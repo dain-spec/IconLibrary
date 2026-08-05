@@ -31,7 +31,7 @@ function CodeBlock({
       <pre className="max-h-40 overflow-auto rounded-lg bg-surface-hover p-3 text-xs text-ink">
         <code className="break-all">{content}</code>
       </pre>
-      <div className="absolute right-2 top-2 flex gap-1 rounded-md bg-white/60 p-0.5 shadow-sm">
+      <div className="absolute right-2 top-2 flex gap-1 rounded-md bg-white/80 p-0.5 shadow-sm">
         {href && (
           <a
             href={href}
