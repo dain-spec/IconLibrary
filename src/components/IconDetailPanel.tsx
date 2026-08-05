@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { Icon } from "@/lib/icons";
 import { figmaLinkFor } from "@/data/icons";
 import { CopyButton } from "./CopyButton";
@@ -21,15 +21,23 @@ export function IconDetailPanel({
   onClose: () => void;
 }) {
   const [tab, setTab] = useState<Tab>("svg");
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const id = requestAnimationFrame(() => setVisible(true));
+    return () => cancelAnimationFrame(id);
+  }, []);
 
   const reactSnippet = `import { Icon } from "@/components/icon"\n\n<Icon name="${icon.id}" />`;
   const figmaLink = icon.figmaNodeId ? figmaLinkFor(icon.figmaNodeId) : "";
   const content = tab === "svg" ? icon.svg : tab === "react" ? reactSnippet : figmaLink;
 
   return (
-    <div className="fixed inset-0 z-50 bg-black/40" onClick={onClose}>
+    <div className="fixed inset-0 z-50" onClick={onClose}>
       <div
-        className="fixed inset-y-0 right-0 w-full max-w-md overflow-y-auto border-l border-border bg-surface p-6"
+        className={`fixed inset-y-0 right-0 w-full max-w-md overflow-y-auto border-l border-border bg-surface p-6 transition-transform duration-300 ease-out ${
+          visible ? "translate-x-0" : "translate-x-full"
+        }`}
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-start justify-between">
