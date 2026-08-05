@@ -33,7 +33,6 @@ export function LibraryExplorer({ icons }: { icons: Icon[] }) {
   function handleTagClick(tag: string) {
     setCategory("전체");
     setQuery(tag);
-    setSelectedId(null);
   }
 
   return (
