@@ -13,6 +13,19 @@ const TABS: { key: Tab; label: string }[] = [
   { key: "figma", label: "Figma" },
 ];
 
+function CodeBlock({ content }: { content: string }) {
+  return (
+    <div className="relative">
+      <pre className="max-h-40 overflow-auto rounded-lg bg-surface-hover p-3 text-xs text-ink">
+        <code>{content}</code>
+      </pre>
+      <div className="absolute right-2 top-2">
+        <CopyButton text={content} />
+      </div>
+    </div>
+  );
+}
+
 export function IconDetailPanel({
   icon,
   onClose,
@@ -30,7 +43,6 @@ export function IconDetailPanel({
 
   const reactSnippet = `import { Icon } from "@/components/icon"\n\n<Icon name="${icon.id}" />`;
   const figmaLink = icon.figmaNodeId ? figmaLinkFor(icon.figmaNodeId) : "";
-  const content = tab === "svg" ? icon.svg : tab === "react" ? reactSnippet : figmaLink;
 
   return (
     <div
@@ -87,14 +99,19 @@ export function IconDetailPanel({
           ))}
         </div>
 
-        <div className="relative mt-3">
-          <pre className="max-h-40 overflow-auto rounded-lg bg-surface-hover p-3 text-xs text-ink">
-            <code>{content}</code>
-          </pre>
-          <div className="absolute right-2 top-2">
-            <CopyButton text={content} />
+        {tab === "react" ? (
+          <div className="mt-3 flex flex-col gap-4">
+            <CodeBlock content={reactSnippet} />
+            <div>
+              <p className="mb-1.5 text-xs font-medium text-muted">SVG</p>
+              <CodeBlock content={icon.svg} />
+            </div>
           </div>
-        </div>
+        ) : (
+          <div className="mt-3">
+            <CodeBlock content={tab === "svg" ? icon.svg : figmaLink} />
+          </div>
+        )}
       </div>
     </div>
   );
