@@ -17,6 +17,15 @@ function toComponentName(id: string) {
   return segments.map((s) => s.charAt(0).toUpperCase() + s.slice(1)).join("");
 }
 
+// Wraps the SVG body in a named group so pasting into Figma names the
+// resulting layer after the icon's file name instead of "Vector"/"svg".
+function withFigmaLayerName(svg: string, name: string) {
+  return svg.replace(
+    /(<svg[^>]*>)([\s\S]*)(<\/svg>)/,
+    (_match, open, inner, close) => `${open}<g id="${name}">${inner}</g>${close}`
+  );
+}
+
 function CodeBlock({
   content,
   copyText,
@@ -157,7 +166,7 @@ export function IconDetailPanel({
             </a>
             <div>
               <p className="mb-1.5 text-xs font-medium text-muted">SVG</p>
-              <CodeBlock content={icon.svg} />
+              <CodeBlock content={withFigmaLayerName(icon.svg, icon.id)} />
             </div>
           </div>
         )}
