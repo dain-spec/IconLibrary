@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -8,62 +9,87 @@ type NavEntry = { label: string; href: string } | { label: string; children: Nav
 
 const NAV: NavEntry[] = [
   {
-    label: "아이콘",
-    children: [{ label: "멀티컬러", href: "/icon/multicolor" }],
-  },
-  {
     label: "모션",
     href: "/motion",
   },
+  {
+    label: "아이콘",
+    children: [{ label: "멀티컬러", href: "/icon/multicolor" }],
+  },
 ];
+
+function ChevronIcon({ open }: { open: boolean }) {
+  return (
+    <svg
+      width="14"
+      height="14"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      className={`shrink-0 transition-transform ${open ? "rotate-90" : ""}`}
+    >
+      <path d="M9 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+function NavLink({ href, label, active }: { href: string; label: string; active: boolean }) {
+  return (
+    <Link
+      href={href}
+      className={`block rounded-r-md py-1.5 text-sm transition-colors ${
+        active
+          ? "border-l-2 border-accent bg-accent/10 pl-[10px] pr-3 font-medium text-accent"
+          : "border-l-2 border-transparent pl-[10px] pr-3 text-ink hover:bg-surface-hover"
+      }`}
+    >
+      {label}
+    </Link>
+  );
+}
+
+function NavGroup({ label, children }: { label: string; children: NavItem[] }) {
+  const pathname = usePathname();
+  const [open, setOpen] = useState(true);
+
+  return (
+    <div>
+      <button
+        onClick={() => setOpen((v) => !v)}
+        className="flex w-full items-center gap-1 rounded-md py-1.5 pl-2 pr-3 text-sm font-medium text-ink hover:bg-surface-hover"
+      >
+        <ChevronIcon open={open} />
+        {label}
+      </button>
+      {open && (
+        <div className="ml-4 mt-0.5 flex flex-col gap-0.5">
+          {children.map((item) => (
+            <NavLink
+              key={item.href}
+              href={item.href}
+              label={item.label}
+              active={pathname === item.href}
+            />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
 
 export function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <nav className="flex h-full w-52 shrink-0 flex-col gap-4 overflow-y-auto border-r border-border p-4">
-      {NAV.map((entry) => {
-        if ("children" in entry) {
-          return (
-            <div key={entry.label}>
-              <p className="px-2 text-xs font-medium uppercase tracking-wide text-muted">
-                {entry.label}
-              </p>
-              <div className="mt-1 flex flex-col gap-0.5">
-                {entry.children.map((item) => {
-                  const active = pathname === item.href;
-                  return (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      className={`rounded-md px-2 py-1.5 text-sm transition-colors ${
-                        active
-                          ? "bg-accent text-white"
-                          : "text-ink hover:bg-surface-hover"
-                      }`}
-                    >
-                      {item.label}
-                    </Link>
-                  );
-                })}
-              </div>
-            </div>
-          );
-        }
-
-        const active = pathname === entry.href;
-        return (
-          <Link
-            key={entry.href}
-            href={entry.href}
-            className={`rounded-md px-2 py-1.5 text-xs font-medium uppercase tracking-wide transition-colors ${
-              active ? "text-accent" : "text-muted hover:text-ink"
-            }`}
-          >
-            {entry.label}
-          </Link>
-        );
-      })}
+    <nav className="flex h-full w-52 shrink-0 flex-col gap-0.5 overflow-y-auto border-r border-border px-3 py-4">
+      {NAV.map((entry) =>
+        "children" in entry ? (
+          <NavGroup key={entry.label} label={entry.label} children={entry.children} />
+        ) : (
+          <NavLink key={entry.href} href={entry.href} label={entry.label} active={pathname === entry.href} />
+        )
+      )}
     </nav>
   );
 }
