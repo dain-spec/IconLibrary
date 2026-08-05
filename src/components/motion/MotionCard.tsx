@@ -2,6 +2,7 @@
 
 import Lottie from "lottie-react";
 import type { MotionAsset } from "@/lib/motion";
+import { useLottieData } from "@/lib/useLottieData";
 
 export function MotionCard({
   asset,
@@ -12,6 +13,8 @@ export function MotionCard({
   isSelected?: boolean;
   onClick: () => void;
 }) {
+  const animationData = useLottieData(asset.type === "json" ? asset.src : "");
+
   return (
     <button
       onClick={onClick}
@@ -26,7 +29,9 @@ export function MotionCard({
         // eslint-disable-next-line @next/next/no-img-element
         <img src={asset.src} alt={asset.title} className="h-full w-full object-contain" />
       ) : (
-        <Lottie path={asset.src} loop autoplay className="h-full w-full" />
+        animationData && (
+          <Lottie animationData={animationData} loop autoplay className="h-full w-full" />
+        )
       )}
     </button>
   );

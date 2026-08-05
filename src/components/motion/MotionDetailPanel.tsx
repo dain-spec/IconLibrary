@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Lottie from "lottie-react";
 import type { MotionAsset } from "@/lib/motion";
 import { CopyButton } from "../CopyButton";
+import { useLottieData } from "@/lib/useLottieData";
 
 export function MotionDetailPanel({
   asset,
@@ -13,6 +14,7 @@ export function MotionDetailPanel({
   onClose: () => void;
 }) {
   const [visible, setVisible] = useState(false);
+  const animationData = useLottieData(asset.type === "json" ? asset.src : "");
 
   useEffect(() => {
     const id = requestAnimationFrame(() => setVisible(true));
@@ -61,7 +63,9 @@ export function MotionDetailPanel({
             // eslint-disable-next-line @next/next/no-img-element
             <img src={asset.src} alt={asset.title} className="h-24 w-24 object-contain" />
           ) : (
-            <Lottie path={asset.src} loop autoplay className="h-24 w-24" />
+            animationData && (
+              <Lottie animationData={animationData} loop autoplay className="h-24 w-24" />
+            )
           )}
         </div>
 
