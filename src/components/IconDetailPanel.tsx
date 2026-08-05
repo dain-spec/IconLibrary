@@ -17,14 +17,37 @@ function toComponentName(id: string) {
   return segments.map((s) => s.charAt(0).toUpperCase() + s.slice(1)).join("");
 }
 
-function CodeBlock({ content }: { content: string }) {
+function CodeBlock({
+  content,
+  copyText,
+  href,
+}: {
+  content: string;
+  copyText?: string;
+  href?: string;
+}) {
   return (
     <div className="relative">
       <pre className="max-h-40 overflow-auto rounded-lg bg-surface-hover p-3 text-xs text-ink">
-        <code>{content}</code>
+        <code className="break-all">{content}</code>
       </pre>
-      <div className="absolute right-2 top-2">
-        <CopyButton text={content} variant="icon" />
+      <div className="absolute right-2 top-2 flex gap-1">
+        {href && (
+          <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Figma에서 열기"
+            className="rounded-md p-1 text-muted transition-colors hover:bg-surface hover:text-ink"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M15 3h6v6" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M10 14L21 3" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </a>
+        )}
+        <CopyButton text={copyText ?? content} variant="icon" />
       </div>
     </div>
   );
@@ -119,7 +142,10 @@ export function IconDetailPanel({
           </div>
         ) : (
           <div className="mt-3">
-            <CodeBlock content={figmaLink} />
+            <p className="mb-1.5 text-xs text-muted">
+              복사하면 SVG가 복사되어 Figma에 바로 붙여넣을 수 있어요.
+            </p>
+            <CodeBlock content={figmaLink} copyText={icon.svg} href={figmaLink} />
           </div>
         )}
       </div>
