@@ -30,6 +30,12 @@ export function LibraryExplorer({ icons }: { icons: Icon[] }) {
 
   const selected = icons.find((icon) => icon.id === selectedId) ?? null;
 
+  function handleTagClick(tag: string) {
+    setCategory("전체");
+    setQuery(tag);
+    setSelectedId(null);
+  }
+
   return (
     <div className="flex h-full overflow-hidden">
       <div className="min-w-0 flex-1 overflow-y-auto">
@@ -82,7 +88,11 @@ export function LibraryExplorer({ icons }: { icons: Icon[] }) {
       </div>
 
       {selected && (
-        <IconDetailPanel icon={selected} onClose={() => setSelectedId(null)} />
+        <IconDetailPanel
+          icon={selected}
+          onClose={() => setSelectedId(null)}
+          onTagClick={handleTagClick}
+        />
       )}
     </div>
   );

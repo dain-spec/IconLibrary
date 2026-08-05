@@ -62,9 +62,11 @@ function CodeBlock({
 export function IconDetailPanel({
   icon,
   onClose,
+  onTagClick,
 }: {
   icon: Icon;
   onClose: () => void;
+  onTagClick: (tag: string) => void;
 }) {
   const [tab, setTab] = useState<Tab>("react");
   const [visible, setVisible] = useState(false);
@@ -100,12 +102,13 @@ export function IconDetailPanel({
         {(icon.tags.ko.length > 0 || icon.tags.en.length > 0) && (
           <div className="mt-3 flex flex-wrap gap-1.5">
             {[...icon.tags.ko, ...icon.tags.en].map((tag) => (
-              <span
+              <button
                 key={tag}
-                className="rounded-full border border-border px-2 py-0.5 text-xs text-muted"
+                onClick={() => onTagClick(tag)}
+                className="rounded-full border border-border px-2 py-0.5 text-xs text-muted transition-colors hover:border-accent hover:text-accent"
               >
                 {tag}
-              </span>
+              </button>
             ))}
           </div>
         )}
