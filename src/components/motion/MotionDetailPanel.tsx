@@ -1,10 +1,21 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Lottie from "lottie-react";
 import type { MotionAsset } from "@/lib/motion";
 import { CopyButton } from "../CopyButton";
 import { useLottieData } from "@/lib/useLottieData";
+import {
+  applyHexToGroup,
+  collectStaticLottieColorCKs,
+  groupLottieColorRefs,
+  rgb01ToHex,
+  type LottieColorGroup,
+} from "@/lib/lottieColor";
+
+function cloneAnimationData(data: object) {
+  return JSON.parse(JSON.stringify(data));
+}
 
 export function MotionDetailPanel({
   asset,
@@ -14,14 +25,50 @@ export function MotionDetailPanel({
   onClose: () => void;
 }) {
   const [visible, setVisible] = useState(false);
-  const animationData = useLottieData(asset.type === "json" ? asset.src : "");
+  const rawData = useLottieData(asset.type === "json" ? asset.src : "");
+  const [workingData, setWorkingData] = useState<Record<string, unknown> | null>(null);
+  const [colorGroups, setColorGroups] = useState<LottieColorGroup[]>([]);
+  const [isLightPreview, setIsLightPreview] = useState(false);
+  const [copyState, setCopyState] = useState<"idle" | "copied" | "error">("idle");
+  const previewRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const id = requestAnimationFrame(() => setVisible(true));
     return () => cancelAnimationFrame(id);
   }, []);
 
+  useEffect(() => {
+    if (!rawData) return;
+    const cloned = cloneAnimationData(rawData);
+    setWorkingData(cloned);
+    setColorGroups(groupLottieColorRefs(collectStaticLottieColorCKs(cloned)));
+  }, [rawData]);
+
   const fileName = asset.src.split("/").pop() ?? asset.src;
+
+  function handleColorChange(group: LottieColorGroup, hex: string) {
+    applyHexToGroup(group, hex);
+    setWorkingData((prev) => (prev ? { ...prev } : prev));
+  }
+
+  async function handleCopyToFigma() {
+    const svgEl = previewRef.current?.querySelector("svg");
+    if (!svgEl) {
+      setCopyState("error");
+      return;
+    }
+    let markup = svgEl.outerHTML;
+    if (!/\sxmlns\s*=/.test(markup)) {
+      markup = markup.replace("<svg ", '<svg xmlns="http://www.w3.org/2000/svg" ');
+    }
+    try {
+      await navigator.clipboard.writeText(markup);
+      setCopyState("copied");
+    } catch {
+      setCopyState("error");
+    }
+    setTimeout(() => setCopyState("idle"), 1600);
+  }
 
   return (
     <div
@@ -58,29 +105,96 @@ export function MotionDetailPanel({
           ))}
         </div>
 
-        <div className="mt-5 flex items-center justify-center rounded-xl bg-neutral-900 p-10">
+        {asset.type === "json" && (
+          <div className="mt-4 flex items-center justify-between">
+            <span className="text-xs font-medium text-muted">mode</span>
+            <button
+              onClick={() => setIsLightPreview((v) => !v)}
+              aria-pressed={isLightPreview}
+              className="flex items-center gap-1 rounded-full border border-border p-1 text-muted"
+            >
+              <span
+                className={`rounded-full px-2 py-0.5 text-xs transition-colors ${
+                  !isLightPreview ? "bg-ink text-surface" : ""
+                }`}
+              >
+                다크
+              </span>
+              <span
+                className={`rounded-full px-2 py-0.5 text-xs transition-colors ${
+                  isLightPreview ? "bg-ink text-surface" : ""
+                }`}
+              >
+                라이트
+              </span>
+            </button>
+          </div>
+        )}
+
+        <div
+          ref={previewRef}
+          className={`mt-3 flex items-center justify-center rounded-xl p-10 ${
+            asset.type === "json" && isLightPreview ? "bg-neutral-100" : "bg-neutral-900"
+          }`}
+        >
           {asset.type === "image" ? (
             // eslint-disable-next-line @next/next/no-img-element
             <img src={asset.src} alt={asset.title} className="h-24 w-24 object-contain" />
           ) : (
-            animationData && (
-              <Lottie animationData={animationData} loop autoplay className="h-24 w-24" />
+            workingData && (
+              <Lottie animationData={workingData} loop autoplay className="h-24 w-24" />
             )
           )}
         </div>
 
-        <a
-          href={asset.src}
-          download={fileName}
-          className="mt-5 flex items-center justify-center gap-1.5 rounded-lg border border-border px-3 py-2 text-sm text-ink transition-colors hover:bg-surface-hover"
-        >
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <path d="M12 3v12" strokeLinecap="round" strokeLinejoin="round" />
-            <path d="M7 10l5 5 5-5" strokeLinecap="round" strokeLinejoin="round" />
-            <path d="M4 19h16" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-          {fileName} 다운로드
-        </a>
+        {colorGroups.length > 0 && (
+          <div className="mt-4 flex flex-wrap gap-3">
+            {colorGroups.map((group, index) => {
+              const [r, g, b] = group.refs[0].k;
+              const hex = rgb01ToHex(r, g, b);
+              return (
+                <label key={index} className="flex flex-col items-center gap-1">
+                  <input
+                    type="color"
+                    value={hex}
+                    onChange={(e) => handleColorChange(group, e.target.value)}
+                    className="h-8 w-8 cursor-pointer rounded-md border border-border p-0.5"
+                  />
+                  <span className="text-xs text-muted">Color{index + 1}</span>
+                </label>
+              );
+            })}
+          </div>
+        )}
+
+        <div className="mt-5 flex flex-col gap-2">
+          <a
+            href={asset.src}
+            download={fileName}
+            className="flex items-center justify-center gap-1.5 rounded-lg border border-border px-3 py-2 text-sm text-ink transition-colors hover:bg-surface-hover"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M12 3v12" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M7 10l5 5 5-5" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M4 19h16" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+            {fileName} 다운로드
+          </a>
+
+          {asset.type === "json" && (
+            <button
+              onClick={handleCopyToFigma}
+              className="flex items-center justify-center gap-1.5 rounded-lg border border-border px-3 py-2 text-sm text-ink transition-colors hover:bg-surface-hover"
+            >
+              🎨{" "}
+              {copyState === "copied"
+                ? "SVG 복사됨"
+                : copyState === "error"
+                  ? "복사 실패"
+                  : "Figma로 SVG 복사"}
+            </button>
+          )}
+        </div>
       </div>
     </div>
   );

@@ -82,7 +82,11 @@ export function MotionExplorer({ assets }: { assets: MotionAsset[] }) {
       </div>
 
       {selected && (
-        <MotionDetailPanel asset={selected} onClose={() => setSelectedId(null)} />
+        <MotionDetailPanel
+          key={selected.id}
+          asset={selected}
+          onClose={() => setSelectedId(null)}
+        />
       )}
     </div>
   );
