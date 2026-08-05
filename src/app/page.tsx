@@ -1,7 +1,5 @@
-import { getAllIcons } from "@/lib/icons";
-import { LibraryExplorer } from "@/components/LibraryExplorer";
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  const icons = getAllIcons();
-  return <LibraryExplorer icons={icons} />;
+  redirect("/icon/multicolor");
 }
