@@ -689,7 +689,7 @@
       "id": "dobe-meet-summary",
       "type": "json",
       "title": "Meet Summary",
-      "path": "./assets/Dobi/Dobe_Meet_summary.json",
+      "path": "./assets/charactor/Dobe_Meet_summary.json",
       "thumbnail": "",
       "tags": [
         "dobi",
@@ -703,7 +703,7 @@
       "id": "dobi-expert1-completed",
       "type": "image",
       "title": "Dobi Expert1 Completed",
-      "path": "./assets/Dobi/Dobi_Expert1_completed.png",
+      "path": "./assets/charactor/Dobi_Expert1_completed.png",
       "thumbnail": "",
       "tags": [
         "dobi",
@@ -716,7 +716,7 @@
       "id": "dobi-expert1-document",
       "type": "image",
       "title": "Dobi Expert1 Document",
-      "path": "./assets/Dobi/Dobi_Expert1_document.png",
+      "path": "./assets/charactor/Dobi_Expert1_document.png",
       "thumbnail": "",
       "tags": [
         "dobi",
@@ -730,7 +730,7 @@
       "id": "dobi-expert1-inprogress",
       "type": "image",
       "title": "Dobi Expert1 In Progress",
-      "path": "./assets/Dobi/Dobi_Expert1_inprogress.png",
+      "path": "./assets/charactor/Dobi_Expert1_inprogress.png",
       "thumbnail": "",
       "tags": [
         "dobi",
@@ -744,7 +744,7 @@
       "id": "dobi-expert1-welcome",
       "type": "image",
       "title": "Dobi Expert1 Welcome",
-      "path": "./assets/Dobi/Dobi_Expert1_welcome.png",
+      "path": "./assets/charactor/Dobi_Expert1_welcome.png",
       "thumbnail": "",
       "tags": [
         "dobi",
@@ -758,7 +758,7 @@
       "id": "dobi-guide",
       "type": "image",
       "title": "Dobi Guide",
-      "path": "./assets/Dobi/Dobi_Guide.png",
+      "path": "./assets/charactor/Dobi_Guide.png",
       "thumbnail": "",
       "tags": [
         "dobi",
