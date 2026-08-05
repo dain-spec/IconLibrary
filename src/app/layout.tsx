@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { NavTabs } from "@/components/NavTabs";
 
 export const metadata: Metadata = {
   title: "Icon Library",
@@ -13,7 +14,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
-      <body>{children}</body>
+      <body>
+        <div className="flex h-screen flex-col">
+          <NavTabs />
+          <div className="flex-1 overflow-hidden">{children}</div>
+        </div>
+      </body>
     </html>
   );
 }

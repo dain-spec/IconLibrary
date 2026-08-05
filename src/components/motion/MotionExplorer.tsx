@@ -1,48 +1,48 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import type { Icon } from "@/lib/icons";
-import { IconCard } from "./IconCard";
-import { IconDetailPanel } from "./IconDetailPanel";
+import type { MotionAsset } from "@/lib/motion";
+import { MotionCard } from "./MotionCard";
+import { MotionDetailPanel } from "./MotionDetailPanel";
 
-export function LibraryExplorer({ icons }: { icons: Icon[] }) {
+export function MotionExplorer({ assets }: { assets: MotionAsset[] }) {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState<string>("전체");
   const [selectedId, setSelectedId] = useState<string | null>(null);
 
   const categories = useMemo(
-    () => ["전체", ...Array.from(new Set(icons.map((icon) => icon.category)))],
-    [icons]
+    () => ["전체", ...Array.from(new Set(assets.map((a) => a.category)))],
+    [assets]
   );
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return icons.filter((icon) => {
-      const matchesCategory = category === "전체" || icon.category === category;
+    return assets.filter((asset) => {
+      const matchesCategory = category === "전체" || asset.category === category;
       if (!matchesCategory) return false;
       if (!q) return true;
-      const haystack = [icon.id, icon.category, ...icon.tags.ko, ...icon.tags.en]
+      const haystack = [asset.title, asset.category, asset.note ?? "", ...asset.tags]
         .join(" ")
         .toLowerCase();
       return haystack.includes(q);
     });
-  }, [icons, query, category]);
+  }, [assets, query, category]);
 
-  const selected = icons.find((icon) => icon.id === selectedId) ?? null;
+  const selected = assets.find((a) => a.id === selectedId) ?? null;
 
   return (
     <div className="flex h-full overflow-hidden">
       <div className="min-w-0 flex-1 overflow-y-auto">
         <div className="mx-auto max-w-5xl px-6 py-10">
-          <h1 className="text-2xl font-semibold text-ink">Icon Library</h1>
+          <h1 className="text-2xl font-semibold text-ink">Motion Library</h1>
           <p className="mt-1 text-sm text-muted">
-            {icons.length}개의 아이콘을 검색하고 코드를 복사하세요.
+            {assets.length}개의 모션을 검색하고 다운로드하세요.
           </p>
 
           <input
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="이름, 태그로 검색 (예: 문서, money, list)"
+            placeholder="이름, 태그로 검색 (예: loader, 로딩, dobi)"
             className="mt-6 w-full rounded-lg border border-border bg-surface px-4 py-2.5 text-sm text-ink outline-none focus:border-accent"
           />
 
@@ -68,12 +68,12 @@ export function LibraryExplorer({ icons }: { icons: Icon[] }) {
             </p>
           ) : (
             <div className="mt-6 flex flex-wrap gap-3">
-              {filtered.map((icon) => (
-                <IconCard
-                  key={icon.id}
-                  icon={icon}
-                  isSelected={icon.id === selectedId}
-                  onClick={() => setSelectedId(icon.id)}
+              {filtered.map((asset) => (
+                <MotionCard
+                  key={asset.id}
+                  asset={asset}
+                  isSelected={asset.id === selectedId}
+                  onClick={() => setSelectedId(asset.id)}
                 />
               ))}
             </div>
@@ -82,7 +82,7 @@ export function LibraryExplorer({ icons }: { icons: Icon[] }) {
       </div>
 
       {selected && (
-        <IconDetailPanel icon={selected} onClose={() => setSelectedId(null)} />
+        <MotionDetailPanel asset={selected} onClose={() => setSelectedId(null)} />
       )}
     </div>
   );
