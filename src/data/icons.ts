@@ -49,10 +49,9 @@ export const iconMeta: IconMeta[] = [
     figmaNodeId: "15861:27193",
   },
   {
-    id: "ic_doc_arrow_flat",
+    id: "ic_doc_minus_flat",
     category: "문서",
-    tags: { ko: ["문서", "화살표", "이동", "제출"], en: ["document", "arrow"] },
-    figmaNodeId: "15861:27122",
+    tags: { ko: ["문서", "삭제", "빼기", "제거"], en: ["document", "minus", "remove"] },
   },
   {
     id: "ic_doc_percent_flat",
