@@ -33,13 +33,11 @@ export function IconDetailPanel({
   const content = tab === "svg" ? icon.svg : tab === "react" ? reactSnippet : figmaLink;
 
   return (
-    <div className="fixed inset-0 z-50" onClick={onClose}>
-      <div
-        className={`fixed inset-y-0 right-0 w-full max-w-md overflow-y-auto border-l border-border bg-surface p-6 transition-transform duration-300 ease-out ${
-          visible ? "translate-x-0" : "translate-x-full"
-        }`}
-        onClick={(e) => e.stopPropagation()}
-      >
+    <div
+      className="h-full shrink-0 overflow-hidden border-l border-border bg-surface transition-[width] duration-300 ease-out"
+      style={{ width: visible ? "28rem" : "0px" }}
+    >
+      <div className="h-full w-[28rem] overflow-y-auto p-6">
         <div className="flex items-start justify-between">
           <div className="flex items-center gap-3">
             <span
