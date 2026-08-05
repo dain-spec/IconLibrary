@@ -72,6 +72,7 @@ export function LibraryExplorer({ icons }: { icons: Icon[] }) {
                 <IconCard
                   key={icon.id}
                   icon={icon}
+                  isSelected={icon.id === selectedId}
                   onClick={() => setSelectedId(icon.id)}
                 />
               ))}
