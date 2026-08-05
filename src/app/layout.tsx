@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Header } from "@/components/Header";
 import { Sidebar } from "@/components/Sidebar";
 
 export const metadata: Metadata = {
@@ -15,9 +16,12 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body>
-        <div className="flex h-screen">
-          <Sidebar />
-          <div className="min-w-0 flex-1 overflow-hidden">{children}</div>
+        <div className="flex h-screen flex-col">
+          <Header />
+          <div className="flex flex-1 overflow-hidden">
+            <Sidebar />
+            <div className="min-w-0 flex-1 overflow-hidden">{children}</div>
+          </div>
         </div>
       </body>
     </html>
