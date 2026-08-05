@@ -12,15 +12,14 @@ export function IconCard({
   return (
     <button
       onClick={onClick}
-      className="flex flex-col items-center gap-3 rounded-xl border border-border bg-surface p-5 text-left transition-colors hover:bg-surface-hover"
+      title={icon.id}
+      aria-label={icon.id}
+      className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl border border-border bg-surface transition-colors hover:bg-surface-hover"
     >
       <span
-        className="h-10 w-10 [&_svg]:h-10 [&_svg]:w-10"
+        className="h-6 w-6 [&_svg]:h-6 [&_svg]:w-6"
         dangerouslySetInnerHTML={{ __html: icon.svg }}
       />
-      <span className="w-full truncate text-center text-xs text-muted">
-        {icon.id}
-      </span>
     </button>
   );
 }

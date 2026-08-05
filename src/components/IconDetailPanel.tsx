@@ -27,12 +27,9 @@ export function IconDetailPanel({
   const content = tab === "svg" ? icon.svg : tab === "react" ? reactSnippet : figmaLink;
 
   return (
-    <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4"
-      onClick={onClose}
-    >
+    <div className="fixed inset-0 z-50 bg-black/40" onClick={onClose}>
       <div
-        className="w-full max-w-md rounded-2xl border border-border bg-surface p-6"
+        className="fixed inset-y-0 right-0 w-full max-w-md overflow-y-auto border-l border-border bg-surface p-6"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-start justify-between">

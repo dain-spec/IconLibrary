@@ -65,7 +65,7 @@ export function LibraryExplorer({ icons }: { icons: Icon[] }) {
           검색 결과가 없습니다.
         </p>
       ) : (
-        <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4">
+        <div className="mt-6 flex flex-wrap gap-3">
           {filtered.map((icon) => (
             <IconCard
               key={icon.id}
