@@ -5,13 +5,17 @@ import type { Icon } from "@/lib/icons";
 import { figmaLinkFor } from "@/data/icons";
 import { CopyButton } from "./CopyButton";
 
-type Tab = "svg" | "react" | "figma";
+type Tab = "react" | "figma";
 
 const TABS: { key: Tab; label: string }[] = [
-  { key: "svg", label: "SVG" },
   { key: "react", label: "React" },
   { key: "figma", label: "Figma" },
 ];
+
+function toComponentName(id: string) {
+  const segments = id.split("_").map((s) => (s === "ic" ? "icon" : s));
+  return segments.map((s) => s.charAt(0).toUpperCase() + s.slice(1)).join("");
+}
 
 function CodeBlock({ content }: { content: string }) {
   return (
@@ -20,7 +24,7 @@ function CodeBlock({ content }: { content: string }) {
         <code>{content}</code>
       </pre>
       <div className="absolute right-2 top-2">
-        <CopyButton text={content} />
+        <CopyButton text={content} variant="icon" />
       </div>
     </div>
   );
@@ -33,7 +37,7 @@ export function IconDetailPanel({
   icon: Icon;
   onClose: () => void;
 }) {
-  const [tab, setTab] = useState<Tab>("svg");
+  const [tab, setTab] = useState<Tab>("react");
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -41,6 +45,7 @@ export function IconDetailPanel({
     return () => cancelAnimationFrame(id);
   }, []);
 
+  const componentName = toComponentName(icon.id);
   const reactSnippet = `import { Icon } from "@/components/icon"\n\n<Icon name="${icon.id}" />`;
   const figmaLink = icon.figmaNodeId ? figmaLinkFor(icon.figmaNodeId) : "";
 
@@ -49,29 +54,22 @@ export function IconDetailPanel({
       className="h-full shrink-0 overflow-hidden border-l border-border bg-surface transition-[width] duration-300 ease-out"
       style={{ width: visible ? "28rem" : "0px" }}
     >
-      <div className="h-full w-[28rem] overflow-y-auto p-6">
-        <div className="flex items-start justify-between">
-          <div className="flex items-center gap-3">
-            <span
-              className="h-10 w-10 [&_svg]:h-10 [&_svg]:w-10"
-              dangerouslySetInnerHTML={{ __html: icon.svg }}
-            />
-            <div>
-              <p className="font-medium text-ink">{icon.id}</p>
-              <p className="text-xs text-muted">{icon.category}</p>
-            </div>
-          </div>
-          <button
-            onClick={onClose}
-            className="text-muted hover:text-ink"
-            aria-label="닫기"
-          >
-            ✕
-          </button>
+      <div className="relative h-full w-[28rem] overflow-y-auto p-6">
+        <button
+          onClick={onClose}
+          className="absolute right-4 top-4 text-muted hover:text-ink"
+          aria-label="닫기"
+        >
+          ✕
+        </button>
+
+        <div className="flex items-center gap-1.5 pr-8">
+          <h2 className="text-xl font-bold text-ink">{icon.id}</h2>
+          <CopyButton text={icon.id} variant="icon" />
         </div>
 
         {(icon.tags.ko.length > 0 || icon.tags.en.length > 0) && (
-          <div className="mt-4 flex flex-wrap gap-1.5">
+          <div className="mt-3 flex flex-wrap gap-1.5">
             {[...icon.tags.ko, ...icon.tags.en].map((tag) => (
               <span
                 key={tag}
@@ -82,6 +80,13 @@ export function IconDetailPanel({
             ))}
           </div>
         )}
+
+        <div className="mt-5 flex items-center justify-center rounded-xl bg-surface-hover p-10">
+          <span
+            className="h-12 w-12 [&_svg]:h-12 [&_svg]:w-12"
+            dangerouslySetInnerHTML={{ __html: icon.svg }}
+          />
+        </div>
 
         <div className="mt-5 flex gap-1 border-b border-border">
           {TABS.filter((t) => t.key !== "figma" || figmaLink).map((t) => (
@@ -101,7 +106,12 @@ export function IconDetailPanel({
 
         {tab === "react" ? (
           <div className="mt-3 flex flex-col gap-4">
-            <CodeBlock content={reactSnippet} />
+            <div>
+              <p className="mb-1.5 font-mono text-sm font-semibold text-ink">
+                {componentName}
+              </p>
+              <CodeBlock content={reactSnippet} />
+            </div>
             <div>
               <p className="mb-1.5 text-xs font-medium text-muted">SVG</p>
               <CodeBlock content={icon.svg} />
@@ -109,7 +119,7 @@ export function IconDetailPanel({
           </div>
         ) : (
           <div className="mt-3">
-            <CodeBlock content={tab === "svg" ? icon.svg : figmaLink} />
+            <CodeBlock content={figmaLink} />
           </div>
         )}
       </div>
