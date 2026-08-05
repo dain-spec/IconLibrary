@@ -17,13 +17,10 @@ function toComponentName(id: string) {
   return segments.map((s) => s.charAt(0).toUpperCase() + s.slice(1)).join("");
 }
 
-// Wraps the SVG body in a named group so pasting into Figma names the
-// resulting layer after the icon's file name instead of "Vector"/"svg".
+// Sets the root <svg> id so pasting into Figma names the resulting
+// top-level Frame after the icon's file name instead of "Frame".
 function withFigmaLayerName(svg: string, name: string) {
-  return svg.replace(
-    /(<svg[^>]*>)([\s\S]*)(<\/svg>)/,
-    (_match, open, inner, close) => `${open}<g id="${name}">${inner}</g>${close}`
-  );
+  return svg.replace(/^<svg /, `<svg id="${name}" `);
 }
 
 function CodeBlock({
