@@ -141,11 +141,24 @@ export function IconDetailPanel({
             </div>
           </div>
         ) : (
-          <div className="mt-3">
-            <p className="mb-1.5 text-xs text-muted">
-              복사하면 SVG가 복사되어 Figma에 바로 붙여넣을 수 있어요.
-            </p>
-            <CodeBlock content={figmaLink} copyText={icon.svg} href={figmaLink} />
+          <div className="mt-3 flex flex-col gap-4">
+            <a
+              href={figmaLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-1.5 rounded-lg border border-border px-3 py-2 text-sm text-ink transition-colors hover:bg-surface-hover"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M15 3h6v6" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M10 14L21 3" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              Figma에서 열기
+            </a>
+            <div>
+              <p className="mb-1.5 text-xs font-medium text-muted">SVG</p>
+              <CodeBlock content={icon.svg} />
+            </div>
           </div>
         )}
       </div>
