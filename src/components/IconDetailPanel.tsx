@@ -63,11 +63,14 @@ function CodeBlock({
         wrapLongLines
         customStyle={{
           margin: 0,
-          maxHeight: "10rem",
+          maxHeight: "11.25rem",
           overflow: "auto",
           borderRadius: "0.5rem",
           border: "1px solid #ededed",
-          padding: "0.75rem",
+          paddingTop: "0.75rem",
+          paddingLeft: "0.75rem",
+          paddingRight: "0.75rem",
+          paddingBottom: "0.75rem",
           fontSize: "0.875rem",
           background: "#ffffff",
         }}
