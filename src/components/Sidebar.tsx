@@ -9,12 +9,12 @@ type NavEntry = { label: string; href: string } | { label: string; children: Nav
 
 const NAV: NavEntry[] = [
   {
-    label: "모션",
+    label: "Motion",
     href: "/motion",
   },
   {
-    label: "아이콘",
-    children: [{ label: "멀티컬러", href: "/icon/multicolor" }],
+    label: "Icon",
+    children: [{ label: "Multicolor", href: "/icon/multicolor" }],
   },
 ];
 
@@ -38,7 +38,7 @@ function NavLink({ href, label, active }: { href: string; label: string; active:
   return (
     <Link
       href={href}
-      className={`block rounded-r-md py-1.5 text-sm transition-colors ${
+      className={`flex h-7 items-center rounded-r-md text-sm transition-colors ${
         active
           ? "border-l-2 border-accent bg-accent/10 pl-[10px] pr-3 font-medium text-accent"
           : "border-l-2 border-transparent pl-[10px] pr-3 text-ink hover:bg-surface-hover"
@@ -57,7 +57,7 @@ function NavGroup({ label, children }: { label: string; children: NavItem[] }) {
     <div>
       <button
         onClick={() => setOpen((v) => !v)}
-        className="flex w-full items-center gap-1 rounded-md py-1.5 pl-2 pr-3 text-sm font-medium text-ink hover:bg-surface-hover"
+        className="flex h-7 w-full items-center gap-1 rounded-md pl-2 pr-3 text-sm font-medium text-ink hover:bg-surface-hover"
       >
         <ChevronIcon open={open} />
         {label}
