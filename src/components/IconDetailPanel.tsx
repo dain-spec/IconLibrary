@@ -3,14 +3,24 @@
 import { useEffect, useState } from "react";
 import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import markup from "react-syntax-highlighter/dist/esm/languages/prism/markup";
-import jsx from "react-syntax-highlighter/dist/esm/languages/prism/jsx";
 import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
 import type { Icon } from "@/lib/icons";
 import { figmaLinkFor } from "@/data/icons";
 import { CopyButton } from "./CopyButton";
 
 SyntaxHighlighter.registerLanguage("markup", markup);
-SyntaxHighlighter.registerLanguage("jsx", jsx);
+
+const CODE_COLORS = {
+  red: "hsl(5, 74%, 59%)",
+  purple: "hsl(301, 63%, 40%)",
+  blue: "hsl(221, 87%, 60%)",
+  orange: "hsl(35, 99%, 36%)",
+  green: "hsl(119, 34%, 47%)",
+};
+
+// SVG tag names (svg/g/path…) read as purple, matching the reference design;
+// oneLight otherwise ships them red.
+const svgTheme = { ...oneLight, tag: { color: CODE_COLORS.purple } };
 
 type Tab = "react" | "figma";
 
@@ -34,18 +44,16 @@ function CodeBlock({
   content,
   copyText,
   href,
-  language = "markup",
 }: {
   content: string;
   copyText?: string;
   href?: string;
-  language?: "markup" | "jsx";
 }) {
   return (
     <div className="relative">
       <SyntaxHighlighter
-        language={language}
-        style={oneLight}
+        language="markup"
+        style={svgTheme}
         wrapLongLines
         customStyle={{
           margin: 0,
@@ -82,6 +90,37 @@ function CodeBlock({
   );
 }
 
+// Hand-colored instead of run through Prism: the two-line template is fixed
+// shape, and Prism's jsx grammar never tokenizes the plain import specifier
+// as a class name, so it can't reproduce the reference design's blue on its own.
+function ReactCodeBlock({ componentName, iconId }: { componentName: string; iconId: string }) {
+  const copyText = `import { ${componentName} } from "@/components/icon"\n\n<${componentName} name="${iconId}" />`;
+  return (
+    <div className="relative">
+      <pre
+        className="m-0 whitespace-pre-wrap break-all rounded-lg p-3 font-mono text-xs leading-relaxed"
+        style={{ background: "var(--surface-hover)" }}
+      >
+        <span style={{ color: CODE_COLORS.red }}>import</span>
+        {" { "}
+        <span style={{ color: CODE_COLORS.blue }}>{componentName}</span>
+        {" } "}
+        <span style={{ color: CODE_COLORS.red }}>from</span>{" "}
+        <span style={{ color: CODE_COLORS.green }}>&quot;@/components/icon&quot;</span>
+        {"\n\n"}
+        {"<"}
+        <span style={{ color: CODE_COLORS.blue }}>{componentName}</span>{" "}
+        <span style={{ color: CODE_COLORS.orange }}>name</span>=
+        <span style={{ color: CODE_COLORS.green }}>&quot;{iconId}&quot;</span>{" "}
+        {"/>"}
+      </pre>
+      <div className="absolute right-2 top-2 flex gap-1 rounded-md bg-white/80 p-0.5 shadow-sm">
+        <CopyButton text={copyText} variant="icon" />
+      </div>
+    </div>
+  );
+}
+
 export function IconDetailPanel({
   icon,
   onClose,
@@ -100,7 +139,6 @@ export function IconDetailPanel({
   }, []);
 
   const componentName = toComponentName(icon.id);
-  const reactSnippet = `import { Icon } from "@/components/icon"\n\n<Icon name="${icon.id}" />`;
   const figmaLink = icon.figmaNodeId ? figmaLinkFor(icon.figmaNodeId) : "";
 
   return (
@@ -165,7 +203,7 @@ export function IconDetailPanel({
               <p className="mb-1.5 font-mono text-sm font-semibold text-ink">
                 {componentName}
               </p>
-              <CodeBlock content={reactSnippet} language="jsx" />
+              <ReactCodeBlock componentName={componentName} iconId={icon.id} />
             </div>
             <div>
               <p className="mb-1.5 text-xs font-medium text-muted">SVG</p>
