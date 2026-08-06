@@ -41,6 +41,7 @@ export const iconMeta: IconMeta[] = [
     id: "ic_doc_aicheck_flat",
     category: "문서",
     tags: { ko: ["문서", "AI", "검토", "확인"], en: ["document", "ai", "check"] },
+    figmaNodeId: "17337:34650",
   },
   {
     id: "ic_doc_search_flat",
@@ -76,6 +77,7 @@ export const iconMeta: IconMeta[] = [
     id: "ic_doc_myset_flat",
     category: "문서",
     tags: { ko: ["문서", "설정", "내 설정"], en: ["document", "my set"] },
+    figmaNodeId: "17337:27909",
   },
   {
     id: "ic_doc_check_flat",
@@ -321,6 +323,7 @@ export const iconMeta: IconMeta[] = [
     id: "ic_graph_flat",
     category: "일반",
     tags: { ko: ["그래프", "통계", "차트"], en: ["graph", "chart", "stats"] },
+    figmaNodeId: "16817:1404",
   },
   {
     id: "ic_pc_down_flat",
