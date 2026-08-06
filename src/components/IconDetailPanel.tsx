@@ -103,8 +103,16 @@ function CodeBlock({
 // Hand-colored instead of run through Prism: the two-line template is fixed
 // shape, and Prism's jsx grammar never tokenizes the plain import specifier
 // as a class name, so it can't reproduce the reference design's blue on its own.
-function ReactCodeBlock({ componentName, iconId }: { componentName: string; iconId: string }) {
-  const copyText = `import { ${componentName} } from "@/components/icon"\n\n<${componentName} name="${iconId}" />`;
+function ReactCodeBlock({
+  componentName,
+  iconId,
+  importPath = "@/components/icon",
+}: {
+  componentName: string;
+  iconId: string;
+  importPath?: string;
+}) {
+  const copyText = `import { ${componentName} } from "${importPath}"\n\n<${componentName} name="${iconId}" />`;
   return (
     <div className="relative">
       <pre
@@ -116,7 +124,7 @@ function ReactCodeBlock({ componentName, iconId }: { componentName: string; icon
         <span style={{ color: CODE_COLORS.blue }}>{componentName}</span>
         {" } "}
         <span style={{ color: CODE_COLORS.red }}>from</span>{" "}
-        <span style={{ color: CODE_COLORS.string }}>&quot;@/components/icon&quot;</span>
+        <span style={{ color: CODE_COLORS.string }}>&quot;{importPath}&quot;</span>
         {"\n\n"}
         {"<"}
         <span style={{ color: CODE_COLORS.blue }}>{componentName}</span>{" "}
@@ -214,6 +222,14 @@ export function IconDetailPanel({
                 {componentName}
               </p>
               <ReactCodeBlock componentName={componentName} iconId={icon.id} />
+            </div>
+            <div>
+              <p className="mb-1.5 text-xs font-medium text-muted">React Native</p>
+              <ReactCodeBlock
+                componentName={componentName}
+                iconId={icon.id}
+                importPath="@/components/icon/native"
+              />
             </div>
             <div>
               <p className="mb-1.5 text-xs font-medium text-muted">SVG</p>
