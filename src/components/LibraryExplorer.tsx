@@ -8,31 +8,22 @@ import { SearchClearButton } from "./SearchClearButton";
 
 export function LibraryExplorer({ icons }: { icons: Icon[] }) {
   const [query, setQuery] = useState("");
-  const [category, setCategory] = useState<string>("전체");
   const [selectedId, setSelectedId] = useState<string | null>(null);
-
-  const categories = useMemo(
-    () => ["전체", ...Array.from(new Set(icons.map((icon) => icon.category)))],
-    [icons]
-  );
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
+    if (!q) return icons;
     return icons.filter((icon) => {
-      const matchesCategory = category === "전체" || icon.category === category;
-      if (!matchesCategory) return false;
-      if (!q) return true;
       const haystack = [icon.id, icon.category, ...icon.tags.ko, ...icon.tags.en]
         .join(" ")
         .toLowerCase();
       return haystack.includes(q);
     });
-  }, [icons, query, category]);
+  }, [icons, query]);
 
   const selected = icons.find((icon) => icon.id === selectedId) ?? null;
 
   function handleTagClick(tag: string) {
-    setCategory("전체");
     setQuery(tag);
   }
 
@@ -48,22 +39,6 @@ export function LibraryExplorer({ icons }: { icons: Icon[] }) {
               className="w-full rounded-lg border border-border bg-surface px-4 py-2.5 pr-10 text-sm text-ink outline-none focus:border-accent"
             />
             {query && <SearchClearButton onClick={() => setQuery("")} />}
-          </div>
-
-          <div className="mt-4 flex flex-wrap gap-2">
-            {categories.map((c) => (
-              <button
-                key={c}
-                onClick={() => setCategory(c)}
-                className={`rounded-full border px-3 py-1 text-xs transition-colors ${
-                  category === c
-                    ? "border-accent bg-accent text-white"
-                    : "border-border text-muted hover:text-ink"
-                }`}
-              >
-                {c}
-              </button>
-            ))}
           </div>
 
           {filtered.length === 0 ? (

@@ -8,26 +8,18 @@ import { SearchClearButton } from "../SearchClearButton";
 
 export function MotionExplorer({ assets }: { assets: MotionAsset[] }) {
   const [query, setQuery] = useState("");
-  const [category, setCategory] = useState<string>("전체");
   const [selectedId, setSelectedId] = useState<string | null>(null);
-
-  const categories = useMemo(
-    () => ["전체", ...Array.from(new Set(assets.map((a) => a.category)))],
-    [assets]
-  );
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
+    if (!q) return assets;
     return assets.filter((asset) => {
-      const matchesCategory = category === "전체" || asset.category === category;
-      if (!matchesCategory) return false;
-      if (!q) return true;
       const haystack = [asset.title, asset.category, asset.note ?? "", ...asset.tags]
         .join(" ")
         .toLowerCase();
       return haystack.includes(q);
     });
-  }, [assets, query, category]);
+  }, [assets, query]);
 
   const selected = assets.find((a) => a.id === selectedId) ?? null;
 
@@ -43,22 +35,6 @@ export function MotionExplorer({ assets }: { assets: MotionAsset[] }) {
               className="w-full rounded-lg border border-border bg-surface px-4 py-2.5 pr-10 text-sm text-ink outline-none focus:border-accent"
             />
             {query && <SearchClearButton onClick={() => setQuery("")} />}
-          </div>
-
-          <div className="mt-4 flex flex-wrap gap-2">
-            {categories.map((c) => (
-              <button
-                key={c}
-                onClick={() => setCategory(c)}
-                className={`rounded-full border px-3 py-1 text-xs transition-colors ${
-                  category === c
-                    ? "border-accent bg-accent text-white"
-                    : "border-border text-muted hover:text-ink"
-                }`}
-              >
-                {c}
-              </button>
-            ))}
           </div>
 
           {filtered.length === 0 ? (
