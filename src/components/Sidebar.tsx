@@ -4,8 +4,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const NAV = [
-  { label: "Motion", href: "/motion" },
   { label: "MultiColor Icon", href: "/icon/multicolor" },
+  { label: "Motion", href: "/motion" },
 ];
 
 export function Sidebar() {
