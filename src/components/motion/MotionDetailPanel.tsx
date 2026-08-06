@@ -44,6 +44,13 @@ export function MotionDetailPanel({
     setColorGroups(groupLottieColorRefs(collectStaticLottieColorCKs(cloned)));
   }, [rawData]);
 
+  useEffect(() => {
+    setIsLightPreview(false);
+    setCopyState("idle");
+    setWorkingData(null);
+    setColorGroups([]);
+  }, [asset.id]);
+
   const fileName = asset.src.split("/").pop() ?? asset.src;
 
   function handleColorChange(group: LottieColorGroup, hex: string) {
