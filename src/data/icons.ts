@@ -52,6 +52,7 @@ export const iconMeta: IconMeta[] = [
     id: "ic_doc_minus_flat",
     category: "문서",
     tags: { ko: ["문서", "삭제", "빼기", "제거"], en: ["document", "minus", "remove"] },
+    figmaNodeId: "15861:27122",
   },
   {
     id: "ic_doc_percent_flat",
