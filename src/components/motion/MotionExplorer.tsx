@@ -34,7 +34,7 @@ export function MotionExplorer({ assets }: { assets: MotionAsset[] }) {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="이름, 태그로 검색 (예: loader, 로딩, dobi)"
-              className="w-full rounded-lg border border-border bg-surface py-2.5 pl-10 pr-10 text-sm text-ink outline-none focus:border-accent"
+              className="w-full rounded-lg border border-border bg-surface py-2.5 pl-10 pr-10 text-sm text-ink outline-none focus:border-[#333333]"
             />
             {query && <SearchClearButton onClick={() => setQuery("")} />}
           </div>
