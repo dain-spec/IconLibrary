@@ -240,6 +240,19 @@
       "note": "로딩 블루"
     },
     {
+      "id": "ic-airplane",
+      "type": "json",
+      "title": "IC Airplane",
+      "path": "./assets/Icon/airplane.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "airplane"
+      ],
+      "updatedAt": "2026-08-06",
+      "note": "비행기"
+    },
+    {
       "id": "ic-oneai-analysis",
       "type": "json",
       "title": "IC ONE AI Analysis",
