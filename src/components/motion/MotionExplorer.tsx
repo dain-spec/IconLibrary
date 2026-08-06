@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import type { MotionAsset } from "@/lib/motion";
 import { MotionCard } from "./MotionCard";
 import { MotionDetailPanel } from "./MotionDetailPanel";
+import { SearchClearButton } from "../SearchClearButton";
 
 export function MotionExplorer({ assets }: { assets: MotionAsset[] }) {
   const [query, setQuery] = useState("");
@@ -34,12 +35,15 @@ export function MotionExplorer({ assets }: { assets: MotionAsset[] }) {
     <div className="flex h-full overflow-hidden">
       <div className="min-w-0 flex-1 overflow-y-auto">
         <div className="mx-auto max-w-5xl px-6 py-10">
-          <input
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="이름, 태그로 검색 (예: loader, 로딩, dobi)"
-            className="w-full rounded-lg border border-border bg-surface px-4 py-2.5 text-sm text-ink outline-none focus:border-accent"
-          />
+          <div className="relative">
+            <input
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="이름, 태그로 검색 (예: loader, 로딩, dobi)"
+              className="w-full rounded-lg border border-border bg-surface px-4 py-2.5 pr-10 text-sm text-ink outline-none focus:border-accent"
+            />
+            {query && <SearchClearButton onClick={() => setQuery("")} />}
+          </div>
 
           <div className="mt-4 flex flex-wrap gap-2">
             {categories.map((c) => (
