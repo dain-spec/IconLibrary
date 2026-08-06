@@ -19,14 +19,14 @@ export function Sidebar() {
           <Link
             key={item.href}
             href={item.href}
-            className={`relative flex h-7 items-center rounded-r-md pl-3 pr-3 text-sm transition-colors ${
+            className={`relative flex h-8 items-center rounded-lg pl-4 pr-3 text-sm transition-colors ${
               active
-                ? "bg-accent/10 font-medium text-accent"
+                ? "bg-[var(--accent-soft)] font-semibold text-accent"
                 : "text-ink hover:bg-surface-hover"
             }`}
           >
             {active && (
-              <span className="absolute left-0 top-1/2 h-5 w-0.5 -translate-y-1/2 bg-accent" />
+              <span className="absolute left-0 top-1/2 h-4 w-1 -translate-y-1/2 rounded-full bg-accent" />
             )}
             {item.label}
           </Link>
