@@ -60,7 +60,6 @@ function CodeBlock({
       <SyntaxHighlighter
         language="markup"
         style={svgTheme}
-        wrapLongLines
         customStyle={{
           margin: 0,
           maxHeight: "11.25rem",
@@ -72,9 +71,10 @@ function CodeBlock({
           paddingRight: "0.75rem",
           paddingBottom: "0.75rem",
           fontSize: "0.875rem",
+          lineHeight: "1.5",
           background: "#ffffff",
         }}
-        codeTagProps={{ style: { whiteSpace: "pre-wrap", wordBreak: "break-all" } }}
+        codeTagProps={{ style: { whiteSpace: "pre" } }}
       >
         {content}
       </SyntaxHighlighter>
@@ -108,8 +108,8 @@ function ReactCodeBlock({ componentName, iconId }: { componentName: string; icon
   return (
     <div className="relative">
       <pre
-        className="m-0 whitespace-pre-wrap break-all rounded-lg p-3 font-mono text-sm leading-relaxed"
-        style={{ background: "#ffffff", border: "1px solid #ededed" }}
+        className="m-0 overflow-x-auto whitespace-pre rounded-lg p-3 font-mono text-sm"
+        style={{ background: "#ffffff", border: "1px solid #ededed", lineHeight: "1.5" }}
       >
         <span style={{ color: CODE_COLORS.red }}>import</span>
         {" { "}
