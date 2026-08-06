@@ -66,7 +66,7 @@ function CodeBlock({
           maxHeight: "10rem",
           overflow: "auto",
           borderRadius: "0.5rem",
-          border: "1px solid #b4b4b4",
+          border: "1px solid #ededed",
           padding: "0.75rem",
           fontSize: "0.875rem",
           background: "#ffffff",
@@ -106,7 +106,7 @@ function ReactCodeBlock({ componentName, iconId }: { componentName: string; icon
     <div className="relative">
       <pre
         className="m-0 whitespace-pre-wrap break-all rounded-lg p-3 font-mono text-sm leading-relaxed"
-        style={{ background: "#ffffff", border: "1px solid #b4b4b4" }}
+        style={{ background: "#ffffff", border: "1px solid #ededed" }}
       >
         <span style={{ color: CODE_COLORS.red }}>import</span>
         {" { "}
