@@ -252,6 +252,18 @@ export const iconMeta: IconMeta[] = [
     figmaNodeId: "17192:25385",
   },
   {
+    id: "ic_arrow_left_flat",
+    category: "일반",
+    tags: { ko: ["화살표", "이전", "뒤로"], en: ["arrow", "back", "previous"] },
+    figmaNodeId: "17192:25398",
+  },
+  {
+    id: "ic_doc_folder_flat",
+    category: "문서",
+    tags: { ko: ["문서", "폴더", "보관"], en: ["document", "folder"] },
+    figmaNodeId: "15830:25322",
+  },
+  {
     id: "ic_cart_flat",
     category: "일반",
     tags: { ko: ["장바구니", "쇼핑", "구매"], en: ["cart", "shopping"] },
