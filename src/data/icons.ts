@@ -257,6 +257,95 @@ export const iconMeta: IconMeta[] = [
     tags: { ko: ["장바구니", "쇼핑", "구매"], en: ["cart", "shopping"] },
     figmaNodeId: "17101:26761",
   },
+  {
+    id: "ic_contract_flat",
+    category: "문서",
+    tags: { ko: ["문서", "계약", "계약서"], en: ["document", "contract"] },
+    figmaNodeId: "16333:2876",
+  },
+  {
+    id: "ic_doc_play_flat",
+    category: "문서",
+    tags: { ko: ["문서", "재생", "동영상"], en: ["document", "play", "video"] },
+    figmaNodeId: "16350:24813",
+  },
+  {
+    id: "ic_goverment_money_flat",
+    category: "금융",
+    tags: { ko: ["정부", "관공서", "돈", "세금"], en: ["government", "money", "tax"] },
+    figmaNodeId: "16085:24361",
+  },
+  {
+    id: "ic_money_flat",
+    category: "금융",
+    tags: { ko: ["돈", "원", "화폐"], en: ["money", "currency"] },
+    figmaNodeId: "3597:9605",
+  },
+  {
+    id: "ic_map_flat",
+    category: "위치",
+    tags: { ko: ["지도", "위치"], en: ["map", "location"] },
+    figmaNodeId: "17194:25503",
+  },
+  {
+    id: "ic_map_pin_flat",
+    category: "위치",
+    tags: { ko: ["지도", "핀", "위치"], en: ["map", "pin", "location"] },
+    figmaNodeId: "17194:25520",
+  },
+  {
+    id: "ic_calcu_flat",
+    category: "일반",
+    tags: { ko: ["계산기", "계산"], en: ["calculator", "calc"] },
+    figmaNodeId: "3597:9554",
+  },
+  {
+    id: "ic_embedding_flat",
+    category: "일반",
+    tags: { ko: ["임베딩", "연결"], en: ["embedding", "connect"] },
+    figmaNodeId: "16676:24982",
+  },
+  {
+    id: "ic_graph_flat",
+    category: "일반",
+    tags: { ko: ["그래프", "통계", "차트"], en: ["graph", "chart", "stats"] },
+  },
+  {
+    id: "ic_pc_down_flat",
+    category: "일반",
+    tags: { ko: ["PC", "다운로드", "컴퓨터"], en: ["pc", "download", "computer"] },
+    figmaNodeId: "16350:24703",
+  },
+  {
+    id: "ic_pc_remote_flat",
+    category: "일반",
+    tags: { ko: ["PC", "원격", "컴퓨터"], en: ["pc", "remote", "computer"] },
+    figmaNodeId: "16350:24629",
+  },
+  {
+    id: "ic_play_flat",
+    category: "일반",
+    tags: { ko: ["재생", "플레이"], en: ["play"] },
+    figmaNodeId: "16350:24883",
+  },
+  {
+    id: "ic_set_flat",
+    category: "일반",
+    tags: { ko: ["설정", "세팅"], en: ["set", "settings"] },
+    figmaNodeId: "7813:16307",
+  },
+  {
+    id: "ic_shop_bag_flat",
+    category: "일반",
+    tags: { ko: ["쇼핑백", "구매", "쇼핑"], en: ["shop", "bag", "shopping"] },
+    figmaNodeId: "17148:3020",
+  },
+  {
+    id: "ic_siren_flat",
+    category: "일반",
+    tags: { ko: ["사이렌", "경보", "알림"], en: ["siren", "alert"] },
+    figmaNodeId: "17190:25279",
+  },
 ];
 
 export function figmaLinkFor(nodeId: string): string {
