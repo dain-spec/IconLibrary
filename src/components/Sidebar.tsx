@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -17,22 +16,6 @@ const NAV: NavEntry[] = [
     children: [{ label: "Multicolor", href: "/icon/multicolor" }],
   },
 ];
-
-function ChevronIcon({ open }: { open: boolean }) {
-  return (
-    <svg
-      width="14"
-      height="14"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      className={`shrink-0 transition-transform ${open ? "rotate-90" : ""}`}
-    >
-      <path d="M9 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  );
-}
 
 function NavLink({ href, label, active }: { href: string; label: string; active: boolean }) {
   return (
@@ -51,29 +34,22 @@ function NavLink({ href, label, active }: { href: string; label: string; active:
 
 function NavGroup({ label, children }: { label: string; children: NavItem[] }) {
   const pathname = usePathname();
-  const [open, setOpen] = useState(true);
 
   return (
     <div>
-      <button
-        onClick={() => setOpen((v) => !v)}
-        className="flex h-7 w-full items-center gap-1 rounded-md pl-2 pr-3 text-sm font-medium text-ink hover:bg-surface-hover"
-      >
-        <ChevronIcon open={open} />
+      <div className="flex h-7 items-center pl-2 pr-3 text-sm font-medium text-ink">
         {label}
-      </button>
-      {open && (
-        <div className="ml-4 mt-0.5 flex flex-col gap-0.5">
-          {children.map((item) => (
-            <NavLink
-              key={item.href}
-              href={item.href}
-              label={item.label}
-              active={pathname === item.href}
-            />
-          ))}
-        </div>
-      )}
+      </div>
+      <div className="ml-4 mt-0.5 flex flex-col gap-0.5">
+        {children.map((item) => (
+          <NavLink
+            key={item.href}
+            href={item.href}
+            label={item.label}
+            active={pathname === item.href}
+          />
+        ))}
+      </div>
     </div>
   );
 }
