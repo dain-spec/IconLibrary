@@ -15,12 +15,18 @@ const CODE_COLORS = {
   purple: "hsl(301, 63%, 40%)",
   blue: "hsl(221, 87%, 60%)",
   orange: "hsl(35, 99%, 36%)",
-  green: "hsl(119, 34%, 47%)",
+  string: "hsl(230, 8%, 24%)",
 };
 
-// SVG tag names (svg/g/path…) read as purple, matching the reference design;
-// oneLight otherwise ships them red.
-const svgTheme = { ...oneLight, tag: { color: CODE_COLORS.purple } };
+// SVG tag names (svg/g/path…) read as purple and string values as black,
+// matching the reference design; oneLight otherwise ships tags red and
+// strings green.
+const svgTheme = {
+  ...oneLight,
+  tag: { color: CODE_COLORS.purple },
+  string: { color: CODE_COLORS.string },
+  "attr-value": { color: CODE_COLORS.string },
+};
 
 type Tab = "react" | "figma";
 
@@ -61,7 +67,7 @@ function CodeBlock({
           overflow: "auto",
           borderRadius: "0.5rem",
           padding: "0.75rem",
-          fontSize: "0.75rem",
+          fontSize: "0.875rem",
           background: "var(--surface-hover)",
         }}
         codeTagProps={{ style: { whiteSpace: "pre-wrap", wordBreak: "break-all" } }}
@@ -98,7 +104,7 @@ function ReactCodeBlock({ componentName, iconId }: { componentName: string; icon
   return (
     <div className="relative">
       <pre
-        className="m-0 whitespace-pre-wrap break-all rounded-lg p-3 font-mono text-xs leading-relaxed"
+        className="m-0 whitespace-pre-wrap break-all rounded-lg p-3 font-mono text-sm leading-relaxed"
         style={{ background: "var(--surface-hover)" }}
       >
         <span style={{ color: CODE_COLORS.red }}>import</span>
@@ -106,12 +112,12 @@ function ReactCodeBlock({ componentName, iconId }: { componentName: string; icon
         <span style={{ color: CODE_COLORS.blue }}>{componentName}</span>
         {" } "}
         <span style={{ color: CODE_COLORS.red }}>from</span>{" "}
-        <span style={{ color: CODE_COLORS.green }}>&quot;@/components/icon&quot;</span>
+        <span style={{ color: CODE_COLORS.string }}>&quot;@/components/icon&quot;</span>
         {"\n\n"}
         {"<"}
         <span style={{ color: CODE_COLORS.blue }}>{componentName}</span>{" "}
         <span style={{ color: CODE_COLORS.orange }}>name</span>=
-        <span style={{ color: CODE_COLORS.green }}>&quot;{iconId}&quot;</span>{" "}
+        <span style={{ color: CODE_COLORS.string }}>&quot;{iconId}&quot;</span>{" "}
         {"/>"}
       </pre>
       <div className="absolute right-2 top-2 flex gap-1 rounded-md bg-white/80 p-0.5 shadow-sm">
