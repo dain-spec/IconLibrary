@@ -1,9 +1,16 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
+import markup from "react-syntax-highlighter/dist/esm/languages/prism/markup";
+import jsx from "react-syntax-highlighter/dist/esm/languages/prism/jsx";
+import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
 import type { Icon } from "@/lib/icons";
 import { figmaLinkFor } from "@/data/icons";
 import { CopyButton } from "./CopyButton";
+
+SyntaxHighlighter.registerLanguage("markup", markup);
+SyntaxHighlighter.registerLanguage("jsx", jsx);
 
 type Tab = "react" | "figma";
 
@@ -27,16 +34,32 @@ function CodeBlock({
   content,
   copyText,
   href,
+  language = "markup",
 }: {
   content: string;
   copyText?: string;
   href?: string;
+  language?: "markup" | "jsx";
 }) {
   return (
     <div className="relative">
-      <pre className="max-h-40 overflow-auto rounded-lg bg-surface-hover p-3 text-xs text-ink">
-        <code className="break-all">{content}</code>
-      </pre>
+      <SyntaxHighlighter
+        language={language}
+        style={oneLight}
+        wrapLongLines
+        customStyle={{
+          margin: 0,
+          maxHeight: "10rem",
+          overflow: "auto",
+          borderRadius: "0.5rem",
+          padding: "0.75rem",
+          fontSize: "0.75rem",
+          background: "var(--surface-hover)",
+        }}
+        codeTagProps={{ style: { whiteSpace: "pre-wrap", wordBreak: "break-all" } }}
+      >
+        {content}
+      </SyntaxHighlighter>
       <div className="absolute right-2 top-2 flex gap-1 rounded-md bg-white/80 p-0.5 shadow-sm">
         {href && (
           <a
@@ -142,7 +165,7 @@ export function IconDetailPanel({
               <p className="mb-1.5 font-mono text-sm font-semibold text-ink">
                 {componentName}
               </p>
-              <CodeBlock content={reactSnippet} />
+              <CodeBlock content={reactSnippet} language="jsx" />
             </div>
             <div>
               <p className="mb-1.5 text-xs font-medium text-muted">SVG</p>
