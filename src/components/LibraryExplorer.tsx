@@ -5,6 +5,7 @@ import type { Icon } from "@/lib/icons";
 import { IconCard } from "./IconCard";
 import { IconDetailPanel } from "./IconDetailPanel";
 import { SearchClearButton } from "./SearchClearButton";
+import { SearchIcon } from "./SearchIcon";
 
 export function LibraryExplorer({ icons }: { icons: Icon[] }) {
   const [query, setQuery] = useState("");
@@ -32,11 +33,12 @@ export function LibraryExplorer({ icons }: { icons: Icon[] }) {
       <div className="min-w-0 flex-1 overflow-y-auto">
         <div className="mx-auto max-w-5xl px-6 py-10">
           <div className="relative">
+            <SearchIcon />
             <input
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="이름, 태그로 검색 (예: 문서, money, list)"
-              className="w-full rounded-lg border border-border bg-surface px-4 py-2.5 pr-10 text-sm text-ink outline-none focus:border-accent"
+              className="w-full rounded-lg border border-border bg-surface py-2.5 pl-10 pr-10 text-sm text-ink outline-none focus:border-accent"
             />
             {query && <SearchClearButton onClick={() => setQuery("")} />}
           </div>
