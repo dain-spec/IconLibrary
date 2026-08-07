@@ -976,6 +976,19 @@
       ],
       "updatedAt": "2026-05-12",
       "note": "위하고/이용가이드"
+    },
+    {
+      "id": "dobi-default",
+      "type": "image",
+      "title": "Dobi",
+      "path": "./assets/character/img_dobi.png",
+      "thumbnail": "",
+      "tags": [
+        "dobi",
+        "character"
+      ],
+      "updatedAt": "2026-08-07",
+      "note": "기본"
     }
   ]
 }
