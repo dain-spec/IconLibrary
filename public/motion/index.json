@@ -242,7 +242,7 @@
     {
       "id": "ic-airplane",
       "type": "json",
-      "title": "IC Airplane",
+      "title": "비행기",
       "path": "./assets/3d/airplane.json",
       "thumbnail": "",
       "tags": [
@@ -255,7 +255,7 @@
     {
       "id": "ic-alarm",
       "type": "json",
-      "title": "IC Alarm",
+      "title": "알람",
       "path": "./assets/3d/alarm.json",
       "thumbnail": "",
       "tags": [
@@ -268,7 +268,7 @@
     {
       "id": "ic-book",
       "type": "json",
-      "title": "IC Book",
+      "title": "책",
       "path": "./assets/3d/book.json",
       "thumbnail": "",
       "tags": [
@@ -281,7 +281,7 @@
     {
       "id": "ic-briefcase",
       "type": "json",
-      "title": "IC Briefcase",
+      "title": "서류가방",
       "path": "./assets/3d/briefcase.json",
       "thumbnail": "",
       "tags": [
@@ -294,7 +294,7 @@
     {
       "id": "ic-calcu",
       "type": "json",
-      "title": "IC Calculator",
+      "title": "계산기",
       "path": "./assets/3d/calcu.json",
       "thumbnail": "",
       "tags": [
@@ -307,7 +307,7 @@
     {
       "id": "ic-calender",
       "type": "json",
-      "title": "IC Calendar",
+      "title": "달력",
       "path": "./assets/3d/calender.json",
       "thumbnail": "",
       "tags": [
@@ -320,7 +320,7 @@
     {
       "id": "ic-card",
       "type": "json",
-      "title": "IC Card",
+      "title": "카드",
       "path": "./assets/3d/card.json",
       "thumbnail": "",
       "tags": [
@@ -333,7 +333,7 @@
     {
       "id": "ic-docbox",
       "type": "json",
-      "title": "IC Doc Box",
+      "title": "문서함",
       "path": "./assets/3d/docbox.json",
       "thumbnail": "",
       "tags": [
@@ -347,7 +347,7 @@
     {
       "id": "ic-folder",
       "type": "json",
-      "title": "IC Folder",
+      "title": "폴더",
       "path": "./assets/3d/folder.json",
       "thumbnail": "",
       "tags": [
@@ -360,7 +360,7 @@
     {
       "id": "ic-hand",
       "type": "json",
-      "title": "IC Hand",
+      "title": "손",
       "path": "./assets/3d/hand.json",
       "thumbnail": "",
       "tags": [
@@ -373,7 +373,7 @@
     {
       "id": "ic-mail",
       "type": "json",
-      "title": "IC Mail",
+      "title": "메일",
       "path": "./assets/3d/mail.json",
       "thumbnail": "",
       "tags": [
@@ -386,7 +386,7 @@
     {
       "id": "ic-moneybag",
       "type": "json",
-      "title": "IC Money Bag",
+      "title": "돈주머니",
       "path": "./assets/3d/moneybag.json",
       "thumbnail": "",
       "tags": [
@@ -399,7 +399,7 @@
     {
       "id": "ic-scan",
       "type": "json",
-      "title": "IC Scan",
+      "title": "스캔",
       "path": "./assets/3d/scan.json",
       "thumbnail": "",
       "tags": [
@@ -412,7 +412,7 @@
     {
       "id": "ic-send",
       "type": "json",
-      "title": "IC Send",
+      "title": "종이비행기",
       "path": "./assets/3d/send.json",
       "thumbnail": "",
       "tags": [
@@ -425,7 +425,7 @@
     {
       "id": "ic-sign",
       "type": "json",
-      "title": "IC Sign",
+      "title": "서명",
       "path": "./assets/3d/sign.json",
       "thumbnail": "",
       "tags": [
@@ -438,7 +438,7 @@
     {
       "id": "ic-videocall",
       "type": "json",
-      "title": "IC Video Call",
+      "title": "화상통화",
       "path": "./assets/3d/videocall.json",
       "thumbnail": "",
       "tags": [
