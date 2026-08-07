@@ -34,7 +34,6 @@ export function MotionDetailPanel({
   const rawData = useLottieData(asset.type === "json" ? asset.src : "");
   const [workingData, setWorkingData] = useState<Record<string, unknown> | null>(null);
   const [colorGroups, setColorGroups] = useState<LottieColorGroup[]>([]);
-  const [isLightPreview, setIsLightPreview] = useState(false);
   const [copyState, setCopyState] = useState<"idle" | "copied" | "error">("idle");
   const previewRef = useRef<HTMLDivElement>(null);
   const { width, isDragging, onPointerDown } = useResizablePanelWidth();
@@ -51,7 +50,6 @@ export function MotionDetailPanel({
   }, [rawData]);
 
   useEffect(() => {
-    setIsLightPreview(false);
     setCopyState("idle");
     setWorkingData(null);
     setColorGroups([]);
@@ -119,42 +117,6 @@ export function MotionDetailPanel({
           ))}
         </div>
 
-        <div className="mt-4 flex items-center justify-end">
-          <button
-            onClick={() => setIsLightPreview((v) => !v)}
-            aria-pressed={isLightPreview}
-            aria-label={isLightPreview ? "라이트 모드" : "다크 모드"}
-            className="flex shrink-0 items-center gap-1.5"
-          >
-            <span
-              className={`relative flex h-6 w-11 shrink-0 items-center rounded-full p-0.5 transition-colors ${
-                isLightPreview ? "bg-neutral-300" : "bg-neutral-900"
-              }`}
-            >
-              <span
-                className={`h-5 w-5 rounded-full bg-neutral-600 shadow-md transition-transform ${
-                  isLightPreview ? "translate-x-0" : "translate-x-5"
-                }`}
-              />
-            </span>
-            <span className="text-muted">
-              {isLightPreview ? (
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <circle cx="12" cy="12" r="4" />
-                  <path
-                    d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
-                    strokeLinecap="round"
-                  />
-                </svg>
-              ) : (
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
-                </svg>
-              )}
-            </span>
-          </button>
-        </div>
-
         <ZoomHoverPreview
           large={
             asset.type === "image" ? (
@@ -169,9 +131,7 @@ export function MotionDetailPanel({
         >
           <div
             ref={previewRef}
-            className={`mt-3 flex items-center justify-center rounded-xl p-10 ${
-              isLightPreview ? "bg-neutral-100" : "bg-neutral-900"
-            }`}
+            className="mt-3 flex items-center justify-center rounded-xl bg-neutral-900 p-10"
           >
             {asset.type === "image" ? (
               // eslint-disable-next-line @next/next/no-img-element
