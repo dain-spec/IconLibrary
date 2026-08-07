@@ -113,36 +113,34 @@ export function MotionDetailPanel({
           ))}
         </div>
 
-        {asset.type === "json" && (
-          <div className="mt-4 flex items-center justify-between">
-            <span className="text-xs font-medium text-muted">mode</span>
-            <button
-              onClick={() => setIsLightPreview((v) => !v)}
-              aria-pressed={isLightPreview}
-              className="flex items-center gap-1 rounded-full border border-border p-1 text-muted"
+        <div className="mt-4 flex items-center justify-between">
+          <span className="text-xs font-medium text-muted">mode</span>
+          <button
+            onClick={() => setIsLightPreview((v) => !v)}
+            aria-pressed={isLightPreview}
+            className="flex items-center gap-1 rounded-full border border-border p-1 text-muted"
+          >
+            <span
+              className={`rounded-full px-2 py-0.5 text-xs transition-colors ${
+                !isLightPreview ? "bg-ink text-surface" : ""
+              }`}
             >
-              <span
-                className={`rounded-full px-2 py-0.5 text-xs transition-colors ${
-                  !isLightPreview ? "bg-ink text-surface" : ""
-                }`}
-              >
-                다크
-              </span>
-              <span
-                className={`rounded-full px-2 py-0.5 text-xs transition-colors ${
-                  isLightPreview ? "bg-ink text-surface" : ""
-                }`}
-              >
-                라이트
-              </span>
-            </button>
-          </div>
-        )}
+              다크
+            </span>
+            <span
+              className={`rounded-full px-2 py-0.5 text-xs transition-colors ${
+                isLightPreview ? "bg-ink text-surface" : ""
+              }`}
+            >
+              라이트
+            </span>
+          </button>
+        </div>
 
         <div
           ref={previewRef}
           className={`mt-3 flex items-center justify-center rounded-xl p-10 ${
-            asset.type === "json" && isLightPreview ? "bg-neutral-100" : "bg-neutral-900"
+            isLightPreview ? "bg-neutral-100" : "bg-neutral-900"
           }`}
         >
           {asset.type === "image" ? (
