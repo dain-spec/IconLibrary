@@ -921,7 +921,7 @@
         "summary"
       ],
       "updatedAt": "2026-05-12",
-      "note": "위하고/화상회의/요약"
+      "note": "2025_WEHAGO Meet Mobile 회의요약"
     },
     {
       "id": "dobi-expert1-completed",
@@ -934,7 +934,7 @@
         "expert"
       ],
       "updatedAt": "2026-05-12",
-      "note": "Expert1/완료"
+      "note": "2026_Expert1"
     },
     {
       "id": "dobi-expert1-document",
@@ -948,7 +948,7 @@
         "document"
       ],
       "updatedAt": "2026-05-12",
-      "note": "Expert1/문서"
+      "note": "2026_Expert1"
     },
     {
       "id": "dobi-expert1-inprogress",
@@ -962,7 +962,7 @@
         "progress"
       ],
       "updatedAt": "2026-05-12",
-      "note": "Expert1/진행 중"
+      "note": "2026_Expert1"
     },
     {
       "id": "dobi-expert1-welcome",
@@ -976,7 +976,7 @@
         "welcome"
       ],
       "updatedAt": "2026-05-12",
-      "note": "Expert1/환영"
+      "note": "2026_Expert1"
     },
     {
       "id": "dobi-guide",
@@ -989,7 +989,7 @@
         "guide"
       ],
       "updatedAt": "2026-05-12",
-      "note": "위하고/이용가이드"
+      "note": "2025_WEHAGO ONE AI 이용가이드"
     },
     {
       "id": "dobi-default",
