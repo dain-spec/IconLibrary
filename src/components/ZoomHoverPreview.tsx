@@ -4,15 +4,13 @@ import { useRef, useState, type ReactNode } from "react";
 import { createPortal } from "react-dom";
 import { MagnifierIcon } from "./MagnifierIcon";
 
-const OVERLAY_SIZE = 256;
+const OVERLAY_SIZE = 512;
 const VIEWPORT_MARGIN = 8;
 
 export function ZoomHoverPreview({
-  bgClassName,
   large,
   children,
 }: {
-  bgClassName: string;
   large: ReactNode;
   children: ReactNode;
 }) {
@@ -52,12 +50,14 @@ export function ZoomHoverPreview({
           <div
             onMouseEnter={handleEnter}
             onMouseLeave={() => setHovered(false)}
-            className={`fixed z-50 flex items-center justify-center rounded-xl border border-border shadow-lg ${bgClassName}`}
+            className="fixed z-50 flex items-center justify-center rounded-xl"
             style={{
               top: position.top,
               left: position.left,
               width: OVERLAY_SIZE,
               height: OVERLAY_SIZE,
+              backgroundColor: "rgba(0, 0, 0, 0.8)",
+              boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.25)",
             }}
           >
             {large}

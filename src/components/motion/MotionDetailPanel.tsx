@@ -144,14 +144,13 @@ export function MotionDetailPanel({
         </div>
 
         <ZoomHoverPreview
-          bgClassName={isLightPreview ? "bg-neutral-100" : "bg-neutral-900"}
           large={
             asset.type === "image" ? (
               // eslint-disable-next-line @next/next/no-img-element
-              <img src={asset.src} alt={asset.title} className="h-40 w-40 object-contain" />
+              <img src={asset.src} alt={asset.title} className="h-80 w-80 object-contain" />
             ) : (
               workingData && (
-                <Lottie animationData={workingData} loop autoplay className="h-40 w-40" />
+                <Lottie animationData={workingData} loop autoplay className="h-80 w-80" />
               )
             )
           }

@@ -192,10 +192,9 @@ export function IconDetailPanel({
         )}
 
         <ZoomHoverPreview
-          bgClassName="bg-surface-hover"
           large={
             <span
-              className="h-40 w-40 [&_svg]:h-40 [&_svg]:w-40"
+              className="h-80 w-80 [&_svg]:h-80 [&_svg]:w-80"
               dangerouslySetInnerHTML={{ __html: icon.svg }}
             />
           }
