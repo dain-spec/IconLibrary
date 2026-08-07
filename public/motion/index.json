@@ -28,34 +28,6 @@
       "note": "로딩 블루"
     },
     {
-      "id": "ic-loading-s",
-      "type": "json",
-      "title": "IC Loading S",
-      "path": "./assets/Loader/loader_loading_s.json",
-      "thumbnail": "",
-      "tags": [
-        "loader",
-        "circle",
-        "spinner"
-      ],
-      "updatedAt": "2026-05-11",
-      "note": "스피너 색상"
-    },
-    {
-      "id": "loading-circle",
-      "type": "json",
-      "title": "Loading Circle",
-      "path": "./assets/Loader/loading_circle.json",
-      "thumbnail": "",
-      "tags": [
-        "loader",
-        "circle",
-        "spinner"
-      ],
-      "updatedAt": "2026-05-08",
-      "note": "스피너 기본"
-    },
-    {
       "id": "loading-gray",
       "type": "json",
       "title": "Loading Gray",
@@ -80,20 +52,6 @@
       ],
       "updatedAt": "2026-05-11",
       "note": "로딩 색상"
-    },
-    {
-      "id": "spinner-loading",
-      "type": "json",
-      "title": "Spinner Loading",
-      "path": "./assets/Loader/spinner_loading.json",
-      "thumbnail": "",
-      "tags": [
-        "loader",
-        "spinner",
-        "circle"
-      ],
-      "updatedAt": "2026-05-11",
-      "note": "스피너 기본"
     },
     {
       "id": "loading-16-dark",
@@ -133,6 +91,48 @@
       ],
       "updatedAt": "2026-05-11",
       "note": "로딩 블루"
+    },
+    {
+      "id": "ic-loading-s",
+      "type": "json",
+      "title": "IC Loading S",
+      "path": "./assets/Loader/loader_loading_s.json",
+      "thumbnail": "",
+      "tags": [
+        "loader",
+        "circle",
+        "spinner"
+      ],
+      "updatedAt": "2026-05-11",
+      "note": "스피너 색상"
+    },
+    {
+      "id": "loading-circle",
+      "type": "json",
+      "title": "Loading Circle",
+      "path": "./assets/Loader/loading_circle.json",
+      "thumbnail": "",
+      "tags": [
+        "loader",
+        "circle",
+        "spinner"
+      ],
+      "updatedAt": "2026-05-08",
+      "note": "스피너 기본"
+    },
+    {
+      "id": "spinner-loading",
+      "type": "json",
+      "title": "Spinner Loading",
+      "path": "./assets/Loader/spinner_loading.json",
+      "thumbnail": "",
+      "tags": [
+        "loader",
+        "spinner",
+        "circle"
+      ],
+      "updatedAt": "2026-05-11",
+      "note": "스피너 기본"
     },
     {
       "id": "dot-voice",
