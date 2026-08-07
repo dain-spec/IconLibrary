@@ -7,6 +7,8 @@ import { MotionDetailPanel } from "./MotionDetailPanel";
 import { SearchClearButton } from "../SearchClearButton";
 import { SearchIcon } from "../SearchIcon";
 
+const CATEGORY_ORDER = ["Loader", "3d", "character"];
+
 export function MotionExplorer({ assets }: { assets: MotionAsset[] }) {
   const [query, setQuery] = useState("");
   const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -21,6 +23,21 @@ export function MotionExplorer({ assets }: { assets: MotionAsset[] }) {
       return haystack.includes(q);
     });
   }, [assets, query]);
+
+  const grouped = useMemo(() => {
+    const order = [
+      ...CATEGORY_ORDER,
+      ...Array.from(new Set(filtered.map((asset) => asset.category))).filter(
+        (category) => !CATEGORY_ORDER.includes(category)
+      ),
+    ];
+    return order
+      .map((category) => ({
+        category,
+        items: filtered.filter((asset) => asset.category === category),
+      }))
+      .filter((group) => group.items.length > 0);
+  }, [filtered]);
 
   const selected = assets.find((a) => a.id === selectedId) ?? null;
 
@@ -48,14 +65,21 @@ export function MotionExplorer({ assets }: { assets: MotionAsset[] }) {
               검색 결과가 없습니다.
             </p>
           ) : (
-            <div className="mt-6 flex flex-wrap gap-3">
-              {filtered.map((asset) => (
-                <MotionCard
-                  key={asset.id}
-                  asset={asset}
-                  isSelected={asset.id === selectedId}
-                  onClick={() => setSelectedId(asset.id)}
-                />
+            <div className="mt-6 flex flex-col gap-8">
+              {grouped.map((group) => (
+                <div key={group.category}>
+                  <h3 className="mb-3 text-sm font-semibold text-ink">{group.category}</h3>
+                  <div className="flex flex-wrap gap-3">
+                    {group.items.map((asset) => (
+                      <MotionCard
+                        key={asset.id}
+                        asset={asset}
+                        isSelected={asset.id === selectedId}
+                        onClick={() => setSelectedId(asset.id)}
+                      />
+                    ))}
+                  </div>
+                </div>
               ))}
             </div>
           )}
