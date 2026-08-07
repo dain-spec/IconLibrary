@@ -6,7 +6,7 @@ export interface Icon extends IconMeta {
   svg: string;
 }
 
-const ICONS_DIR = path.join(process.cwd(), "public", "icons");
+const ICONS_DIR = path.join(process.cwd(), "public", "icons", "multicolor");
 
 function metaFor(id: string): IconMeta {
   return (
