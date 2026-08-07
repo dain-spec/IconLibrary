@@ -207,6 +207,19 @@ export function IconDetailPanel({
           </div>
         </ZoomHoverPreview>
 
+        <a
+          href={icon.src}
+          download={`${icon.id}.svg`}
+          className="mt-3 flex items-center justify-center gap-1.5 rounded-lg border border-border px-3 py-2 text-sm text-ink transition-colors hover:bg-surface-hover"
+        >
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M12 3v12" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M7 10l5 5 5-5" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M4 19h16" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+          {icon.id}.svg 다운로드
+        </a>
+
         <div className="mt-5 flex gap-1 border-b border-border">
           {TABS.filter((t) => t.key !== "figma" || figmaLink).map((t) => (
             <button

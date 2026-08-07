@@ -4,6 +4,7 @@ import { iconMeta, type IconMeta } from "@/data/icons";
 
 export interface Icon extends IconMeta {
   svg: string;
+  src: string;
 }
 
 const ICONS_DIR = path.join(process.cwd(), "public", "icons", "multicolor");
@@ -27,7 +28,7 @@ export function getAllIcons(): Icon[] {
   return files.map((file) => {
     const id = file.replace(/\.svg$/, "");
     const svg = fs.readFileSync(path.join(ICONS_DIR, file), "utf-8");
-    return { ...metaFor(id), svg };
+    return { ...metaFor(id), svg, src: `/icons/multicolor/${file}` };
   });
 }
 
