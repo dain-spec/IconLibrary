@@ -102,9 +102,6 @@ export function MotionDetailPanel({
         {asset.note && <p className="mt-1 text-sm text-muted">{asset.note}</p>}
 
         <div className="mt-3 flex flex-wrap gap-1.5">
-          <span className="rounded-full border border-border px-2 py-0.5 text-xs text-muted">
-            {asset.category}
-          </span>
           {dedupeTagsCaseInsensitive(asset.tags).map((tag) => (
             <button
               key={tag}
