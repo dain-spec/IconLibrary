@@ -119,26 +119,33 @@ export function MotionDetailPanel({
           ))}
         </div>
 
-        <div className="mt-4 flex items-center justify-between">
-          <span className="text-xs font-medium text-muted">mode</span>
+        <div className="mt-4 flex items-center justify-end">
           <button
             onClick={() => setIsLightPreview((v) => !v)}
             aria-pressed={isLightPreview}
-            className="flex items-center gap-1 rounded-full border border-border p-1 text-muted"
+            aria-label={isLightPreview ? "라이트 모드" : "다크 모드"}
+            className={`relative flex h-6 w-11 shrink-0 items-center rounded-full p-0.5 transition-colors ${
+              isLightPreview ? "bg-neutral-300" : "bg-neutral-900"
+            }`}
           >
             <span
-              className={`rounded-full px-2 py-0.5 text-xs transition-colors ${
-                !isLightPreview ? "bg-ink text-surface" : ""
+              className={`flex h-5 w-5 items-center justify-center rounded-full bg-neutral-800 text-white transition-transform ${
+                isLightPreview ? "translate-x-0" : "translate-x-5"
               }`}
             >
-              다크
-            </span>
-            <span
-              className={`rounded-full px-2 py-0.5 text-xs transition-colors ${
-                isLightPreview ? "bg-ink text-surface" : ""
-              }`}
-            >
-              라이트
+              {isLightPreview ? (
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <circle cx="12" cy="12" r="4" />
+                  <path
+                    d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+                    strokeLinecap="round"
+                  />
+                </svg>
+              ) : (
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+                </svg>
+              )}
             </span>
           </button>
         </div>
