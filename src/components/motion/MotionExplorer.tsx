@@ -7,7 +7,7 @@ import { MotionDetailPanel } from "./MotionDetailPanel";
 import { SearchClearButton } from "../SearchClearButton";
 import { SearchIcon } from "../SearchIcon";
 
-const CATEGORY_ORDER = ["Loader", "3d", "기본", "character"];
+const CATEGORY_ORDER = ["Loader", "기본", "3d", "character"];
 
 export function MotionExplorer({ assets }: { assets: MotionAsset[] }) {
   const [query, setQuery] = useState("");
