@@ -250,7 +250,7 @@
         "airplane"
       ],
       "updatedAt": "2026-08-06",
-      "note": "비행기"
+      "note": "2025_WEHAGO 공통 3D 아이콘"
     },
     {
       "id": "ic-alarm",
@@ -263,7 +263,7 @@
         "alarm"
       ],
       "updatedAt": "2026-08-07",
-      "note": "알람"
+      "note": "2025_WEHAGO 공통 3D 아이콘"
     },
     {
       "id": "ic-book",
@@ -276,7 +276,7 @@
         "book"
       ],
       "updatedAt": "2026-08-07",
-      "note": "책"
+      "note": "2025_WEHAGO 공통 3D 아이콘"
     },
     {
       "id": "ic-briefcase",
@@ -289,7 +289,7 @@
         "briefcase"
       ],
       "updatedAt": "2026-08-07",
-      "note": "서류가방"
+      "note": "2025_WEHAGO 공통 3D 아이콘"
     },
     {
       "id": "ic-calcu",
@@ -302,7 +302,7 @@
         "calculator"
       ],
       "updatedAt": "2026-08-07",
-      "note": "계산기"
+      "note": "2025_WEHAGO 공통 3D 아이콘"
     },
     {
       "id": "ic-calender",
@@ -315,7 +315,7 @@
         "calendar"
       ],
       "updatedAt": "2026-08-07",
-      "note": "달력"
+      "note": "2025_WEHAGO 공통 3D 아이콘"
     },
     {
       "id": "ic-card",
@@ -328,7 +328,7 @@
         "card"
       ],
       "updatedAt": "2026-08-07",
-      "note": "카드"
+      "note": "2025_WEHAGO 공통 3D 아이콘"
     },
     {
       "id": "ic-docbox",
@@ -342,7 +342,7 @@
         "box"
       ],
       "updatedAt": "2026-08-07",
-      "note": "문서함"
+      "note": "2025_WEHAGO 공통 3D 아이콘"
     },
     {
       "id": "ic-folder",
@@ -355,7 +355,7 @@
         "folder"
       ],
       "updatedAt": "2026-08-07",
-      "note": "폴더"
+      "note": "2025_WEHAGO 공통 3D 아이콘"
     },
     {
       "id": "ic-hand",
@@ -368,7 +368,7 @@
         "hand"
       ],
       "updatedAt": "2026-08-07",
-      "note": "손"
+      "note": "2025_WEHAGO 공통 3D 아이콘"
     },
     {
       "id": "ic-mail",
@@ -381,7 +381,7 @@
         "mail"
       ],
       "updatedAt": "2026-08-07",
-      "note": "메일"
+      "note": "2025_WEHAGO 공통 3D 아이콘"
     },
     {
       "id": "ic-moneybag",
@@ -394,7 +394,7 @@
         "money"
       ],
       "updatedAt": "2026-08-07",
-      "note": "돈주머니"
+      "note": "2025_WEHAGO 공통 3D 아이콘"
     },
     {
       "id": "ic-scan",
@@ -407,7 +407,7 @@
         "scan"
       ],
       "updatedAt": "2026-08-07",
-      "note": "스캔"
+      "note": "2025_WEHAGO 공통 3D 아이콘"
     },
     {
       "id": "ic-send",
@@ -420,7 +420,7 @@
         "send"
       ],
       "updatedAt": "2026-08-07",
-      "note": "보내기"
+      "note": "2025_WEHAGO 공통 3D 아이콘"
     },
     {
       "id": "ic-sign",
@@ -433,7 +433,7 @@
         "sign"
       ],
       "updatedAt": "2026-08-07",
-      "note": "서명"
+      "note": "2025_WEHAGO 공통 3D 아이콘"
     },
     {
       "id": "ic-videocall",
@@ -447,7 +447,7 @@
         "call"
       ],
       "updatedAt": "2026-08-07",
-      "note": "화상통화"
+      "note": "2025_WEHAGO 공통 3D 아이콘"
     },
     {
       "id": "ic-shinhanbank-search",
