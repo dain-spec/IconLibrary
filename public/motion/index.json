@@ -453,7 +453,7 @@
       "id": "ic-oneai-analysis",
       "type": "json",
       "title": "IC ONE AI Analysis",
-      "path": "./assets/3d/ic_ONEAI_analysis.json",
+      "path": "./assets/기본/ic_ONEAI_analysis.json",
       "thumbnail": "",
       "tags": [
         "icon",
@@ -467,7 +467,7 @@
       "id": "ic-analysis",
       "type": "json",
       "title": "IC Analysis",
-      "path": "./assets/3d/ic_analysis.json",
+      "path": "./assets/기본/ic_analysis.json",
       "thumbnail": "",
       "tags": [
         "icon",
@@ -481,7 +481,7 @@
       "id": "ic-card-scan",
       "type": "json",
       "title": "IC Card Scan",
-      "path": "./assets/3d/ic_card_scan.json",
+      "path": "./assets/기본/ic_card_scan.json",
       "thumbnail": "",
       "tags": [
         "icon",
@@ -494,7 +494,7 @@
       "id": "ic-card-scan-completed",
       "type": "json",
       "title": "IC Card Scan Completed",
-      "path": "./assets/3d/ic_card_scan_completed.json",
+      "path": "./assets/기본/ic_card_scan_completed.json",
       "thumbnail": "",
       "tags": [
         "icon",
@@ -507,7 +507,7 @@
       "id": "ic-check-16-gn",
       "type": "json",
       "title": "IC Check 16 Green",
-      "path": "./assets/3d/ic_check_16_gn.json",
+      "path": "./assets/기본/ic_check_16_gn.json",
       "thumbnail": "",
       "tags": [
         "icon",
@@ -521,7 +521,7 @@
       "id": "ic-check-circle-outlined-32-bl",
       "type": "json",
       "title": "IC Check Circle Outlined 32 Bl",
-      "path": "./assets/3d/ic_check_circle_outlined_32_bl.json",
+      "path": "./assets/기본/ic_check_circle_outlined_32_bl.json",
       "thumbnail": "",
       "tags": [
         "icon",
@@ -535,7 +535,7 @@
       "id": "ic-check-circle-outlined-32-gn",
       "type": "json",
       "title": "IC Check Circle Outlined 32 Gn",
-      "path": "./assets/3d/ic_check_circle_outlined_32_gn.json",
+      "path": "./assets/기본/ic_check_circle_outlined_32_gn.json",
       "thumbnail": "",
       "tags": [
         "icon",
@@ -549,7 +549,7 @@
       "id": "ic-check-red",
       "type": "json",
       "title": "IC Check Red",
-      "path": "./assets/3d/ic_check_red.json",
+      "path": "./assets/기본/ic_check_red.json",
       "thumbnail": "",
       "tags": [
         "icon",
@@ -563,7 +563,7 @@
       "id": "ic-close-circle-outlined-32-re",
       "type": "json",
       "title": "IC Close Circle Outlined 32 Re",
-      "path": "./assets/3d/ic_close_circle_outlined_32_re.json",
+      "path": "./assets/기본/ic_close_circle_outlined_32_re.json",
       "thumbnail": "",
       "tags": [
         "icon",
@@ -577,7 +577,7 @@
       "id": "ic-error",
       "type": "json",
       "title": "IC Error",
-      "path": "./assets/3d/ic_error.json",
+      "path": "./assets/기본/ic_error.json",
       "thumbnail": "",
       "tags": [
         "icon",
@@ -591,7 +591,7 @@
       "id": "ic-error-triangle-outlined-32-ye",
       "type": "json",
       "title": "IC Error Triangle Outlined 32 Ye",
-      "path": "./assets/3d/ic_error_triangle_outlined_32_ye.json",
+      "path": "./assets/기본/ic_error_triangle_outlined_32_ye.json",
       "thumbnail": "",
       "tags": [
         "icon",
@@ -605,7 +605,7 @@
       "id": "ic-generating",
       "type": "json",
       "title": "IC Generating",
-      "path": "./assets/3d/ic_generating.json",
+      "path": "./assets/기본/ic_generating.json",
       "thumbnail": "",
       "tags": [
         "icon",
@@ -618,7 +618,7 @@
       "id": "ic-goout",
       "type": "json",
       "title": "IC Goout",
-      "path": "./assets/3d/ic_goout.json",
+      "path": "./assets/기본/ic_goout.json",
       "thumbnail": "",
       "tags": [
         "icon"
@@ -630,7 +630,7 @@
       "id": "ic-header-logo",
       "type": "json",
       "title": "IC Header Logo",
-      "path": "./assets/3d/ic_header_logo.json",
+      "path": "./assets/기본/ic_header_logo.json",
       "thumbnail": "",
       "tags": [
         "icon",
@@ -643,7 +643,7 @@
       "id": "ic-info",
       "type": "json",
       "title": "IC Info",
-      "path": "./assets/3d/ic_info.json",
+      "path": "./assets/기본/ic_info.json",
       "thumbnail": "",
       "tags": [
         "icon",
@@ -657,7 +657,7 @@
       "id": "ic-listen-32-wh",
       "type": "json",
       "title": "IC Listen 32 White",
-      "path": "./assets/3d/ic_listen_32_wh.json",
+      "path": "./assets/기본/ic_listen_32_wh.json",
       "thumbnail": "",
       "tags": [
         "icon"
@@ -669,7 +669,7 @@
       "id": "ic-loading-72-loop",
       "type": "json",
       "title": "IC Loading 72 Loop",
-      "path": "./assets/3d/ic_loading_72_loop.json",
+      "path": "./assets/기본/ic_loading_72_loop.json",
       "thumbnail": "",
       "tags": [
         "icon"
@@ -681,7 +681,7 @@
       "id": "ic-loading-login-200-loop",
       "type": "json",
       "title": "IC Loading Login 200 Loop",
-      "path": "./assets/3d/ic_loading_login_200_loop.json",
+      "path": "./assets/기본/ic_loading_login_200_loop.json",
       "thumbnail": "",
       "tags": [
         "icon"
@@ -693,7 +693,7 @@
       "id": "ic-loading-step2",
       "type": "json",
       "title": "IC Loading Step2",
-      "path": "./assets/3d/ic_loading_step2.json",
+      "path": "./assets/기본/ic_loading_step2.json",
       "thumbnail": "",
       "tags": [
         "icon"
@@ -705,7 +705,7 @@
       "id": "ic-loading-step4",
       "type": "json",
       "title": "IC Loading Step4",
-      "path": "./assets/3d/ic_loading_step4.json",
+      "path": "./assets/기본/ic_loading_step4.json",
       "thumbnail": "",
       "tags": [
         "icon"
@@ -717,7 +717,7 @@
       "id": "ic-lock-open-24",
       "type": "json",
       "title": "IC Lock Open 24",
-      "path": "./assets/3d/ic_lock_open_24.json",
+      "path": "./assets/기본/ic_lock_open_24.json",
       "thumbnail": "",
       "tags": [
         "icon"
@@ -729,7 +729,7 @@
       "id": "ic-logout-outlined-32-bl",
       "type": "json",
       "title": "IC Logout Outlined 32 Bl",
-      "path": "./assets/3d/ic_logout_outlined_32_bl.json",
+      "path": "./assets/기본/ic_logout_outlined_32_bl.json",
       "thumbnail": "",
       "tags": [
         "icon"
@@ -741,7 +741,7 @@
       "id": "ic-oneai-header",
       "type": "image",
       "title": "IC ONE AI Header",
-      "path": "./assets/3d/ic_oneai_header.png",
+      "path": "./assets/기본/ic_oneai_header.png",
       "thumbnail": "",
       "tags": [
         "icon",
@@ -754,7 +754,7 @@
       "id": "ic-service-icon01",
       "type": "json",
       "title": "IC Service Icon01",
-      "path": "./assets/3d/ic_service_icon01.json",
+      "path": "./assets/기본/ic_service_icon01.json",
       "thumbnail": "",
       "tags": [
         "icon",
@@ -767,7 +767,7 @@
       "id": "ic-service-icon02",
       "type": "json",
       "title": "IC Service Icon02",
-      "path": "./assets/3d/ic_service_icon02.json",
+      "path": "./assets/기본/ic_service_icon02.json",
       "thumbnail": "",
       "tags": [
         "icon",
@@ -780,7 +780,7 @@
       "id": "ic-service-icon03",
       "type": "json",
       "title": "IC Service Icon03",
-      "path": "./assets/3d/ic_service_icon03.json",
+      "path": "./assets/기본/ic_service_icon03.json",
       "thumbnail": "",
       "tags": [
         "icon",
@@ -793,7 +793,7 @@
       "id": "ic-service-icon04",
       "type": "json",
       "title": "IC Service Icon04",
-      "path": "./assets/3d/ic_service_icon04.json",
+      "path": "./assets/기본/ic_service_icon04.json",
       "thumbnail": "",
       "tags": [
         "icon",
@@ -806,7 +806,7 @@
       "id": "ic-service-icon05",
       "type": "json",
       "title": "IC Service Icon05",
-      "path": "./assets/3d/ic_service_icon05.json",
+      "path": "./assets/기본/ic_service_icon05.json",
       "thumbnail": "",
       "tags": [
         "icon",
@@ -819,7 +819,7 @@
       "id": "ic-service-icon06",
       "type": "json",
       "title": "IC Service Icon06",
-      "path": "./assets/3d/ic_service_icon06.json",
+      "path": "./assets/기본/ic_service_icon06.json",
       "thumbnail": "",
       "tags": [
         "icon",
@@ -832,7 +832,7 @@
       "id": "ic-service-icon07",
       "type": "json",
       "title": "IC Service Icon07",
-      "path": "./assets/3d/ic_service_icon07.json",
+      "path": "./assets/기본/ic_service_icon07.json",
       "thumbnail": "",
       "tags": [
         "icon",
@@ -845,7 +845,7 @@
       "id": "ic-success",
       "type": "json",
       "title": "IC Success",
-      "path": "./assets/3d/ic_success.json",
+      "path": "./assets/기본/ic_success.json",
       "thumbnail": "",
       "tags": [
         "icon",
@@ -859,7 +859,7 @@
       "id": "ic-t-pdf",
       "type": "json",
       "title": "IC T PDF",
-      "path": "./assets/3d/ic_t_pdf.json",
+      "path": "./assets/기본/ic_t_pdf.json",
       "thumbnail": "",
       "tags": [
         "icon"
@@ -871,7 +871,7 @@
       "id": "ic-warning",
       "type": "json",
       "title": "IC Warning",
-      "path": "./assets/3d/ic_warning.json",
+      "path": "./assets/기본/ic_warning.json",
       "thumbnail": "",
       "tags": [
         "icon",
@@ -885,7 +885,7 @@
       "id": "ic-warning-ye",
       "type": "json",
       "title": "IC Warning Ye",
-      "path": "./assets/3d/ic_warning_ye.json",
+      "path": "./assets/기본/ic_warning_ye.json",
       "thumbnail": "",
       "tags": [
         "icon",
