@@ -253,6 +253,203 @@
       "note": "비행기"
     },
     {
+      "id": "ic-alarm",
+      "type": "json",
+      "title": "IC Alarm",
+      "path": "./assets/Icon/alarm.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "alarm"
+      ],
+      "updatedAt": "2026-08-07",
+      "note": "알람"
+    },
+    {
+      "id": "ic-book",
+      "type": "json",
+      "title": "IC Book",
+      "path": "./assets/Icon/book.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "book"
+      ],
+      "updatedAt": "2026-08-07",
+      "note": "책"
+    },
+    {
+      "id": "ic-briefcase",
+      "type": "json",
+      "title": "IC Briefcase",
+      "path": "./assets/Icon/briefcase.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "briefcase"
+      ],
+      "updatedAt": "2026-08-07",
+      "note": "서류가방"
+    },
+    {
+      "id": "ic-calcu",
+      "type": "json",
+      "title": "IC Calculator",
+      "path": "./assets/Icon/calcu.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "calculator"
+      ],
+      "updatedAt": "2026-08-07",
+      "note": "계산기"
+    },
+    {
+      "id": "ic-calender",
+      "type": "json",
+      "title": "IC Calendar",
+      "path": "./assets/Icon/calender.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "calendar"
+      ],
+      "updatedAt": "2026-08-07",
+      "note": "달력"
+    },
+    {
+      "id": "ic-card",
+      "type": "json",
+      "title": "IC Card",
+      "path": "./assets/Icon/card.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "card"
+      ],
+      "updatedAt": "2026-08-07",
+      "note": "카드"
+    },
+    {
+      "id": "ic-docbox",
+      "type": "json",
+      "title": "IC Doc Box",
+      "path": "./assets/Icon/docbox.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "document",
+        "box"
+      ],
+      "updatedAt": "2026-08-07",
+      "note": "문서함"
+    },
+    {
+      "id": "ic-folder",
+      "type": "json",
+      "title": "IC Folder",
+      "path": "./assets/Icon/folder.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "folder"
+      ],
+      "updatedAt": "2026-08-07",
+      "note": "폴더"
+    },
+    {
+      "id": "ic-hand",
+      "type": "json",
+      "title": "IC Hand",
+      "path": "./assets/Icon/hand.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "hand"
+      ],
+      "updatedAt": "2026-08-07",
+      "note": "손"
+    },
+    {
+      "id": "ic-mail",
+      "type": "json",
+      "title": "IC Mail",
+      "path": "./assets/Icon/mail.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "mail"
+      ],
+      "updatedAt": "2026-08-07",
+      "note": "메일"
+    },
+    {
+      "id": "ic-moneybag",
+      "type": "json",
+      "title": "IC Money Bag",
+      "path": "./assets/Icon/moneybag.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "money"
+      ],
+      "updatedAt": "2026-08-07",
+      "note": "돈주머니"
+    },
+    {
+      "id": "ic-scan",
+      "type": "json",
+      "title": "IC Scan",
+      "path": "./assets/Icon/scan.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "scan"
+      ],
+      "updatedAt": "2026-08-07",
+      "note": "스캔"
+    },
+    {
+      "id": "ic-send",
+      "type": "json",
+      "title": "IC Send",
+      "path": "./assets/Icon/send.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "send"
+      ],
+      "updatedAt": "2026-08-07",
+      "note": "보내기"
+    },
+    {
+      "id": "ic-sign",
+      "type": "json",
+      "title": "IC Sign",
+      "path": "./assets/Icon/sign.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "sign"
+      ],
+      "updatedAt": "2026-08-07",
+      "note": "서명"
+    },
+    {
+      "id": "ic-videocall",
+      "type": "json",
+      "title": "IC Video Call",
+      "path": "./assets/Icon/videocall.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "video",
+        "call"
+      ],
+      "updatedAt": "2026-08-07",
+      "note": "화상통화"
+    },
+    {
       "id": "ic-oneai-analysis",
       "type": "json",
       "title": "IC ONE AI Analysis",
