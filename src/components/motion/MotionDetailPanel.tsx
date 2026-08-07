@@ -129,7 +129,7 @@ export function MotionDetailPanel({
             }`}
           >
             <span
-              className={`flex h-5 w-5 items-center justify-center rounded-full bg-neutral-800 text-white transition-transform ${
+              className={`flex h-5 w-5 items-center justify-center rounded-full bg-neutral-600 text-white shadow-md transition-transform ${
                 isLightPreview ? "translate-x-0" : "translate-x-5"
               }`}
             >
