@@ -912,7 +912,7 @@
     {
       "id": "dobe-meet-summary",
       "type": "json",
-      "title": "Meet Summary",
+      "title": "메모",
       "path": "./assets/character/Dobe_Meet_summary.json",
       "thumbnail": "",
       "tags": [
@@ -926,7 +926,7 @@
     {
       "id": "dobi-expert1-completed",
       "type": "image",
-      "title": "Dobi Expert1 Completed",
+      "title": "엄지척",
       "path": "./assets/character/Dobi_Expert1_completed.png",
       "thumbnail": "",
       "tags": [
@@ -939,7 +939,7 @@
     {
       "id": "dobi-expert1-document",
       "type": "image",
-      "title": "Dobi Expert1 Document",
+      "title": "설명",
       "path": "./assets/character/Dobi_Expert1_document.png",
       "thumbnail": "",
       "tags": [
@@ -953,7 +953,7 @@
     {
       "id": "dobi-expert1-inprogress",
       "type": "image",
-      "title": "Dobi Expert1 In Progress",
+      "title": "돋보기",
       "path": "./assets/character/Dobi_Expert1_inprogress.png",
       "thumbnail": "",
       "tags": [
@@ -967,7 +967,7 @@
     {
       "id": "dobi-expert1-welcome",
       "type": "image",
-      "title": "Dobi Expert1 Welcome",
+      "title": "프로필",
       "path": "./assets/character/Dobi_Expert1_welcome.png",
       "thumbnail": "",
       "tags": [
@@ -981,7 +981,7 @@
     {
       "id": "dobi-guide",
       "type": "image",
-      "title": "Dobi Guide",
+      "title": "안내",
       "path": "./assets/character/Dobi_Guide.png",
       "thumbnail": "",
       "tags": [
@@ -994,7 +994,7 @@
     {
       "id": "dobi-default",
       "type": "image",
-      "title": "Dobi",
+      "title": "팔짱",
       "path": "./assets/character/img_dobi.png",
       "thumbnail": "",
       "tags": [
