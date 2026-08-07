@@ -7,7 +7,9 @@ import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
 import type { Icon } from "@/lib/icons";
 import { figmaLinkFor } from "@/data/icons";
 import { dedupeTagsCaseInsensitive } from "@/lib/tags";
+import { useResizablePanelWidth } from "@/lib/useResizablePanelWidth";
 import { CopyButton } from "./CopyButton";
+import { PanelResizeHandle } from "./PanelResizeHandle";
 
 SyntaxHighlighter.registerLanguage("markup", markup);
 
@@ -143,10 +145,10 @@ export function IconDetailPanel({
 }) {
   const [tab, setTab] = useState<Tab>("react");
   const [visible, setVisible] = useState(false);
+  const { width, isDragging, onPointerDown } = useResizablePanelWidth();
 
   useEffect(() => {
-    const id = requestAnimationFrame(() => setVisible(true));
-    return () => cancelAnimationFrame(id);
+    setVisible(true);
   }, []);
 
   const componentName = toComponentName(icon.id);
@@ -154,10 +156,13 @@ export function IconDetailPanel({
 
   return (
     <div
-      className="h-full shrink-0 overflow-hidden border-l border-border bg-surface transition-[width] duration-300 ease-out"
-      style={{ width: visible ? "28rem" : "0px" }}
+      className={`relative h-full shrink-0 overflow-hidden border-l border-border bg-surface ${
+        isDragging ? "" : "transition-[width] duration-300 ease-out"
+      }`}
+      style={{ width: visible ? `${width}px` : "0px" }}
     >
-      <div className="relative h-full w-[28rem] overflow-y-auto p-6">
+      <PanelResizeHandle onPointerDown={onPointerDown} />
+      <div className="relative h-full overflow-y-auto p-6" style={{ width: `${width}px` }}>
         <button
           onClick={onClose}
           className="absolute right-4 top-4 text-muted hover:text-ink"

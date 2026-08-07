@@ -4,7 +4,9 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Lottie from "lottie-react";
 import type { MotionAsset } from "@/lib/motion";
 import { dedupeTagsCaseInsensitive } from "@/lib/tags";
+import { useResizablePanelWidth } from "@/lib/useResizablePanelWidth";
 import { CopyButton } from "../CopyButton";
+import { PanelResizeHandle } from "../PanelResizeHandle";
 import { useLottieData } from "@/lib/useLottieData";
 import {
   applyHexToGroup,
@@ -34,10 +36,10 @@ export function MotionDetailPanel({
   const [isLightPreview, setIsLightPreview] = useState(false);
   const [copyState, setCopyState] = useState<"idle" | "copied" | "error">("idle");
   const previewRef = useRef<HTMLDivElement>(null);
+  const { width, isDragging, onPointerDown } = useResizablePanelWidth();
 
   useEffect(() => {
-    const id = requestAnimationFrame(() => setVisible(true));
-    return () => cancelAnimationFrame(id);
+    setVisible(true);
   }, []);
 
   useEffect(() => {
@@ -82,10 +84,13 @@ export function MotionDetailPanel({
 
   return (
     <div
-      className="h-full shrink-0 overflow-hidden border-l border-border bg-surface transition-[width] duration-300 ease-out"
-      style={{ width: visible ? "28rem" : "0px" }}
+      className={`relative h-full shrink-0 overflow-hidden border-l border-border bg-surface ${
+        isDragging ? "" : "transition-[width] duration-300 ease-out"
+      }`}
+      style={{ width: visible ? `${width}px` : "0px" }}
     >
-      <div className="relative h-full w-[28rem] overflow-y-auto p-6">
+      <PanelResizeHandle onPointerDown={onPointerDown} />
+      <div className="relative h-full overflow-y-auto p-6" style={{ width: `${width}px` }}>
         <button
           onClick={onClose}
           className="absolute right-4 top-4 text-muted hover:text-ink"
