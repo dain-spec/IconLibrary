@@ -240,6 +240,19 @@
       "note": "아마란스10/ONE AI/녹음 중"
     },
     {
+      "id": "ic-listen-32-wh",
+      "type": "json",
+      "title": "IC Listen 32 White",
+      "path": "./assets/Loader/ic_listen_32_wh.json",
+      "thumbnail": "",
+      "tags": [
+        "loader",
+        "icon"
+      ],
+      "updatedAt": "2026-05-11",
+      "note": "아마란스10/ONE AI/말하는 중"
+    },
+    {
       "id": "ic-airplane",
       "type": "json",
       "title": "비행기",
@@ -884,18 +897,6 @@
       ],
       "updatedAt": "2026-05-12",
       "note": "아마란스10/CRM"
-    },
-    {
-      "id": "ic-listen-32-wh",
-      "type": "json",
-      "title": "IC Listen 32 White",
-      "path": "./assets/기본/ic_listen_32_wh.json",
-      "thumbnail": "",
-      "tags": [
-        "icon"
-      ],
-      "updatedAt": "2026-05-11",
-      "note": "아마란스10/ONE AI/말하는 중"
     },
     {
       "id": "ic-t-pdf",
