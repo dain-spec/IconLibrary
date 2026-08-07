@@ -2,20 +2,6 @@
   "repoUrl": "https://github.com/dain-spec/motion",
   "assets": [
     {
-      "id": "dot-voice",
-      "type": "json",
-      "title": "Dot Voice",
-      "path": "./assets/Loader/dot_voice.json",
-      "thumbnail": "",
-      "tags": [
-        "loader",
-        "dot",
-        "voice"
-      ],
-      "updatedAt": "2026-05-11",
-      "note": "위하고/말하는 중"
-    },
-    {
       "id": "loader",
       "type": "json",
       "title": "Loader",
@@ -42,45 +28,6 @@
       "note": "로딩 블루"
     },
     {
-      "id": "loader-dot",
-      "type": "json",
-      "title": "Loader Dot",
-      "path": "./assets/Loader/loader_dot.json",
-      "thumbnail": "",
-      "tags": [
-        "loader",
-        "dot"
-      ],
-      "updatedAt": "2026-05-07",
-      "note": "위하고/화상회의/대기중"
-    },
-    {
-      "id": "loader-dot-answer",
-      "type": "json",
-      "title": "Loader Dot Answer",
-      "path": "./assets/Loader/loader_dot_answer.json",
-      "thumbnail": "",
-      "tags": [
-        "loader",
-        "dot"
-      ],
-      "updatedAt": "2026-05-07",
-      "note": "위하고/대기중"
-    },
-    {
-      "id": "loader-dots-loop",
-      "type": "json",
-      "title": "Loader Dots Loop",
-      "path": "./assets/Loader/loader_dots_loop.json",
-      "thumbnail": "",
-      "tags": [
-        "loader",
-        "dot"
-      ],
-      "updatedAt": "2026-05-12",
-      "note": "영상통역회의/대기중"
-    },
-    {
       "id": "ic-loading-s",
       "type": "json",
       "title": "IC Loading S",
@@ -93,19 +40,6 @@
       ],
       "updatedAt": "2026-05-11",
       "note": "스피너 색상"
-    },
-    {
-      "id": "loading-generic",
-      "type": "json",
-      "title": "Loading",
-      "path": "./assets/Loader/loading.json",
-      "thumbnail": "",
-      "tags": [
-        "loader",
-        "dot"
-      ],
-      "updatedAt": "2026-05-11",
-      "note": "아마란스10/ONE AI/분석 중"
     },
     {
       "id": "loading-circle",
@@ -122,32 +56,6 @@
       "note": "스피너 기본"
     },
     {
-      "id": "loading-dot-32",
-      "type": "json",
-      "title": "Loading Dot 32",
-      "path": "./assets/Loader/loading_dot_32.json",
-      "thumbnail": "",
-      "tags": [
-        "loader",
-        "dot"
-      ],
-      "updatedAt": "2026-05-12",
-      "note": "아마란스10포미/로딩"
-    },
-    {
-      "id": "loading-dot-blue",
-      "type": "json",
-      "title": "Loading Dot Blue",
-      "path": "./assets/Loader/loading_dot_blue.json",
-      "thumbnail": "",
-      "tags": [
-        "loader",
-        "dot"
-      ],
-      "updatedAt": "2026-05-08",
-      "note": "위하고/화상회의/대기중"
-    },
-    {
       "id": "loading-gray",
       "type": "json",
       "title": "Loading Gray",
@@ -159,19 +67,6 @@
       ],
       "updatedAt": "2026-05-08",
       "note": "로딩 그레이"
-    },
-    {
-      "id": "loading-record",
-      "type": "json",
-      "title": "Loading Record",
-      "path": "./assets/Loader/loading_record.json",
-      "thumbnail": "",
-      "tags": [
-        "loader",
-        "dot"
-      ],
-      "updatedAt": "2026-05-11",
-      "note": "아마란스10/ONE AI/녹음 중"
     },
     {
       "id": "s-loading",
@@ -238,6 +133,111 @@
       ],
       "updatedAt": "2026-05-11",
       "note": "로딩 블루"
+    },
+    {
+      "id": "dot-voice",
+      "type": "json",
+      "title": "Dot Voice",
+      "path": "./assets/Loader/dot_voice.json",
+      "thumbnail": "",
+      "tags": [
+        "loader",
+        "dot",
+        "voice"
+      ],
+      "updatedAt": "2026-05-11",
+      "note": "위하고/말하는 중"
+    },
+    {
+      "id": "loader-dot",
+      "type": "json",
+      "title": "Loader Dot",
+      "path": "./assets/Loader/loader_dot.json",
+      "thumbnail": "",
+      "tags": [
+        "loader",
+        "dot"
+      ],
+      "updatedAt": "2026-05-07",
+      "note": "위하고/화상회의/대기중"
+    },
+    {
+      "id": "loader-dot-answer",
+      "type": "json",
+      "title": "Loader Dot Answer",
+      "path": "./assets/Loader/loader_dot_answer.json",
+      "thumbnail": "",
+      "tags": [
+        "loader",
+        "dot"
+      ],
+      "updatedAt": "2026-05-07",
+      "note": "위하고/대기중"
+    },
+    {
+      "id": "loader-dots-loop",
+      "type": "json",
+      "title": "Loader Dots Loop",
+      "path": "./assets/Loader/loader_dots_loop.json",
+      "thumbnail": "",
+      "tags": [
+        "loader",
+        "dot"
+      ],
+      "updatedAt": "2026-05-12",
+      "note": "영상통역회의/대기중"
+    },
+    {
+      "id": "loading-generic",
+      "type": "json",
+      "title": "Loading",
+      "path": "./assets/Loader/loading.json",
+      "thumbnail": "",
+      "tags": [
+        "loader",
+        "dot"
+      ],
+      "updatedAt": "2026-05-11",
+      "note": "아마란스10/ONE AI/분석 중"
+    },
+    {
+      "id": "loading-dot-32",
+      "type": "json",
+      "title": "Loading Dot 32",
+      "path": "./assets/Loader/loading_dot_32.json",
+      "thumbnail": "",
+      "tags": [
+        "loader",
+        "dot"
+      ],
+      "updatedAt": "2026-05-12",
+      "note": "아마란스10포미/로딩"
+    },
+    {
+      "id": "loading-dot-blue",
+      "type": "json",
+      "title": "Loading Dot Blue",
+      "path": "./assets/Loader/loading_dot_blue.json",
+      "thumbnail": "",
+      "tags": [
+        "loader",
+        "dot"
+      ],
+      "updatedAt": "2026-05-08",
+      "note": "위하고/화상회의/대기중"
+    },
+    {
+      "id": "loading-record",
+      "type": "json",
+      "title": "Loading Record",
+      "path": "./assets/Loader/loading_record.json",
+      "thumbnail": "",
+      "tags": [
+        "loader",
+        "dot"
+      ],
+      "updatedAt": "2026-05-11",
+      "note": "아마란스10/ONE AI/녹음 중"
     },
     {
       "id": "ic-airplane",
