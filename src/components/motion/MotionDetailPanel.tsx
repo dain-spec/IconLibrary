@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Lottie from "lottie-react";
 import type { MotionAsset } from "@/lib/motion";
+import { dedupeTagsCaseInsensitive } from "@/lib/tags";
 import { CopyButton } from "../CopyButton";
 import { useLottieData } from "@/lib/useLottieData";
 import {
@@ -104,7 +105,7 @@ export function MotionDetailPanel({
           <span className="rounded-full border border-border px-2 py-0.5 text-xs text-muted">
             {asset.category}
           </span>
-          {asset.tags.map((tag) => (
+          {dedupeTagsCaseInsensitive(asset.tags).map((tag) => (
             <button
               key={tag}
               onClick={() => onTagClick(tag)}

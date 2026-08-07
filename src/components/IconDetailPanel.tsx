@@ -6,6 +6,7 @@ import markup from "react-syntax-highlighter/dist/esm/languages/prism/markup";
 import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
 import type { Icon } from "@/lib/icons";
 import { figmaLinkFor } from "@/data/icons";
+import { dedupeTagsCaseInsensitive } from "@/lib/tags";
 import { CopyButton } from "./CopyButton";
 
 SyntaxHighlighter.registerLanguage("markup", markup);
@@ -172,7 +173,7 @@ export function IconDetailPanel({
 
         {(icon.tags.ko.length > 0 || icon.tags.en.length > 0) && (
           <div className="mt-3 flex flex-wrap gap-1.5">
-            {[...icon.tags.ko, ...icon.tags.en].map((tag) => (
+            {dedupeTagsCaseInsensitive([...icon.tags.ko, ...icon.tags.en]).map((tag) => (
               <button
                 key={tag}
                 onClick={() => onTagClick(tag)}
