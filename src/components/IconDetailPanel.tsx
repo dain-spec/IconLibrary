@@ -10,6 +10,7 @@ import { dedupeTagsCaseInsensitive } from "@/lib/tags";
 import { useResizablePanelWidth } from "@/lib/useResizablePanelWidth";
 import { CopyButton } from "./CopyButton";
 import { PanelResizeHandle } from "./PanelResizeHandle";
+import { ZoomHoverPreview } from "./ZoomHoverPreview";
 
 SyntaxHighlighter.registerLanguage("markup", markup);
 
@@ -190,12 +191,22 @@ export function IconDetailPanel({
           </div>
         )}
 
-        <div className="mt-5 flex items-center justify-center rounded-xl bg-surface-hover p-10">
-          <span
-            className="h-12 w-12 [&_svg]:h-12 [&_svg]:w-12"
-            dangerouslySetInnerHTML={{ __html: icon.svg }}
-          />
-        </div>
+        <ZoomHoverPreview
+          bgClassName="bg-surface-hover"
+          large={
+            <span
+              className="h-40 w-40 [&_svg]:h-40 [&_svg]:w-40"
+              dangerouslySetInnerHTML={{ __html: icon.svg }}
+            />
+          }
+        >
+          <div className="mt-5 flex items-center justify-center rounded-xl bg-surface-hover p-10">
+            <span
+              className="h-12 w-12 [&_svg]:h-12 [&_svg]:w-12"
+              dangerouslySetInnerHTML={{ __html: icon.svg }}
+            />
+          </div>
+        </ZoomHoverPreview>
 
         <div className="mt-5 flex gap-1 border-b border-border">
           {TABS.filter((t) => t.key !== "figma" || figmaLink).map((t) => (

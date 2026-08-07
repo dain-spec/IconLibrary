@@ -7,6 +7,7 @@ import { dedupeTagsCaseInsensitive } from "@/lib/tags";
 import { useResizablePanelWidth } from "@/lib/useResizablePanelWidth";
 import { CopyButton } from "../CopyButton";
 import { PanelResizeHandle } from "../PanelResizeHandle";
+import { ZoomHoverPreview } from "../ZoomHoverPreview";
 import { useLottieData } from "@/lib/useLottieData";
 import {
   applyHexToGroup,
@@ -142,21 +143,35 @@ export function MotionDetailPanel({
           </button>
         </div>
 
-        <div
-          ref={previewRef}
-          className={`mt-3 flex items-center justify-center rounded-xl p-10 ${
-            isLightPreview ? "bg-neutral-100" : "bg-neutral-900"
-          }`}
-        >
-          {asset.type === "image" ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img src={asset.src} alt={asset.title} className="h-24 w-24 object-contain" />
-          ) : (
-            workingData && (
-              <Lottie animationData={workingData} loop autoplay className="h-24 w-24" />
+        <ZoomHoverPreview
+          bgClassName={isLightPreview ? "bg-neutral-100" : "bg-neutral-900"}
+          large={
+            asset.type === "image" ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img src={asset.src} alt={asset.title} className="h-40 w-40 object-contain" />
+            ) : (
+              workingData && (
+                <Lottie animationData={workingData} loop autoplay className="h-40 w-40" />
+              )
             )
-          )}
-        </div>
+          }
+        >
+          <div
+            ref={previewRef}
+            className={`mt-3 flex items-center justify-center rounded-xl p-10 ${
+              isLightPreview ? "bg-neutral-100" : "bg-neutral-900"
+            }`}
+          >
+            {asset.type === "image" ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img src={asset.src} alt={asset.title} className="h-24 w-24 object-contain" />
+            ) : (
+              workingData && (
+                <Lottie animationData={workingData} loop autoplay className="h-24 w-24" />
+              )
+            )}
+          </div>
+        </ZoomHoverPreview>
 
         {colorGroups.length > 0 && (
           <div className="mt-4 flex flex-wrap gap-3">
