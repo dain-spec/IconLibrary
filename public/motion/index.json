@@ -4,7 +4,7 @@
     {
       "id": "loader",
       "type": "json",
-      "title": "Loader",
+      "title": "원형",
       "path": "./assets/Loader/loader.json",
       "thumbnail": "",
       "tags": [
@@ -15,221 +15,21 @@
       "note": "로딩 기본"
     },
     {
-      "id": "loader-data",
+      "id": "loading-spinner",
       "type": "json",
-      "title": "Loader Data",
-      "path": "./assets/Loader/loader_data.json",
+      "title": "스피너",
+      "path": "./assets/Loader/loading_spinner.json",
       "thumbnail": "",
       "tags": [
-        "loader",
-        "circle"
+        "loader"
       ],
-      "updatedAt": "2026-05-11",
-      "note": "로딩 블루"
-    },
-    {
-      "id": "loading-gray",
-      "type": "json",
-      "title": "Loading Gray",
-      "path": "./assets/Loader/loading_gray.json",
-      "thumbnail": "",
-      "tags": [
-        "loader",
-        "circle"
-      ],
-      "updatedAt": "2026-05-08",
-      "note": "로딩 그레이"
-    },
-    {
-      "id": "s-loading",
-      "type": "json",
-      "title": "S Loading",
-      "path": "./assets/Loader/s_loading.json",
-      "thumbnail": "",
-      "tags": [
-        "loader",
-        "circle"
-      ],
-      "updatedAt": "2026-05-11",
-      "note": "로딩 색상"
-    },
-    {
-      "id": "loading-16-dark",
-      "type": "json",
-      "title": "Spinner Loading 16 Dark",
-      "path": "./assets/Loader/spinner_loading_16_dark.json",
-      "thumbnail": "",
-      "tags": [
-        "loader",
-        "circle"
-      ],
-      "updatedAt": "2026-05-11",
-      "note": "로딩 블루"
-    },
-    {
-      "id": "loading-18",
-      "type": "json",
-      "title": "Spinner Loading 18",
-      "path": "./assets/Loader/spinner_loading_18.json",
-      "thumbnail": "",
-      "tags": [
-        "loader",
-        "circle"
-      ],
-      "updatedAt": "2026-05-11",
-      "note": "로딩 화이트"
-    },
-    {
-      "id": "loading-24",
-      "type": "json",
-      "title": "Loading",
-      "path": "./assets/Loader/spinner_loading_24.json",
-      "thumbnail": "",
-      "tags": [
-        "loader",
-        "circle"
-      ],
-      "updatedAt": "2026-05-11",
-      "note": "로딩 블루"
-    },
-    {
-      "id": "ic-loading-s",
-      "type": "json",
-      "title": "IC Loading S",
-      "path": "./assets/Loader/loader_loading_s.json",
-      "thumbnail": "",
-      "tags": [
-        "loader",
-        "circle",
-        "spinner"
-      ],
-      "updatedAt": "2026-05-11",
-      "note": "스피너 색상"
-    },
-    {
-      "id": "loading-circle",
-      "type": "json",
-      "title": "Loading Circle",
-      "path": "./assets/Loader/loading_circle.json",
-      "thumbnail": "",
-      "tags": [
-        "loader",
-        "circle",
-        "spinner"
-      ],
-      "updatedAt": "2026-05-08",
-      "note": "스피너 기본"
-    },
-    {
-      "id": "spinner-loading",
-      "type": "json",
-      "title": "Spinner Loading",
-      "path": "./assets/Loader/spinner_loading.json",
-      "thumbnail": "",
-      "tags": [
-        "loader",
-        "spinner",
-        "circle"
-      ],
-      "updatedAt": "2026-05-11",
-      "note": "스피너 기본"
-    },
-    {
-      "id": "dot-voice",
-      "type": "json",
-      "title": "Dot Voice",
-      "path": "./assets/Loader/dot_voice.json",
-      "thumbnail": "",
-      "tags": [
-        "loader",
-        "dot",
-        "voice"
-      ],
-      "updatedAt": "2026-05-11",
-      "note": "위하고/말하는 중"
-    },
-    {
-      "id": "loader-dot",
-      "type": "json",
-      "title": "Loader Dot",
-      "path": "./assets/Loader/loader_dot.json",
-      "thumbnail": "",
-      "tags": [
-        "loader",
-        "dot"
-      ],
-      "updatedAt": "2026-05-07",
-      "note": "위하고/화상회의/대기중"
-    },
-    {
-      "id": "loader-dot-answer",
-      "type": "json",
-      "title": "Loader Dot Answer",
-      "path": "./assets/Loader/loader_dot_answer.json",
-      "thumbnail": "",
-      "tags": [
-        "loader",
-        "dot"
-      ],
-      "updatedAt": "2026-05-07",
-      "note": "위하고/대기중"
-    },
-    {
-      "id": "loader-dots-loop",
-      "type": "json",
-      "title": "Loader Dots Loop",
-      "path": "./assets/Loader/loader_dots_loop.json",
-      "thumbnail": "",
-      "tags": [
-        "loader",
-        "dot"
-      ],
-      "updatedAt": "2026-05-12",
-      "note": "영상통역회의/대기중"
-    },
-    {
-      "id": "loading-generic",
-      "type": "json",
-      "title": "Loading",
-      "path": "./assets/Loader/loading.json",
-      "thumbnail": "",
-      "tags": [
-        "loader",
-        "dot"
-      ],
-      "updatedAt": "2026-05-11",
-      "note": "아마란스10/ONE AI/분석 중"
-    },
-    {
-      "id": "loading-dot-32",
-      "type": "json",
-      "title": "Loading Dot 32",
-      "path": "./assets/Loader/loading_dot_32.json",
-      "thumbnail": "",
-      "tags": [
-        "loader",
-        "dot"
-      ],
-      "updatedAt": "2026-05-12",
-      "note": "아마란스10포미/로딩"
-    },
-    {
-      "id": "loading-dot-blue",
-      "type": "json",
-      "title": "Loading Dot Blue",
-      "path": "./assets/Loader/loading_dot_blue.json",
-      "thumbnail": "",
-      "tags": [
-        "loader",
-        "dot"
-      ],
-      "updatedAt": "2026-05-08",
-      "note": "위하고/화상회의/대기중"
+      "updatedAt": "2026-08-07",
+      "note": ""
     },
     {
       "id": "loading-record",
       "type": "json",
-      "title": "Loading Record",
+      "title": "점",
       "path": "./assets/Loader/loading_record.json",
       "thumbnail": "",
       "tags": [
@@ -240,17 +40,76 @@
       "note": "아마란스10/ONE AI/녹음 중"
     },
     {
-      "id": "ic-listen-32-wh",
+      "id": "loading-dot",
       "type": "json",
-      "title": "IC Listen 32 White",
-      "path": "./assets/Loader/ic_listen_32_wh.json",
+      "title": "점 그라데이션",
+      "path": "./assets/Loader/loading_dot.json",
       "thumbnail": "",
       "tags": [
-        "loader",
-        "icon"
+        "loader"
       ],
-      "updatedAt": "2026-05-11",
-      "note": "아마란스10/ONE AI/말하는 중"
+      "updatedAt": "2026-08-07",
+      "note": ""
+    },
+    {
+      "id": "loading-dot-loop",
+      "type": "json",
+      "title": "점 4개",
+      "path": "./assets/Loader/loading_dot_loop.json",
+      "thumbnail": "",
+      "tags": [
+        "loader"
+      ],
+      "updatedAt": "2026-08-07",
+      "note": ""
+    },
+    {
+      "id": "loading-dot-wave",
+      "type": "json",
+      "title": "물결 점",
+      "path": "./assets/Loader/loading_dot_wave.json",
+      "thumbnail": "",
+      "tags": [
+        "loader"
+      ],
+      "updatedAt": "2026-08-07",
+      "note": ""
+    },
+    {
+      "id": "loading-dotblue",
+      "type": "json",
+      "title": "블루 점",
+      "path": "./assets/Loader/loading_dotblue.json",
+      "thumbnail": "",
+      "tags": [
+        "loader"
+      ],
+      "updatedAt": "2026-08-07",
+      "note": ""
+    },
+    {
+      "id": "loading-listen",
+      "type": "json",
+      "title": "음성 웨이브",
+      "path": "./assets/Loader/loading_listen.json",
+      "thumbnail": "",
+      "tags": [
+        "loader"
+      ],
+      "updatedAt": "2026-08-07",
+      "note": ""
+    },
+    {
+      "id": "loading-voice",
+      "type": "json",
+      "title": "막대",
+      "path": "./assets/Loader/loading_voice.json",
+      "thumbnail": "",
+      "tags": [
+        "loader"
+      ],
+      "updatedAt": "2026-08-07",
+      "note": ""
     },
     {
       "id": "ic-airplane",
