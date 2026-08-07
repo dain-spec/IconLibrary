@@ -21,11 +21,9 @@ export function MotionCard({
       title={asset.title}
       aria-label={asset.title}
       aria-pressed={isSelected}
-      className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-xl border p-2 transition-colors ${
-        asset.category === "Icon"
-          ? "bg-[#FAFAFA] hover:bg-[#F0F0F0]"
-          : "bg-neutral-900 hover:bg-neutral-800"
-      } ${isSelected ? "border-accent" : "border-border"}`}
+      className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-xl border bg-[#FAFAFA] p-2 transition-colors hover:bg-[#F0F0F0] ${
+        isSelected ? "border-accent" : "border-border"
+      }`}
     >
       {asset.type === "image" ? (
         // eslint-disable-next-line @next/next/no-img-element
