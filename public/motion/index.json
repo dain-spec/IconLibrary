@@ -15,6 +15,18 @@
       "note": "2025_WEHAGO 공통 로딩"
     },
     {
+      "id": "loading-gray",
+      "type": "json",
+      "title": "그레이 원형",
+      "path": "./assets/Loader/loading_gray.json",
+      "thumbnail": "",
+      "tags": [
+        "loader"
+      ],
+      "updatedAt": "2026-08-07",
+      "note": "2025_WEHAGO 공통 로딩"
+    },
+    {
       "id": "loading-spinner",
       "type": "json",
       "title": "스피너",
