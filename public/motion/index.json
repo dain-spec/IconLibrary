@@ -12,7 +12,7 @@
         "circle"
       ],
       "updatedAt": "2026-04-22",
-      "note": "로딩 기본"
+      "note": "2025_WEHAGO 공통 로딩"
     },
     {
       "id": "loading-spinner",
@@ -24,7 +24,7 @@
         "loader"
       ],
       "updatedAt": "2026-08-07",
-      "note": ""
+      "note": "2025_WEHAGO 공통 로딩"
     },
     {
       "id": "loading-record",
@@ -37,7 +37,7 @@
         "dot"
       ],
       "updatedAt": "2026-05-11",
-      "note": "아마란스10/ONE AI/녹음 중"
+      "note": "2025_WEHAGO 공통 로딩"
     },
     {
       "id": "loading-dot",
@@ -49,7 +49,7 @@
         "loader"
       ],
       "updatedAt": "2026-08-07",
-      "note": ""
+      "note": "2025_WEHAGO 공통 로딩"
     },
     {
       "id": "loading-dot-loop",
@@ -61,7 +61,7 @@
         "loader"
       ],
       "updatedAt": "2026-08-07",
-      "note": ""
+      "note": "2025_WEHAGO 공통 로딩"
     },
     {
       "id": "loading-dot-wave",
@@ -73,7 +73,7 @@
         "loader"
       ],
       "updatedAt": "2026-08-07",
-      "note": ""
+      "note": "2025_WEHAGO 공통 로딩"
     },
     {
       "id": "loading-dotblue",
@@ -85,7 +85,7 @@
         "loader"
       ],
       "updatedAt": "2026-08-07",
-      "note": ""
+      "note": "2025_WEHAGO 공통 로딩"
     },
     {
       "id": "loading-listen",
@@ -97,7 +97,7 @@
         "loader"
       ],
       "updatedAt": "2026-08-07",
-      "note": ""
+      "note": "2025_WEHAGO 공통 로딩"
     },
     {
       "id": "loading-voice",
@@ -109,7 +109,7 @@
         "loader"
       ],
       "updatedAt": "2026-08-07",
-      "note": ""
+      "note": "2025_WEHAGO 공통 로딩"
     },
     {
       "id": "ic-airplane",
