@@ -450,6 +450,20 @@
       "note": "화상통화"
     },
     {
+      "id": "ic-shinhanbank-search",
+      "type": "image",
+      "title": "IC Shinhan Bank Search",
+      "path": "./assets/3d/ic_shinhanbank_search@2x.png",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "bank",
+        "search"
+      ],
+      "updatedAt": "2026-08-07",
+      "note": "은행 조회"
+    },
+    {
       "id": "ic-oneai-analysis",
       "type": "json",
       "title": "IC ONE AI Analysis",
