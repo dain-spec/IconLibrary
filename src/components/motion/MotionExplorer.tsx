@@ -24,6 +24,10 @@ export function MotionExplorer({ assets }: { assets: MotionAsset[] }) {
 
   const selected = assets.find((a) => a.id === selectedId) ?? null;
 
+  function handleTagClick(tag: string) {
+    setQuery(tag);
+  }
+
   return (
     <div className="flex h-full overflow-hidden">
       <div className="min-w-0 flex-1 overflow-y-auto">
@@ -59,7 +63,11 @@ export function MotionExplorer({ assets }: { assets: MotionAsset[] }) {
       </div>
 
       {selected && (
-        <MotionDetailPanel asset={selected} onClose={() => setSelectedId(null)} />
+        <MotionDetailPanel
+          asset={selected}
+          onClose={() => setSelectedId(null)}
+          onTagClick={handleTagClick}
+        />
       )}
     </div>
   );

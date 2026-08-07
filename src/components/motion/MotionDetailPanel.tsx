@@ -20,9 +20,11 @@ function cloneAnimationData(data: object) {
 export function MotionDetailPanel({
   asset,
   onClose,
+  onTagClick,
 }: {
   asset: MotionAsset;
   onClose: () => void;
+  onTagClick: (tag: string) => void;
 }) {
   const [visible, setVisible] = useState(false);
   const rawData = useLottieData(asset.type === "json" ? asset.src : "");
@@ -103,12 +105,13 @@ export function MotionDetailPanel({
             {asset.category}
           </span>
           {asset.tags.map((tag) => (
-            <span
+            <button
               key={tag}
-              className="rounded-full border border-border px-2 py-0.5 text-xs text-muted"
+              onClick={() => onTagClick(tag)}
+              className="rounded-full border border-border px-2 py-0.5 text-xs text-muted transition-colors hover:border-accent hover:text-accent"
             >
               {tag}
-            </span>
+            </button>
           ))}
         </div>
 
