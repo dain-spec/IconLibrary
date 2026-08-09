@@ -155,7 +155,7 @@ export function MotionDetailPanel({
                   type="color"
                   value={hex}
                   onChange={(e) => handleColorChange(group, e.target.value)}
-                  className="h-5 w-5 cursor-pointer rounded-md border border-border p-0"
+                  className="h-5 w-5 cursor-pointer rounded-full border border-border p-0 [&::-webkit-color-swatch]:rounded-full [&::-webkit-color-swatch-wrapper]:rounded-full [&::-webkit-color-swatch-wrapper]:p-0"
                 />
               );
             })}
