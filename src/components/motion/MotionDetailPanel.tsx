@@ -150,15 +150,13 @@ export function MotionDetailPanel({
               const [r, g, b] = group.refs[0].k;
               const hex = rgb01ToHex(r, g, b);
               return (
-                <label key={index} className="flex flex-col items-center gap-1">
-                  <input
-                    type="color"
-                    value={hex}
-                    onChange={(e) => handleColorChange(group, e.target.value)}
-                    className="h-8 w-8 cursor-pointer rounded-md border border-border p-0.5"
-                  />
-                  <span className="text-xs text-muted">Color{index + 1}</span>
-                </label>
+                <input
+                  key={index}
+                  type="color"
+                  value={hex}
+                  onChange={(e) => handleColorChange(group, e.target.value)}
+                  className="h-5 w-5 cursor-pointer rounded-md border border-border p-0"
+                />
               );
             })}
           </div>
