@@ -62,6 +62,13 @@ export function MotionDetailPanel({
     setWorkingData((prev) => (prev ? { ...prev } : prev));
   }
 
+  function handleResetColors() {
+    if (!rawData) return;
+    const cloned = cloneAnimationData(rawData);
+    setWorkingData(cloned);
+    setColorGroups(groupLottieColorRefs(collectStaticLottieColorCKs(cloned)));
+  }
+
   async function handleCopyToFigma() {
     const svgEl = previewRef.current?.querySelector("svg");
     if (!svgEl) {
@@ -145,7 +152,7 @@ export function MotionDetailPanel({
         </ZoomHoverPreview>
 
         {colorGroups.length > 0 && (
-          <div className="mt-4 flex flex-wrap gap-3">
+          <div className="mt-4 flex flex-wrap items-center gap-3">
             {colorGroups.map((group, index) => {
               const [r, g, b] = group.refs[0].k;
               const hex = rgb01ToHex(r, g, b);
@@ -159,6 +166,17 @@ export function MotionDetailPanel({
                 />
               );
             })}
+            <button
+              onClick={handleResetColors}
+              title="원래 색상으로 되돌리기"
+              aria-label="원래 색상으로 되돌리기"
+              className="flex h-5 w-5 items-center justify-center text-muted transition-colors hover:text-ink"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M3 12a9 9 0 1 0 2.6-6.4" strokeLinecap="round" />
+                <path d="M3 4v5h5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
           </div>
         )}
 
