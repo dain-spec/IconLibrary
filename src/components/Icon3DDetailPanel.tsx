@@ -4,10 +4,43 @@ import { useEffect, useState } from "react";
 import type { Icon3D } from "@/lib/icons3d";
 import { dedupeTagsCaseInsensitive } from "@/lib/tags";
 import { useResizablePanelWidth } from "@/lib/useResizablePanelWidth";
+import { copyImageToClipboard } from "@/lib/clipboardImage";
+import { CODE_COLORS } from "@/lib/codeColors";
 import { CopyButton } from "./CopyButton";
 import { PanelResizeHandle } from "./PanelResizeHandle";
 import { ZoomHoverPreview } from "./ZoomHoverPreview";
-import { copyImageToClipboard } from "@/lib/clipboardImage";
+
+type Tab = "react" | "figma";
+
+const TABS: { key: Tab; label: string }[] = [
+  { key: "react", label: "React" },
+  { key: "figma", label: "Figma" },
+];
+
+// Hand-colored to match IconDetailPanel's ReactCodeBlock: a fixed one-line
+// shape doesn't need Prism just to get the same red/blue/orange/string look.
+function ImgCodeBlock({ src, alt }: { src: string; alt: string }) {
+  const copyText = `<img src="${src}" alt="${alt}" />`;
+  return (
+    <div className="relative">
+      <pre
+        className="m-0 overflow-x-auto whitespace-pre rounded-lg p-3 font-mono text-sm"
+        style={{ background: "#ffffff", border: "1px solid #ededed", lineHeight: "1.5" }}
+      >
+        {"<"}
+        <span style={{ color: CODE_COLORS.blue }}>img</span>{" "}
+        <span style={{ color: CODE_COLORS.orange }}>src</span>=
+        <span style={{ color: CODE_COLORS.string }}>&quot;{src}&quot;</span>{" "}
+        <span style={{ color: CODE_COLORS.orange }}>alt</span>=
+        <span style={{ color: CODE_COLORS.string }}>&quot;{alt}&quot;</span>{" "}
+        {"/>"}
+      </pre>
+      <div className="absolute right-2 top-2 flex gap-1 rounded-md bg-white/80 p-0.5 shadow-sm">
+        <CopyButton text={copyText} variant="icon" />
+      </div>
+    </div>
+  );
+}
 
 export function Icon3DDetailPanel({
   icon,
@@ -18,6 +51,7 @@ export function Icon3DDetailPanel({
   onClose: () => void;
   onTagClick: (tag: string) => void;
 }) {
+  const [tab, setTab] = useState<Tab>("react");
   const [visible, setVisible] = useState(false);
   const [copyState, setCopyState] = useState<"idle" | "copied" | "error">("idle");
   const { width, isDragging, onPointerDown } = useResizablePanelWidth();
@@ -84,32 +118,58 @@ export function Icon3DDetailPanel({
           </div>
         </ZoomHoverPreview>
 
-        <div className="mt-5 flex flex-col gap-2">
-          <a
-            href={icon.src}
-            download={fileName}
-            className="flex items-center justify-center gap-1.5 rounded-lg border border-border px-3 py-2 text-sm text-ink transition-colors hover:bg-surface-hover"
-          >
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M12 3v12" strokeLinecap="round" strokeLinejoin="round" />
-              <path d="M7 10l5 5 5-5" strokeLinecap="round" strokeLinejoin="round" />
-              <path d="M4 19h16" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-            {fileName} 다운로드
-          </a>
+        <a
+          href={icon.src}
+          download={fileName}
+          className="mt-3 flex items-center justify-center gap-1.5 rounded-lg border border-border px-3 py-2 text-sm text-ink transition-colors hover:bg-surface-hover"
+        >
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M12 3v12" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M7 10l5 5 5-5" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M4 19h16" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+          {fileName} 다운로드
+        </a>
 
-          <button
-            onClick={handleCopyImage}
-            className="flex items-center justify-center gap-1.5 rounded-lg border border-border px-3 py-2 text-sm text-ink transition-colors hover:bg-surface-hover"
-          >
-            🖼️{" "}
-            {copyState === "copied"
-              ? "이미지 복사됨"
-              : copyState === "error"
-                ? "복사 실패"
-                : "이미지 복사"}
-          </button>
+        <div className="mt-5 flex gap-1 border-b border-border">
+          {TABS.map((t) => (
+            <button
+              key={t.key}
+              onClick={() => setTab(t.key)}
+              className={`px-3 py-2 text-sm ${
+                tab === t.key
+                  ? "border-b-2 border-accent text-ink"
+                  : "text-muted hover:text-ink"
+              }`}
+            >
+              {t.label}
+            </button>
+          ))}
         </div>
+
+        {tab === "react" ? (
+          <div className="mt-3">
+            <p className="mb-1.5 text-xs font-medium text-muted">IMG</p>
+            <ImgCodeBlock src={icon.src} alt={icon.title} />
+          </div>
+        ) : (
+          <div className="mt-3 flex flex-col gap-3">
+            <p className="text-sm text-muted">
+              이미지를 복사한 뒤 Figma에 붙여넣기(Cmd+V) 하세요.
+            </p>
+            <button
+              onClick={handleCopyImage}
+              className="flex items-center justify-center gap-1.5 rounded-lg border border-border px-3 py-2 text-sm text-ink transition-colors hover:bg-surface-hover"
+            >
+              🖼️{" "}
+              {copyState === "copied"
+                ? "이미지 복사됨"
+                : copyState === "error"
+                  ? "복사 실패"
+                  : "이미지 복사"}
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

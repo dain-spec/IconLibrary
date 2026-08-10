@@ -11,16 +11,9 @@ import { useResizablePanelWidth } from "@/lib/useResizablePanelWidth";
 import { CopyButton } from "./CopyButton";
 import { PanelResizeHandle } from "./PanelResizeHandle";
 import { ZoomHoverPreview } from "./ZoomHoverPreview";
+import { CODE_COLORS } from "@/lib/codeColors";
 
 SyntaxHighlighter.registerLanguage("markup", markup);
-
-const CODE_COLORS = {
-  red: "hsl(5, 74%, 59%)",
-  purple: "hsl(301, 63%, 40%)",
-  blue: "hsl(221, 87%, 60%)",
-  orange: "hsl(35, 99%, 36%)",
-  string: "hsl(230, 8%, 24%)",
-};
 
 // SVG tag names (svg/g/path…) read as purple and string values as black,
 // matching the reference design; oneLight otherwise ships tags red and
