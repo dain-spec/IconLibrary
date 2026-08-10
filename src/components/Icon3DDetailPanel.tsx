@@ -7,6 +7,7 @@ import { useResizablePanelWidth } from "@/lib/useResizablePanelWidth";
 import { CopyButton } from "./CopyButton";
 import { PanelResizeHandle } from "./PanelResizeHandle";
 import { ZoomHoverPreview } from "./ZoomHoverPreview";
+import { copyImageToClipboard } from "@/lib/clipboardImage";
 
 export function Icon3DDetailPanel({
   icon,
@@ -18,13 +19,24 @@ export function Icon3DDetailPanel({
   onTagClick: (tag: string) => void;
 }) {
   const [visible, setVisible] = useState(false);
+  const [copyState, setCopyState] = useState<"idle" | "copied" | "error">("idle");
   const { width, isDragging, onPointerDown } = useResizablePanelWidth();
 
   useEffect(() => {
     setVisible(true);
   }, []);
 
+  useEffect(() => {
+    setCopyState("idle");
+  }, [icon.id]);
+
   const fileName = decodeURIComponent(icon.src.split("/").pop() ?? icon.src);
+
+  async function handleCopyImage() {
+    const success = await copyImageToClipboard(icon.src);
+    setCopyState(success ? "copied" : "error");
+    setTimeout(() => setCopyState("idle"), 1600);
+  }
 
   return (
     <div
@@ -72,18 +84,32 @@ export function Icon3DDetailPanel({
           </div>
         </ZoomHoverPreview>
 
-        <a
-          href={icon.src}
-          download={fileName}
-          className="mt-5 flex items-center justify-center gap-1.5 rounded-lg border border-border px-3 py-2 text-sm text-ink transition-colors hover:bg-surface-hover"
-        >
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <path d="M12 3v12" strokeLinecap="round" strokeLinejoin="round" />
-            <path d="M7 10l5 5 5-5" strokeLinecap="round" strokeLinejoin="round" />
-            <path d="M4 19h16" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-          {fileName} 다운로드
-        </a>
+        <div className="mt-5 flex flex-col gap-2">
+          <a
+            href={icon.src}
+            download={fileName}
+            className="flex items-center justify-center gap-1.5 rounded-lg border border-border px-3 py-2 text-sm text-ink transition-colors hover:bg-surface-hover"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M12 3v12" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M7 10l5 5 5-5" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M4 19h16" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+            {fileName} 다운로드
+          </a>
+
+          <button
+            onClick={handleCopyImage}
+            className="flex items-center justify-center gap-1.5 rounded-lg border border-border px-3 py-2 text-sm text-ink transition-colors hover:bg-surface-hover"
+          >
+            🖼️{" "}
+            {copyState === "copied"
+              ? "이미지 복사됨"
+              : copyState === "error"
+                ? "복사 실패"
+                : "이미지 복사"}
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -9,6 +9,7 @@ import { CopyButton } from "../CopyButton";
 import { PanelResizeHandle } from "../PanelResizeHandle";
 import { ZoomHoverPreview } from "../ZoomHoverPreview";
 import { useLottieData } from "@/lib/useLottieData";
+import { copyImageToClipboard } from "@/lib/clipboardImage";
 import {
   applyHexToGroup,
   collectStaticLottieColorCKs,
@@ -85,6 +86,12 @@ export function MotionDetailPanel({
     } catch {
       setCopyState("error");
     }
+    setTimeout(() => setCopyState("idle"), 1600);
+  }
+
+  async function handleCopyImage() {
+    const success = await copyImageToClipboard(asset.src);
+    setCopyState(success ? "copied" : "error");
     setTimeout(() => setCopyState("idle"), 1600);
   }
 
@@ -194,7 +201,7 @@ export function MotionDetailPanel({
             {fileName} 다운로드
           </a>
 
-          {asset.type === "json" && (
+          {asset.type === "json" ? (
             <button
               onClick={handleCopyToFigma}
               className="flex items-center justify-center gap-1.5 rounded-lg border border-border px-3 py-2 text-sm text-ink transition-colors hover:bg-surface-hover"
@@ -205,6 +212,18 @@ export function MotionDetailPanel({
                 : copyState === "error"
                   ? "복사 실패"
                   : "Figma로 SVG 복사"}
+            </button>
+          ) : (
+            <button
+              onClick={handleCopyImage}
+              className="flex items-center justify-center gap-1.5 rounded-lg border border-border px-3 py-2 text-sm text-ink transition-colors hover:bg-surface-hover"
+            >
+              🖼️{" "}
+              {copyState === "copied"
+                ? "이미지 복사됨"
+                : copyState === "error"
+                  ? "복사 실패"
+                  : "이미지 복사"}
             </button>
           )}
         </div>
