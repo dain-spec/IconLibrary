@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import type { Icon3D } from "@/lib/icons3d";
+import { figmaLinkFor } from "@/data/icons";
 import { dedupeTagsCaseInsensitive } from "@/lib/tags";
 import { useResizablePanelWidth } from "@/lib/useResizablePanelWidth";
 import { copyImageToClipboard } from "@/lib/clipboardImage";
@@ -9,6 +10,10 @@ import { CODE_COLORS } from "@/lib/codeColors";
 import { CopyButton } from "./CopyButton";
 import { PanelResizeHandle } from "./PanelResizeHandle";
 import { ZoomHoverPreview } from "./ZoomHoverPreview";
+
+// All 3D icons currently live under one Figma frame (weather), so every
+// icon links to that shared frame rather than an individual node.
+const FIGMA_3D_FRAME_LINK = figmaLinkFor("5201:14485");
 
 type Tab = "react" | "figma";
 
@@ -154,6 +159,19 @@ export function Icon3DDetailPanel({
           </div>
         ) : (
           <div className="mt-3 flex flex-col gap-3">
+            <a
+              href={FIGMA_3D_FRAME_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-1.5 rounded-lg border border-border px-3 py-2 text-sm text-ink transition-colors hover:bg-surface-hover"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M15 3h6v6" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M10 14L21 3" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              Figma에서 열기
+            </a>
             <p className="text-sm text-muted">
               이미지를 복사한 뒤 Figma에 붙여넣기(Cmd+V) 하세요.
             </p>
