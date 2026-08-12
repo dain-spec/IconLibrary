@@ -493,6 +493,19 @@
       ],
       "updatedAt": "2026-08-12",
       "note": "2025_WEHAGO T 수임처AI 연말정산 안내문"
+    },
+    {
+      "id": "dobi-greeting-2",
+      "type": "image",
+      "title": "인사",
+      "path": "./assets/character/dobi_greeting_2.png",
+      "thumbnail": "",
+      "tags": [
+        "dobi",
+        "greeting"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO T AI Edition AI 브리핑 알림"
     }
   ]
 }
