@@ -559,19 +559,6 @@
       "note": "2025_WEHAGO T AI세무조정 에이전트"
     },
     {
-      "id": "dobi-completed-2",
-      "type": "image",
-      "title": "완료",
-      "path": "./assets/character/character_02.png",
-      "thumbnail": "",
-      "tags": [
-        "dobi",
-        "completed"
-      ],
-      "updatedAt": "2026-08-12",
-      "note": "2025_WEHAGO T AI세무조정 에이전트"
-    },
-    {
       "id": "dobi-salute",
       "type": "image",
       "title": "경례",
@@ -593,6 +580,19 @@
       "tags": [
         "dobi",
         "celebrate"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO T AI세무조정 에이전트"
+    },
+    {
+      "id": "dobi-send",
+      "type": "image",
+      "title": "전송",
+      "path": "./assets/character/apngb-animated_send.png",
+      "thumbnail": "",
+      "tags": [
+        "dobi",
+        "send"
       ],
       "updatedAt": "2026-08-12",
       "note": "2025_WEHAGO T AI세무조정 에이전트"
