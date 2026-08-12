@@ -454,6 +454,32 @@
       ],
       "updatedAt": "2026-08-07",
       "note": "2026_WEHAGO AI Edition 체험하기"
+    },
+    {
+      "id": "dobi-notice-1",
+      "type": "image",
+      "title": "안내",
+      "path": "./assets/character/character_dobi_01.png",
+      "thumbnail": "",
+      "tags": [
+        "dobi",
+        "guide"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO T 수임처AI 연말정산 안내문"
+    },
+    {
+      "id": "dobi-notice-2",
+      "type": "image",
+      "title": "안내",
+      "path": "./assets/character/character_dobi_02.png",
+      "thumbnail": "",
+      "tags": [
+        "dobi",
+        "guide"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO T 수임처AI 연말정산 안내문"
     }
   ]
 }
