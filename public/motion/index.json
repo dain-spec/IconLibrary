@@ -857,6 +857,71 @@
       ],
       "updatedAt": "2026-08-12",
       "note": "2025_WEHAGO Web Proactive AI"
+    },
+    {
+      "id": "domi-calculate",
+      "type": "image",
+      "title": "계산",
+      "path": "./assets/character/Domi_apngb-animated_calculate.png",
+      "thumbnail": "",
+      "tags": [
+        "domi",
+        "calculate"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Web AI세무조정"
+    },
+    {
+      "id": "domi-analysis",
+      "type": "image",
+      "title": "분석",
+      "path": "./assets/character/Domi_character_01.png",
+      "thumbnail": "",
+      "tags": [
+        "domi",
+        "analysis"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Web AI세무조정"
+    },
+    {
+      "id": "domi-default",
+      "type": "image",
+      "title": "기본",
+      "path": "./assets/character/Domi_character_03.png",
+      "thumbnail": "",
+      "tags": [
+        "domi",
+        "character"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Web AI세무조정"
+    },
+    {
+      "id": "domi-memo",
+      "type": "image",
+      "title": "메모",
+      "path": "./assets/character/Domi_character_floating.png",
+      "thumbnail": "",
+      "tags": [
+        "domi",
+        "memo"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Web AI세무조정"
+    },
+    {
+      "id": "domi-greeting",
+      "type": "image",
+      "title": "인사",
+      "path": "./assets/character/Domi_character_popup.png",
+      "thumbnail": "",
+      "tags": [
+        "domi",
+        "greeting"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Web AI세무조정"
     }
   ]
 }
