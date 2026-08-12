@@ -659,6 +659,201 @@
       "note": "2025_WEHAGO Q Mobile"
     },
     {
+      "id": "account-card-link",
+      "type": "json",
+      "title": "계좌카드 연결",
+      "path": "./assets/기본/계좌카드 연결.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "connect"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Q Mobile"
+    },
+    {
+      "id": "account-card-info-loading",
+      "type": "json",
+      "title": "계좌카드정보 찾는중",
+      "path": "./assets/기본/계좌카드정보 찾는중.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "connect"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Q Mobile"
+    },
+    {
+      "id": "utility-bill-link",
+      "type": "json",
+      "title": "공과금연결",
+      "path": "./assets/기본/공과금연결.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "connect"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Q Mobile"
+    },
+    {
+      "id": "delivery-app-link",
+      "type": "json",
+      "title": "배달앱연결",
+      "path": "./assets/기본/배달앱연결.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "connect"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Q Mobile"
+    },
+    {
+      "id": "identity-verification",
+      "type": "json",
+      "title": "본인인증",
+      "path": "./assets/기본/본인인증.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "connect"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Q Mobile"
+    },
+    {
+      "id": "vat-estimate-link",
+      "type": "json",
+      "title": "부가세 예상금액 연결",
+      "path": "./assets/기본/부가세 예상금액 연결.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "connect"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Q Mobile"
+    },
+    {
+      "id": "business-insurance-link",
+      "type": "json",
+      "title": "사업장보험 연결",
+      "path": "./assets/기본/사업장보험 연결.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "connect"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Q Mobile"
+    },
+    {
+      "id": "business-address-link",
+      "type": "json",
+      "title": "사업장주소 연결",
+      "path": "./assets/기본/사업장주소 연결.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "connect"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Q Mobile"
+    },
+    {
+      "id": "credit-rating-lookup",
+      "type": "json",
+      "title": "신용등급 조회",
+      "path": "./assets/기본/신용등급 조회.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "connect"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Q Mobile"
+    },
+    {
+      "id": "connection-error",
+      "type": "json",
+      "title": "연결오류",
+      "path": "./assets/기본/연결오류.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "connect"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Q Mobile"
+    },
+    {
+      "id": "connection-complete",
+      "type": "json",
+      "title": "연결완료",
+      "path": "./assets/기본/연결완료.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "connect"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Q Mobile"
+    },
+    {
+      "id": "card-sales-link",
+      "type": "json",
+      "title": "카드매출 연결",
+      "path": "./assets/기본/카드매출 연결.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "connect"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Q Mobile"
+    },
+    {
+      "id": "card-link",
+      "type": "json",
+      "title": "카드연결",
+      "path": "./assets/기본/카드연결.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "connect"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Q Mobile"
+    },
+    {
+      "id": "pos-link",
+      "type": "json",
+      "title": "포스연결",
+      "path": "./assets/기본/포스연결.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "connect"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Q Mobile"
+    },
+    {
+      "id": "hometax-link",
+      "type": "json",
+      "title": "홈택스 연결",
+      "path": "./assets/기본/홈택스 연결.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "connect"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Q Mobile"
+    },
+    {
       "id": "loading-address",
       "type": "json",
       "title": "연락처",
