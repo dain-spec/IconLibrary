@@ -906,6 +906,110 @@
       "note": "2025_WEHAGO Q Mobile"
     },
     {
+      "id": "emoji-clapping",
+      "type": "json",
+      "title": "박수",
+      "path": "./assets/기본/emoji-clapping-hands.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "emoji"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Meet Mobile"
+    },
+    {
+      "id": "emoji-fire",
+      "type": "json",
+      "title": "불꽃",
+      "path": "./assets/기본/emoji-fire.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "emoji"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Meet Mobile"
+    },
+    {
+      "id": "emoji-hundred",
+      "type": "json",
+      "title": "백점",
+      "path": "./assets/기본/emoji-hundred-points.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "emoji"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Meet Mobile"
+    },
+    {
+      "id": "emoji-ok",
+      "type": "json",
+      "title": "오케이",
+      "path": "./assets/기본/emoji-ok-hand.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "emoji"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Meet Mobile"
+    },
+    {
+      "id": "emoji-party",
+      "type": "json",
+      "title": "축포",
+      "path": "./assets/기본/emoji-party-popper.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "emoji"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Meet Mobile"
+    },
+    {
+      "id": "emoji-heart-eyes",
+      "type": "json",
+      "title": "하트눈",
+      "path": "./assets/기본/emoji-smiling-face-with-heart-eyes.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "emoji"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Meet Mobile"
+    },
+    {
+      "id": "emoji-thumbsup",
+      "type": "json",
+      "title": "좋아요",
+      "path": "./assets/기본/emoji-thumbs-up.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "emoji"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Meet Mobile"
+    },
+    {
+      "id": "emoji-two-hearts",
+      "type": "json",
+      "title": "하트",
+      "path": "./assets/기본/emoji-two-hearts.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "emoji"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Meet Mobile"
+    },
+    {
       "id": "loading-address",
       "type": "json",
       "title": "연락처",
