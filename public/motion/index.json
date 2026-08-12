@@ -516,6 +516,58 @@
       "note": "2025_WEHAGO Web Proactive AI"
     },
     {
+      "id": "step-01-receipt",
+      "type": "image",
+      "title": "접수",
+      "path": "./assets/3d/step_01.png",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "bank"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Web 제주은행"
+    },
+    {
+      "id": "step-02-review",
+      "type": "image",
+      "title": "심사",
+      "path": "./assets/3d/step_02.png",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "bank"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Web 제주은행"
+    },
+    {
+      "id": "step-03-completed",
+      "type": "image",
+      "title": "완료",
+      "path": "./assets/3d/step_03.png",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "bank"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Web 제주은행"
+    },
+    {
+      "id": "bank-main",
+      "type": "image",
+      "title": "은행",
+      "path": "./assets/3d/main.png",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "bank"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Web 제주은행"
+    },
+    {
       "id": "ic-shinhanbank-search",
       "type": "image",
       "title": "신한은행 뱅크인",
