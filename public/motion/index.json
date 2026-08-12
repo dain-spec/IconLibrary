@@ -646,17 +646,17 @@
       "note": "2025_WEHAGO T AI 세무조정 에이전트"
     },
     {
-      "id": "check-purple",
+      "id": "account-link",
       "type": "json",
-      "title": "체크 퍼플",
-      "path": "./assets/기본/check_purple.json",
+      "title": "계좌연결",
+      "path": "./assets/기본/계좌연결.json",
       "thumbnail": "",
       "tags": [
         "icon",
-        "check"
+        "account"
       ],
       "updatedAt": "2026-08-12",
-      "note": "2025_WEHAGO T AI 세무조정 에이전트"
+      "note": "2025_WEHAGO Q Mobile"
     },
     {
       "id": "loading-address",
