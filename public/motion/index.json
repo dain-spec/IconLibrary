@@ -386,6 +386,32 @@
       "note": "2025_WEHAGO T 수임처AI연말정산 안내문"
     },
     {
+      "id": "check-grayblue",
+      "type": "json",
+      "title": "체크 그레이블루",
+      "path": "./assets/기본/check_grayblue.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "check"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO T AI 세무조정 에이전트"
+    },
+    {
+      "id": "check-purple",
+      "type": "json",
+      "title": "체크 퍼플",
+      "path": "./assets/기본/check_purple.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "check"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO T AI 세무조정 에이전트"
+    },
+    {
       "id": "dobi-expert1-completed",
       "type": "image",
       "title": "엄지척",
