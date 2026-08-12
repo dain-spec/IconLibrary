@@ -346,6 +346,20 @@
       "note": "2025_WEHAGO 공통 3D 아이콘"
     },
     {
+      "id": "videocall-web",
+      "type": "json",
+      "title": "화상통화",
+      "path": "./assets/3d/videocall0.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "video",
+        "call"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Web 화상회의"
+    },
+    {
       "id": "ic-shinhanbank-search",
       "type": "image",
       "title": "신한은행 뱅크인",
@@ -410,6 +424,19 @@
       ],
       "updatedAt": "2026-08-12",
       "note": "2025_WEHAGO T AI 세무조정 에이전트"
+    },
+    {
+      "id": "loading-address",
+      "type": "json",
+      "title": "연락처",
+      "path": "./assets/기본/loading_address.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "contact"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Web 연락처"
     },
     {
       "id": "dobi-expert1-completed",
