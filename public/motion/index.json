@@ -636,6 +636,19 @@
       ],
       "updatedAt": "2026-08-12",
       "note": "2025_WEHAGO T AI세무조정 에이전트"
+    },
+    {
+      "id": "dobi-desk-work",
+      "type": "image",
+      "title": "업무",
+      "path": "./assets/character/character_dobi_desk.png",
+      "thumbnail": "",
+      "tags": [
+        "dobi",
+        "work"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Web Proactive AI"
     }
   ]
 }
