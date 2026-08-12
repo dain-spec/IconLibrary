@@ -306,6 +306,19 @@
       "note": "2025_WEHAGO Web AI Flow"
     },
     {
+      "id": "confetti",
+      "type": "json",
+      "title": "컨페티",
+      "path": "./assets/3d/confetti.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "confetti"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Web Agent Market"
+    },
+    {
       "id": "ic-send",
       "type": "json",
       "title": "종이비행기",
