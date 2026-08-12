@@ -606,6 +606,45 @@
       "note": "2025_WEHAGO Mobile 연말정산 미리해보기"
     },
     {
+      "id": "piggy-default",
+      "type": "json",
+      "title": "저금통 기본",
+      "path": "./assets/3d/piggy_default.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "piggy"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Mobile 연말정산 미리해보기"
+    },
+    {
+      "id": "piggy-happy",
+      "type": "json",
+      "title": "저금통 행복",
+      "path": "./assets/3d/piggy_happy.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "piggy"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Mobile 연말정산 미리해보기"
+    },
+    {
+      "id": "piggy-sad",
+      "type": "json",
+      "title": "저금통 슬픔",
+      "path": "./assets/3d/piggy_sad.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "piggy"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Mobile 연말정산 미리해보기"
+    },
+    {
       "id": "ic-shinhanbank-search",
       "type": "image",
       "title": "신한은행 뱅크인",
