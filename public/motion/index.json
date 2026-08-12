@@ -373,6 +373,149 @@
       "note": "2025_WEHAGO Web 메신저"
     },
     {
+      "id": "ic-news-3d",
+      "type": "image",
+      "title": "뉴스",
+      "path": "./assets/3d/ic_news_3d.png",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "news"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Web Proactive AI"
+    },
+    {
+      "id": "ic-weather-3d",
+      "type": "image",
+      "title": "기본",
+      "path": "./assets/3d/ic_weather_3d.png",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "weather"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Web Proactive AI"
+    },
+    {
+      "id": "ic-weather-sun-3d",
+      "type": "image",
+      "title": "맑음",
+      "path": "./assets/3d/ic_weather_sun_3d.png",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "weather"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Web Proactive AI"
+    },
+    {
+      "id": "ic-weather-gray-3d",
+      "type": "image",
+      "title": "구름조금",
+      "path": "./assets/3d/ic_weather_gray_3d.png",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "weather"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Web Proactive AI"
+    },
+    {
+      "id": "ic-weather-cloudy-3d",
+      "type": "image",
+      "title": "흐림",
+      "path": "./assets/3d/ic_weather_cloudy_3d.png",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "weather"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Web Proactive AI"
+    },
+    {
+      "id": "ic-weather-cloudy-rain-3d",
+      "type": "image",
+      "title": "비",
+      "path": "./assets/3d/ic_weather_cloudy_rain_3d.png",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "weather"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Web Proactive AI"
+    },
+    {
+      "id": "ic-weather-shower-rain-3d",
+      "type": "image",
+      "title": "소나기",
+      "path": "./assets/3d/ic_weather_shower_rain_3d.png",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "weather"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Web Proactive AI"
+    },
+    {
+      "id": "ic-weather-flash-3d",
+      "type": "image",
+      "title": "번개",
+      "path": "./assets/3d/ic_weather_flash_3d.png",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "weather"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Web Proactive AI"
+    },
+    {
+      "id": "ic-weather-rain-flash-3d",
+      "type": "image",
+      "title": "비+번개",
+      "path": "./assets/3d/ic_weather_rain_flash_3d.png",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "weather"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Web Proactive AI"
+    },
+    {
+      "id": "ic-weather-snow-3d",
+      "type": "image",
+      "title": "눈",
+      "path": "./assets/3d/ic_weather_snow_3d.png",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "weather"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Web Proactive AI"
+    },
+    {
+      "id": "ic-weather-ice-3d",
+      "type": "image",
+      "title": "영하",
+      "path": "./assets/3d/ic_weather_ice_3d.png",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "weather"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Web Proactive AI"
+    },
+    {
       "id": "ic-shinhanbank-search",
       "type": "image",
       "title": "신한은행 뱅크인",
