@@ -124,6 +124,18 @@
       "note": "2025_WEHAGO 공통 로딩"
     },
     {
+      "id": "loading-dot-circle",
+      "type": "json",
+      "title": "점 원형",
+      "path": "./assets/Loader/loader_dot_circle.json",
+      "thumbnail": "",
+      "tags": [
+        "loader"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO T AI 세무조정 에이전트"
+    },
+    {
       "id": "ic-airplane",
       "type": "json",
       "title": "비행기",
