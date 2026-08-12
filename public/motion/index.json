@@ -593,6 +593,19 @@
       "note": "2025_WEHAGO Web 제주은행"
     },
     {
+      "id": "cash",
+      "type": "json",
+      "title": "환급",
+      "path": "./assets/3d/cash.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "refund"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Mobile 연말정산 미리해보기"
+    },
+    {
       "id": "ic-shinhanbank-search",
       "type": "image",
       "title": "신한은행 뱅크인",
