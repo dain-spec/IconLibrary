@@ -361,6 +361,19 @@
       "note": "2025_WEHAGOT 신고서 PDF 변환"
     },
     {
+      "id": "star",
+      "type": "json",
+      "title": "별",
+      "path": "./assets/기본/star.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "star"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO T 수임처AI연말정산 안내문"
+    },
+    {
       "id": "dobe-meet-summary",
       "type": "json",
       "title": "메모",
