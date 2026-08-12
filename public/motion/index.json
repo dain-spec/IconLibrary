@@ -360,6 +360,19 @@
       "note": "2025_WEHAGO Web 화상회의"
     },
     {
+      "id": "vote",
+      "type": "json",
+      "title": "투표",
+      "path": "./assets/3d/vote.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "vote"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Web 메신저"
+    },
+    {
       "id": "ic-shinhanbank-search",
       "type": "image",
       "title": "신한은행 뱅크인",
