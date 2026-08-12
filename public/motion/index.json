@@ -136,6 +136,18 @@
       "note": "2025_WEHAGO T AI 세무조정 에이전트"
     },
     {
+      "id": "loading-throbber",
+      "type": "json",
+      "title": "링",
+      "path": "./assets/Loader/loading_throbber.json",
+      "thumbnail": "",
+      "tags": [
+        "loader"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO VET"
+    },
+    {
       "id": "ic-airplane",
       "type": "json",
       "title": "비행기",
