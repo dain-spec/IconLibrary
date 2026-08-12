@@ -544,6 +544,58 @@
       ],
       "updatedAt": "2026-08-12",
       "note": "2025_WEHAGO T 수임처AI 연말정산 안내문"
+    },
+    {
+      "id": "dobi-review",
+      "type": "image",
+      "title": "검토",
+      "path": "./assets/character/apngb-animated.png",
+      "thumbnail": "",
+      "tags": [
+        "dobi",
+        "review"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO T AI세무조정 에이전트"
+    },
+    {
+      "id": "dobi-completed-2",
+      "type": "image",
+      "title": "완료",
+      "path": "./assets/character/character_02.png",
+      "thumbnail": "",
+      "tags": [
+        "dobi",
+        "completed"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO T AI세무조정 에이전트"
+    },
+    {
+      "id": "dobi-salute",
+      "type": "image",
+      "title": "경례",
+      "path": "./assets/character/character_03.png",
+      "thumbnail": "",
+      "tags": [
+        "dobi",
+        "salute"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO T AI세무조정 에이전트"
+    },
+    {
+      "id": "dobi-celebrate",
+      "type": "image",
+      "title": "축하",
+      "path": "./assets/character/character_s05.png",
+      "thumbnail": "",
+      "tags": [
+        "dobi",
+        "celebrate"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO T AI세무조정 에이전트"
     }
   ]
 }
