@@ -12,7 +12,6 @@ const CATEGORY_ORDER = ["weather"];
 
 export function Icon3DExplorer({ icons }: { icons: Icon3D[] }) {
   const [query, setQuery] = useState("");
-  const [selectedId, setSelectedId] = useState<string | null>(null);
   const gridRef = useRef<HTMLDivElement>(null);
 
   const filtered = useMemo(() => {
@@ -38,6 +37,10 @@ export function Icon3DExplorer({ icons }: { icons: Icon3D[] }) {
       }))
       .filter((group) => group.items.length > 0);
   }, [filtered]);
+
+  const [selectedId, setSelectedId] = useState<string | null>(
+    () => grouped[0]?.items[0]?.id ?? null
+  );
 
   const selected = icons.find((icon) => icon.id === selectedId) ?? null;
 

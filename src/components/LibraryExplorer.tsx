@@ -10,8 +10,6 @@ import { SearchIcon } from "./SearchIcon";
 
 export function LibraryExplorer({ icons }: { icons: Icon[] }) {
   const [query, setQuery] = useState("");
-  const [selectedId, setSelectedId] = useState<string | null>(null);
-  const gridRef = useRef<HTMLDivElement>(null);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -23,6 +21,9 @@ export function LibraryExplorer({ icons }: { icons: Icon[] }) {
       return haystack.includes(q);
     });
   }, [icons, query]);
+
+  const [selectedId, setSelectedId] = useState<string | null>(() => filtered[0]?.id ?? null);
+  const gridRef = useRef<HTMLDivElement>(null);
 
   const selected = icons.find((icon) => icon.id === selectedId) ?? null;
 

@@ -12,7 +12,6 @@ const CATEGORY_ORDER = ["Loader", "기본", "3d", "character"];
 
 export function MotionExplorer({ assets }: { assets: MotionAsset[] }) {
   const [query, setQuery] = useState("");
-  const [selectedId, setSelectedId] = useState<string | null>(null);
   const gridRef = useRef<HTMLDivElement>(null);
 
   const filtered = useMemo(() => {
@@ -40,6 +39,10 @@ export function MotionExplorer({ assets }: { assets: MotionAsset[] }) {
       }))
       .filter((group) => group.items.length > 0);
   }, [filtered]);
+
+  const [selectedId, setSelectedId] = useState<string | null>(
+    () => grouped[0]?.items[0]?.id ?? null
+  );
 
   const selected = assets.find((a) => a.id === selectedId) ?? null;
 
