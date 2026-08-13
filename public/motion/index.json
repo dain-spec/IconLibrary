@@ -1036,6 +1036,19 @@
       "note": "2025_ONE AI 상담챗봇"
     },
     {
+      "id": "oneai",
+      "type": "json",
+      "title": "ONE AI",
+      "path": "./assets/3d/oneai.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "brand"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_ONE AI Mobile"
+    },
+    {
       "id": "loading-address",
       "type": "json",
       "title": "연락처",
