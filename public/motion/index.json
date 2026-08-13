@@ -1036,6 +1036,84 @@
       "note": "2025_ONE AI Mobile"
     },
     {
+      "id": "ai-globe",
+      "type": "json",
+      "title": "글로브",
+      "path": "./assets/기본/ai_globe.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "globe"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_ONE AI Mobile"
+    },
+    {
+      "id": "ic-aibox",
+      "type": "json",
+      "title": "보관함",
+      "path": "./assets/기본/ic_aibox.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "box"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_ONE AI Mobile"
+    },
+    {
+      "id": "ic-aiimg",
+      "type": "json",
+      "title": "이미지",
+      "path": "./assets/기본/ic_aiimg.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "image"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_ONE AI Mobile"
+    },
+    {
+      "id": "ic-ailense",
+      "type": "json",
+      "title": "렌즈",
+      "path": "./assets/기본/ic_ailense.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "lens"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_ONE AI Mobile"
+    },
+    {
+      "id": "ic-aivoice",
+      "type": "json",
+      "title": "음성",
+      "path": "./assets/기본/ic_aivoice.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "voice"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_ONE AI Mobile"
+    },
+    {
+      "id": "ic-data",
+      "type": "json",
+      "title": "데이터",
+      "path": "./assets/기본/ic_data.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "data"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_ONE AI Mobile"
+    },
+    {
       "id": "loading-address",
       "type": "json",
       "title": "연락처",
