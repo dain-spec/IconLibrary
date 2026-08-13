@@ -1706,6 +1706,19 @@
       ],
       "updatedAt": "2026-08-12",
       "note": "2025_WEHAGO Web AI세무조정"
+    },
+    {
+      "id": "domi-search",
+      "type": "image",
+      "title": "조회",
+      "path": "./assets/character/Domi_ai_loading01.png",
+      "thumbnail": "",
+      "tags": [
+        "domi",
+        "search"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_Amaranth10 Web 연말정산"
     }
   ]
 }
