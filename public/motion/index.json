@@ -1928,6 +1928,20 @@
       ],
       "updatedAt": "2026-08-13",
       "note": "2026_Amaranth10 Web AI 분석리포트"
+    },
+    {
+      "id": "ic-list-time",
+      "type": "json",
+      "title": "히스토리",
+      "path": "./assets/기본/ic_list_time_24.json",
+      "thumbnail": "",
+      "tags": [
+        "history",
+        "list",
+        "time"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_ONE AI Web ONECHAMBER"
     }
   ]
 }
