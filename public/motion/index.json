@@ -1903,6 +1903,31 @@
       ],
       "updatedAt": "2026-08-13",
       "note": "2026_Amaranth10 Web AI 분석 리포트"
+    },
+    {
+      "id": "ic-chart-square",
+      "type": "json",
+      "title": "차트",
+      "path": "./assets/기본/ic_chart_square.json",
+      "thumbnail": "",
+      "tags": [
+        "chart"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_Amaranth10 Web AI 분석리포트"
+    },
+    {
+      "id": "ic-code-doc-search",
+      "type": "json",
+      "title": "문서 검색",
+      "path": "./assets/기본/ic_code_doc_search.json",
+      "thumbnail": "",
+      "tags": [
+        "document",
+        "search"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_Amaranth10 Web AI 분석리포트"
     }
   ]
 }
