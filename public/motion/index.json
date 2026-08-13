@@ -1353,6 +1353,32 @@
       "note": "2025_Amaranth10 Web"
     },
     {
+      "id": "dobi-doc-complete",
+      "type": "image",
+      "title": "완료",
+      "path": "./assets/character/ai_document_complete.png",
+      "thumbnail": "",
+      "tags": [
+        "dobi",
+        "completed"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_Amaranth10 Web 세법도우미"
+    },
+    {
+      "id": "dobi-doc-inprogress",
+      "type": "image",
+      "title": "작성중",
+      "path": "./assets/character/ai_document_inprogress.png",
+      "thumbnail": "",
+      "tags": [
+        "dobi",
+        "inprogress"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_Amaranth10 Web 세법도우미"
+    },
+    {
       "id": "dochi-disappointed",
       "type": "image",
       "title": "실망",
