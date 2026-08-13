@@ -1339,6 +1339,20 @@
       "note": "2025_ONE AI Web"
     },
     {
+      "id": "alert-lock",
+      "type": "json",
+      "title": "잠금 경고",
+      "path": "./assets/기본/ic_alert_lock_48.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "lock",
+        "alert"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_Amaranth10 Web"
+    },
+    {
       "id": "dochi-disappointed",
       "type": "image",
       "title": "실망",
