@@ -1719,6 +1719,45 @@
       ],
       "updatedAt": "2026-08-13",
       "note": "2025_Amaranth10 Web 연말정산"
+    },
+    {
+      "id": "domi-payment",
+      "type": "image",
+      "title": "납부",
+      "path": "./assets/character/Domi_character_step5_payment.png",
+      "thumbnail": "",
+      "tags": [
+        "domi",
+        "payment"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_Amaranth10 Web 연말정산"
+    },
+    {
+      "id": "domi-refund",
+      "type": "image",
+      "title": "환급",
+      "path": "./assets/character/Domi_character_step5_refund.png",
+      "thumbnail": "",
+      "tags": [
+        "domi",
+        "refund"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_Amaranth10 Web 연말정산"
+    },
+    {
+      "id": "domi-zero",
+      "type": "image",
+      "title": "0원",
+      "path": "./assets/character/Domi_character_step5_zero.png",
+      "thumbnail": "",
+      "tags": [
+        "domi",
+        "zero"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_Amaranth10 Web 연말정산"
     }
   ]
 }
