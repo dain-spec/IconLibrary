@@ -1772,6 +1772,19 @@
       ],
       "updatedAt": "2026-08-13",
       "note": "2025_Amaranth10 Web 자료수집및자동분개처리"
+    },
+    {
+      "id": "dobi-labor-inprogress",
+      "type": "image",
+      "title": "돋보기",
+      "path": "./assets/character/dobi_Inprogress.png",
+      "thumbnail": "",
+      "tags": [
+        "dobi",
+        "progress"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_세법노무도우미"
     }
   ]
 }
