@@ -1760,20 +1760,6 @@
       "note": "2025_Amaranth10 Web 연말정산"
     },
     {
-      "id": "noti-fin-start",
-      "type": "json",
-      "title": "완료 알림 시작",
-      "path": "./assets/기본/ico_noti_fin_start.json",
-      "thumbnail": "",
-      "tags": [
-        "notification",
-        "complete",
-        "start"
-      ],
-      "updatedAt": "2026-08-13",
-      "note": "2025_Amaranth10 Web 자료수집및자동분개처리"
-    },
-    {
       "id": "noti-fin-loop",
       "type": "json",
       "title": "완료 알림 반복",
