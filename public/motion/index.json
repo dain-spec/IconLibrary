@@ -1114,6 +1114,20 @@
       "note": "2025_ONE AI Mobile"
     },
     {
+      "id": "oneai-loading",
+      "type": "json",
+      "title": "ONE AI 로딩",
+      "path": "./assets/3d/oneai_loading.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "brand",
+        "loading"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_ONE AI Mobile"
+    },
+    {
       "id": "loading-address",
       "type": "json",
       "title": "연락처",
