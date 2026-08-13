@@ -1785,6 +1785,97 @@
       ],
       "updatedAt": "2026-08-13",
       "note": "2026_세법노무도우미"
+    },
+    {
+      "id": "dochi-carrot",
+      "type": "json",
+      "title": "당근",
+      "path": "./assets/character/carrot.json",
+      "thumbnail": "",
+      "tags": [
+        "dochi",
+        "carrot"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_정밀의료빅데이터플랫폼 Mindmit"
+    },
+    {
+      "id": "dochi-glasses",
+      "type": "json",
+      "title": "돋보기",
+      "path": "./assets/character/glasses.json",
+      "thumbnail": "",
+      "tags": [
+        "dochi",
+        "glasses"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_정밀의료빅데이터플랫폼 Mindmit"
+    },
+    {
+      "id": "dochi-happy",
+      "type": "json",
+      "title": "기쁨",
+      "path": "./assets/character/happy.json",
+      "thumbnail": "",
+      "tags": [
+        "dochi",
+        "happy"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_정밀의료빅데이터플랫폼 Mindmit"
+    },
+    {
+      "id": "dochi-hi",
+      "type": "json",
+      "title": "인사",
+      "path": "./assets/character/hi.json",
+      "thumbnail": "",
+      "tags": [
+        "dochi",
+        "hi"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_정밀의료빅데이터플랫폼 Mindmit"
+    },
+    {
+      "id": "dochi-ipad-full",
+      "type": "json",
+      "title": "아이패드",
+      "path": "./assets/character/ipad_full.json",
+      "thumbnail": "",
+      "tags": [
+        "dochi",
+        "ipad"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_정밀의료빅데이터플랫폼 Mindmit"
+    },
+    {
+      "id": "dochi-ipad-crop",
+      "type": "json",
+      "title": "아이패드 (크롭)",
+      "path": "./assets/character/ipad_crop.json",
+      "thumbnail": "",
+      "tags": [
+        "dochi",
+        "ipad",
+        "crop"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_정밀의료빅데이터플랫폼 Mindmit"
+    },
+    {
+      "id": "certification-3d",
+      "type": "json",
+      "title": "인증",
+      "path": "./assets/3d/certification.json",
+      "thumbnail": "",
+      "tags": [
+        "certification"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_정밀의료빅데이터플랫폼 Mindmit"
     }
   ]
 }
