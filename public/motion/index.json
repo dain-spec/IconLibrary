@@ -1890,6 +1890,19 @@
       ],
       "updatedAt": "2026-08-13",
       "note": "2026_Amaranth10 Web 연말정산총괄현황"
+    },
+    {
+      "id": "loading-docs",
+      "type": "json",
+      "title": "문서 로딩",
+      "path": "./assets/기본/loading_docs.json",
+      "thumbnail": "",
+      "tags": [
+        "loading",
+        "docs"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_Amaranth10 Web AI 분석 리포트"
     }
   ]
 }
