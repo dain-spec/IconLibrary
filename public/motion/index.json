@@ -1942,6 +1942,31 @@
       ],
       "updatedAt": "2026-08-13",
       "note": "2026_ONE AI Web ONECHAMBER"
+    },
+    {
+      "id": "ic-report",
+      "type": "json",
+      "title": "보고서",
+      "path": "./assets/기본/ic_report.json",
+      "thumbnail": "",
+      "tags": [
+        "report"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_ONE AI Web 시각화 보고서 생성"
+    },
+    {
+      "id": "loading-spinner-2",
+      "type": "json",
+      "title": "스피너 2",
+      "path": "./assets/Loader/loading_spinner_0.json",
+      "thumbnail": "",
+      "tags": [
+        "loader",
+        "spinner"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_GEN AI DEWS PE Portal"
     }
   ]
 }
