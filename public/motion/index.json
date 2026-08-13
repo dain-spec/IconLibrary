@@ -1393,6 +1393,32 @@
       "note": "2026_Expert1"
     },
     {
+      "id": "dobi-loading",
+      "type": "image",
+      "title": "로딩",
+      "path": "./assets/character/Dobi_Loading.png",
+      "thumbnail": "",
+      "tags": [
+        "dobi",
+        "loading"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_Expert1"
+    },
+    {
+      "id": "dobi-welcome-2",
+      "type": "image",
+      "title": "프로필",
+      "path": "./assets/character/dobi_welcome.png",
+      "thumbnail": "",
+      "tags": [
+        "dobi",
+        "welcome"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_Expert1"
+    },
+    {
       "id": "dobe-meet-summary",
       "type": "json",
       "title": "메모",
