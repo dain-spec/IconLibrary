@@ -14,6 +14,7 @@ export function Icon3DCard({
   return (
     <button
       onClick={onClick}
+      data-card-id={icon.id}
       title={icon.title}
       aria-label={icon.title}
       aria-pressed={isSelected}

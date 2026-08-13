@@ -1,7 +1,8 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import type { Icon } from "@/lib/icons";
+import { useArrowKeyGridNav } from "@/lib/useArrowKeyGridNav";
 import { IconCard } from "./IconCard";
 import { IconDetailPanel } from "./IconDetailPanel";
 import { SearchClearButton } from "./SearchClearButton";
@@ -10,6 +11,7 @@ import { SearchIcon } from "./SearchIcon";
 export function LibraryExplorer({ icons }: { icons: Icon[] }) {
   const [query, setQuery] = useState("");
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  const gridRef = useRef<HTMLDivElement>(null);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -23,6 +25,13 @@ export function LibraryExplorer({ icons }: { icons: Icon[] }) {
   }, [icons, query]);
 
   const selected = icons.find((icon) => icon.id === selectedId) ?? null;
+
+  useArrowKeyGridNav({
+    containerRef: gridRef,
+    ids: filtered.map((icon) => icon.id),
+    selectedId,
+    onSelect: setSelectedId,
+  });
 
   function handleTagClick(tag: string) {
     setQuery(tag);
@@ -48,7 +57,7 @@ export function LibraryExplorer({ icons }: { icons: Icon[] }) {
               검색 결과가 없습니다.
             </p>
           ) : (
-            <div className="mt-6 flex flex-wrap gap-3">
+            <div ref={gridRef} className="mt-6 flex flex-wrap gap-3">
               {filtered.map((icon) => (
                 <IconCard
                   key={icon.id}

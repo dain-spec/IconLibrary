@@ -14,6 +14,7 @@ export function IconCard({
   return (
     <button
       onClick={onClick}
+      data-card-id={icon.id}
       title={icon.id}
       aria-label={icon.id}
       aria-pressed={isSelected}

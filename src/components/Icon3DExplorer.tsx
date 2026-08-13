@@ -1,7 +1,8 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import type { Icon3D } from "@/lib/icons3d";
+import { useArrowKeyGridNav } from "@/lib/useArrowKeyGridNav";
 import { Icon3DCard } from "./Icon3DCard";
 import { Icon3DDetailPanel } from "./Icon3DDetailPanel";
 import { SearchClearButton } from "./SearchClearButton";
@@ -12,6 +13,7 @@ const CATEGORY_ORDER = ["weather"];
 export function Icon3DExplorer({ icons }: { icons: Icon3D[] }) {
   const [query, setQuery] = useState("");
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  const gridRef = useRef<HTMLDivElement>(null);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -39,6 +41,13 @@ export function Icon3DExplorer({ icons }: { icons: Icon3D[] }) {
 
   const selected = icons.find((icon) => icon.id === selectedId) ?? null;
 
+  useArrowKeyGridNav({
+    containerRef: gridRef,
+    ids: grouped.flatMap((group) => group.items.map((icon) => icon.id)),
+    selectedId,
+    onSelect: setSelectedId,
+  });
+
   function handleTagClick(tag: string) {
     setQuery(tag);
   }
@@ -63,7 +72,7 @@ export function Icon3DExplorer({ icons }: { icons: Icon3D[] }) {
               검색 결과가 없습니다.
             </p>
           ) : (
-            <div className="mt-6 flex flex-col gap-8">
+            <div ref={gridRef} className="mt-6 flex flex-col gap-8">
               {grouped.map((group) => (
                 <div key={group.category}>
                   <h3 className="mb-3 text-sm font-semibold text-ink">{group.category}</h3>

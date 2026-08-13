@@ -1,7 +1,8 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import type { MotionAsset } from "@/lib/motion";
+import { useArrowKeyGridNav } from "@/lib/useArrowKeyGridNav";
 import { MotionCard } from "./MotionCard";
 import { MotionDetailPanel } from "./MotionDetailPanel";
 import { SearchClearButton } from "../SearchClearButton";
@@ -12,6 +13,7 @@ const CATEGORY_ORDER = ["Loader", "기본", "3d", "character"];
 export function MotionExplorer({ assets }: { assets: MotionAsset[] }) {
   const [query, setQuery] = useState("");
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  const gridRef = useRef<HTMLDivElement>(null);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -41,6 +43,13 @@ export function MotionExplorer({ assets }: { assets: MotionAsset[] }) {
 
   const selected = assets.find((a) => a.id === selectedId) ?? null;
 
+  useArrowKeyGridNav({
+    containerRef: gridRef,
+    ids: grouped.flatMap((group) => group.items.map((asset) => asset.id)),
+    selectedId,
+    onSelect: setSelectedId,
+  });
+
   function handleTagClick(tag: string) {
     setQuery(tag);
   }
@@ -65,7 +74,7 @@ export function MotionExplorer({ assets }: { assets: MotionAsset[] }) {
               검색 결과가 없습니다.
             </p>
           ) : (
-            <div className="mt-6 flex flex-col gap-8">
+            <div ref={gridRef} className="mt-6 flex flex-col gap-8">
               {grouped.map((group) => (
                 <div key={group.category}>
                   <h3 className="mb-3 text-sm font-semibold text-ink">{group.category}</h3>

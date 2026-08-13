@@ -18,6 +18,7 @@ export function MotionCard({
   return (
     <button
       onClick={onClick}
+      data-card-id={asset.id}
       title={asset.title}
       aria-label={asset.title}
       aria-pressed={isSelected}
