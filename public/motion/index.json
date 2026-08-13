@@ -1327,6 +1327,20 @@
       "note": "2026_Expert1"
     },
     {
+      "id": "dobi-expert1-welcome",
+      "type": "image",
+      "title": "프로필",
+      "path": "./assets/character/Dobi_Expert1_welcome.png",
+      "thumbnail": "",
+      "tags": [
+        "dobi",
+        "expert",
+        "welcome"
+      ],
+      "updatedAt": "2026-05-12",
+      "note": "2026_Expert1"
+    },
+    {
       "id": "dobi-default",
       "type": "image",
       "title": "팔짱",
@@ -1366,6 +1380,19 @@
       "note": "2025_WEHAGO T 수임처AI 연말정산 안내문"
     },
     {
+      "id": "dobi-notice-2",
+      "type": "image",
+      "title": "안내",
+      "path": "./assets/character/character_dobi_02.png",
+      "thumbnail": "",
+      "tags": [
+        "dobi",
+        "guide"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO T 수임처AI 연말정산 안내문"
+    },
+    {
       "id": "dobi-greeting-2",
       "type": "image",
       "title": "인사",
@@ -1377,20 +1404,6 @@
       ],
       "updatedAt": "2026-08-12",
       "note": "2025_WEHAGO T AI Edition AI 브리핑 알림"
-    },
-    {
-      "id": "dobi-expert1-welcome",
-      "type": "image",
-      "title": "프로필",
-      "path": "./assets/character/Dobi_Expert1_welcome.png",
-      "thumbnail": "",
-      "tags": [
-        "dobi",
-        "expert",
-        "welcome"
-      ],
-      "updatedAt": "2026-05-12",
-      "note": "2026_Expert1"
     },
     {
       "id": "dobi-loading",
@@ -1431,19 +1444,6 @@
       ],
       "updatedAt": "2026-05-12",
       "note": "2025_WEHAGO Meet Mobile 회의요약"
-    },
-    {
-      "id": "dobi-notice-2",
-      "type": "image",
-      "title": "안내",
-      "path": "./assets/character/character_dobi_02.png",
-      "thumbnail": "",
-      "tags": [
-        "dobi",
-        "guide"
-      ],
-      "updatedAt": "2026-08-12",
-      "note": "2025_WEHAGO T 수임처AI 연말정산 안내문"
     },
     {
       "id": "dobi-review",
