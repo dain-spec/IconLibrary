@@ -1167,6 +1167,110 @@
       "note": "2025_ONE AI OmniEsol"
     },
     {
+      "id": "ic-aibox-18",
+      "type": "json",
+      "title": "보관함",
+      "path": "./assets/기본/ic_aibox_18_bk.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "box"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_ONE AI Web"
+    },
+    {
+      "id": "ic-ailaw-18",
+      "type": "json",
+      "title": "법률",
+      "path": "./assets/기본/ic_ailaw_18_bk.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "law"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_ONE AI Web"
+    },
+    {
+      "id": "ic-aimy-18",
+      "type": "json",
+      "title": "마이페이지",
+      "path": "./assets/기본/ic_aimy_18_bk.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "my"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_ONE AI Web"
+    },
+    {
+      "id": "ic-aitool-18",
+      "type": "json",
+      "title": "도구",
+      "path": "./assets/기본/ic_aitool_18_bk.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "tool"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_ONE AI Web"
+    },
+    {
+      "id": "ic-data-18",
+      "type": "json",
+      "title": "데이터",
+      "path": "./assets/기본/ic_data_18_bk.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "data"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_ONE AI Web"
+    },
+    {
+      "id": "ic-globe-18-bk",
+      "type": "json",
+      "title": "글로브",
+      "path": "./assets/기본/ic_globe_18_bk.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "globe"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_ONE AI Web"
+    },
+    {
+      "id": "ic-globe-18-wh",
+      "type": "json",
+      "title": "글로브",
+      "path": "./assets/기본/ic_globe_18_wh.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "globe"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_ONE AI Web"
+    },
+    {
+      "id": "ic-search-star-18",
+      "type": "json",
+      "title": "AI 검색",
+      "path": "./assets/기본/ic_search_star_18_bk.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "search"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_ONE AI Web"
+    },
+    {
       "id": "loading-address",
       "type": "json",
       "title": "연락처",
