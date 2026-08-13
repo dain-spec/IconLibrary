@@ -815,19 +815,6 @@
       "note": "2025_ONE AI Web"
     },
     {
-      "id": "ic-globe-18-wh",
-      "type": "json",
-      "title": "글로브",
-      "path": "./assets/기본/ic_globe_18_wh.json",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "globe"
-      ],
-      "updatedAt": "2026-08-13",
-      "note": "2025_ONE AI Web"
-    },
-    {
       "id": "ic-search-star-18",
       "type": "json",
       "title": "AI 검색",
@@ -839,19 +826,6 @@
       ],
       "updatedAt": "2026-08-13",
       "note": "2025_ONE AI Web"
-    },
-    {
-      "id": "ai-globe",
-      "type": "json",
-      "title": "글로브",
-      "path": "./assets/기본/ai_globe.json",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "globe"
-      ],
-      "updatedAt": "2026-08-13",
-      "note": "2025_ONE AI Mobile"
     },
     {
       "id": "ic-aibox",
