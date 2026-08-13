@@ -1876,6 +1876,20 @@
       ],
       "updatedAt": "2026-08-13",
       "note": "2026_정밀의료빅데이터플랫폼 Mindmit"
+    },
+    {
+      "id": "loading-ai-recommendation",
+      "type": "json",
+      "title": "AI 추천 로딩",
+      "path": "./assets/기본/loading_ai_recommendation.json",
+      "thumbnail": "",
+      "tags": [
+        "loading",
+        "ai",
+        "recommendation"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_Amaranth10 Web 연말정산총괄현황"
     }
   ]
 }
