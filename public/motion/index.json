@@ -841,6 +841,97 @@
       "note": "2025_ONE AI Web"
     },
     {
+      "id": "ai-globe",
+      "type": "json",
+      "title": "글로브",
+      "path": "./assets/기본/ai_globe.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "globe"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_ONE AI Mobile"
+    },
+    {
+      "id": "ic-aibox",
+      "type": "json",
+      "title": "보관함",
+      "path": "./assets/기본/ic_aibox.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "box"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_ONE AI Mobile"
+    },
+    {
+      "id": "ic-aiimg",
+      "type": "json",
+      "title": "이미지",
+      "path": "./assets/기본/ic_aiimg.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "image"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_ONE AI Mobile"
+    },
+    {
+      "id": "ic-ailense",
+      "type": "json",
+      "title": "렌즈",
+      "path": "./assets/기본/ic_ailense.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "lens"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_ONE AI Mobile"
+    },
+    {
+      "id": "ic-aivoice",
+      "type": "json",
+      "title": "음성",
+      "path": "./assets/기본/ic_aivoice.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "voice"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_ONE AI Mobile"
+    },
+    {
+      "id": "ic-data",
+      "type": "json",
+      "title": "데이터",
+      "path": "./assets/기본/ic_data.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "data"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_ONE AI Mobile"
+    },
+    {
+      "id": "user-star",
+      "type": "json",
+      "title": "즐겨찾기",
+      "path": "./assets/기본/ic_user_star_24.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "favorite"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_ONE AI OmniEsol"
+    },
+    {
       "id": "check-grayblue",
       "type": "json",
       "title": "체크 그레이블루",
@@ -1166,84 +1257,6 @@
       "note": "2025_ONE AI Mobile"
     },
     {
-      "id": "ai-globe",
-      "type": "json",
-      "title": "글로브",
-      "path": "./assets/기본/ai_globe.json",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "globe"
-      ],
-      "updatedAt": "2026-08-13",
-      "note": "2025_ONE AI Mobile"
-    },
-    {
-      "id": "ic-aibox",
-      "type": "json",
-      "title": "보관함",
-      "path": "./assets/기본/ic_aibox.json",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "box"
-      ],
-      "updatedAt": "2026-08-13",
-      "note": "2025_ONE AI Mobile"
-    },
-    {
-      "id": "ic-aiimg",
-      "type": "json",
-      "title": "이미지",
-      "path": "./assets/기본/ic_aiimg.json",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "image"
-      ],
-      "updatedAt": "2026-08-13",
-      "note": "2025_ONE AI Mobile"
-    },
-    {
-      "id": "ic-ailense",
-      "type": "json",
-      "title": "렌즈",
-      "path": "./assets/기본/ic_ailense.json",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "lens"
-      ],
-      "updatedAt": "2026-08-13",
-      "note": "2025_ONE AI Mobile"
-    },
-    {
-      "id": "ic-aivoice",
-      "type": "json",
-      "title": "음성",
-      "path": "./assets/기본/ic_aivoice.json",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "voice"
-      ],
-      "updatedAt": "2026-08-13",
-      "note": "2025_ONE AI Mobile"
-    },
-    {
-      "id": "ic-data",
-      "type": "json",
-      "title": "데이터",
-      "path": "./assets/기본/ic_data.json",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "data"
-      ],
-      "updatedAt": "2026-08-13",
-      "note": "2025_ONE AI Mobile"
-    },
-    {
       "id": "oneai-loading",
       "type": "json",
       "title": "ONE AI 로딩",
@@ -1256,19 +1269,6 @@
       ],
       "updatedAt": "2026-08-13",
       "note": "2025_ONE AI Mobile"
-    },
-    {
-      "id": "user-star",
-      "type": "json",
-      "title": "즐겨찾기",
-      "path": "./assets/기본/ic_user_star_24.json",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "favorite"
-      ],
-      "updatedAt": "2026-08-13",
-      "note": "2025_ONE AI OmniEsol"
     },
     {
       "id": "loading-address",
