@@ -1258,6 +1258,34 @@
       "note": "2025_WEHAGO Web 연락처"
     },
     {
+      "id": "loading-graph",
+      "type": "json",
+      "title": "그래프 로딩",
+      "path": "./assets/기본/loading_graph_48.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "loading",
+        "graph"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_ONE AI Web"
+    },
+    {
+      "id": "loading-table",
+      "type": "json",
+      "title": "테이블 로딩",
+      "path": "./assets/기본/loading_table_48.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "loading",
+        "table"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_ONE AI Web"
+    },
+    {
       "id": "dobi-expert1-completed",
       "type": "image",
       "title": "엄지척",
