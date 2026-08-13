@@ -685,6 +685,32 @@
       "note": "2025_WEHAGO T 수임처AI연말정산 안내문"
     },
     {
+      "id": "ic-analysis",
+      "type": "json",
+      "title": "분석",
+      "path": "./assets/기본/ic_analysis.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "analysis"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_ONE AI 상담챗봇"
+    },
+    {
+      "id": "ic-generating",
+      "type": "json",
+      "title": "생성",
+      "path": "./assets/기본/ic_generating.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "generating"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_ONE AI 상담챗봇"
+    },
+    {
       "id": "check-grayblue",
       "type": "json",
       "title": "체크 그레이블루",
@@ -696,19 +722,6 @@
       ],
       "updatedAt": "2026-08-12",
       "note": "2025_WEHAGO T AI 세무조정 에이전트"
-    },
-    {
-      "id": "account-link",
-      "type": "json",
-      "title": "계좌연결",
-      "path": "./assets/기본/계좌연결.json",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "account"
-      ],
-      "updatedAt": "2026-08-12",
-      "note": "2025_WEHAGO Q Mobile"
     },
     {
       "id": "account-card-link",
@@ -1008,32 +1021,6 @@
       ],
       "updatedAt": "2026-08-12",
       "note": "2025_WEHAGO Meet Mobile"
-    },
-    {
-      "id": "ic-analysis",
-      "type": "json",
-      "title": "분석",
-      "path": "./assets/기본/ic_analysis.json",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "analysis"
-      ],
-      "updatedAt": "2026-08-12",
-      "note": "2025_ONE AI 상담챗봇"
-    },
-    {
-      "id": "ic-generating",
-      "type": "json",
-      "title": "생성",
-      "path": "./assets/기본/ic_generating.json",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "generating"
-      ],
-      "updatedAt": "2026-08-12",
-      "note": "2025_ONE AI 상담챗봇"
     },
     {
       "id": "oneai",
