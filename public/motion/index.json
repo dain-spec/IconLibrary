@@ -1128,6 +1128,32 @@
       "note": "2025_ONE AI Mobile"
     },
     {
+      "id": "ic-image",
+      "type": "json",
+      "title": "이미지 생성",
+      "path": "./assets/기본/ic_image.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "image"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_ONE AI Mobile"
+    },
+    {
+      "id": "ic-searching",
+      "type": "json",
+      "title": "검색",
+      "path": "./assets/기본/ic_searching.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "search"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_ONE AI Mobile"
+    },
+    {
       "id": "loading-address",
       "type": "json",
       "title": "연락처",
