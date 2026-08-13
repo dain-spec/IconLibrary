@@ -1154,6 +1154,19 @@
       "note": "2025_ONE AI Mobile"
     },
     {
+      "id": "user-star",
+      "type": "json",
+      "title": "즐겨찾기",
+      "path": "./assets/기본/ic_user_star_24.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "favorite"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_ONE AI OmniEsol"
+    },
+    {
       "id": "loading-address",
       "type": "json",
       "title": "연락처",
