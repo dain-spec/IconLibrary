@@ -793,19 +793,6 @@
       "note": "2026_Amaranth10 Web AI 분석 리포트"
     },
     {
-      "id": "star",
-      "type": "json",
-      "title": "별",
-      "path": "./assets/기본/star.json",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "star"
-      ],
-      "updatedAt": "2026-08-12",
-      "note": "2025_WEHAGO T 수임처AI연말정산 안내문"
-    },
-    {
       "id": "check-grayblue",
       "type": "json",
       "title": "체크 그레이블루",
@@ -871,6 +858,19 @@
       ],
       "updatedAt": "2026-08-12",
       "note": "2025_ONE AI 상담챗봇"
+    },
+    {
+      "id": "star",
+      "type": "json",
+      "title": "별",
+      "path": "./assets/기본/star.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "star"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO T 수임처AI연말정산 안내문"
     },
     {
       "id": "ic-image",
