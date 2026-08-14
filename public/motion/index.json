@@ -793,19 +793,6 @@
       "note": "2026_Amaranth10 Web AI 분석 리포트"
     },
     {
-      "id": "check-grayblue",
-      "type": "json",
-      "title": "체크 그레이블루",
-      "path": "./assets/기본/check_grayblue.json",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "check"
-      ],
-      "updatedAt": "2026-08-12",
-      "note": "2025_WEHAGO T AI 세무조정 에이전트"
-    },
-    {
       "id": "alert-lock",
       "type": "json",
       "title": "잠금 경고",
@@ -1260,6 +1247,19 @@
       ],
       "updatedAt": "2026-08-12",
       "note": "2025_WEHAGO Q Mobile"
+    },
+    {
+      "id": "check-grayblue",
+      "type": "json",
+      "title": "체크 그레이블루",
+      "path": "./assets/기본/check_grayblue.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "check"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO T AI 세무조정 에이전트"
     },
     {
       "id": "card-sales-link",
