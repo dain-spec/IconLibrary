@@ -2149,6 +2149,19 @@
       ],
       "updatedAt": "2026-08-13",
       "note": "2026_WEHAGO Q Mobile"
+    },
+    {
+      "id": "webot-guide",
+      "type": "image",
+      "title": "안내",
+      "path": "./assets/character/character.png",
+      "thumbnail": "",
+      "tags": [
+        "webot",
+        "guide"
+      ],
+      "updatedAt": "2026-08-14",
+      "note": "2026_WE봇"
     }
   ]
 }
