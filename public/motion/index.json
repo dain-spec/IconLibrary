@@ -2162,6 +2162,33 @@
       ],
       "updatedAt": "2026-08-14",
       "note": "2026_WE봇"
+    },
+    {
+      "id": "webot-guide-crop",
+      "type": "image",
+      "title": "안내 (크롭)",
+      "path": "./assets/character/character_01.png",
+      "thumbnail": "",
+      "tags": [
+        "webot",
+        "guide",
+        "crop"
+      ],
+      "updatedAt": "2026-08-14",
+      "note": "2026_WE봇"
+    },
+    {
+      "id": "webot-profile",
+      "type": "image",
+      "title": "프로필",
+      "path": "./assets/character/character_02.png",
+      "thumbnail": "",
+      "tags": [
+        "webot",
+        "profile"
+      ],
+      "updatedAt": "2026-08-14",
+      "note": "2026_WE봇"
     }
   ]
 }
