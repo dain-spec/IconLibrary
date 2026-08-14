@@ -76,6 +76,7 @@ export function useArrowKeyGridNav({
     }
 
     function selectAndReveal(node: { id: string; el: HTMLElement }) {
+      node.el.focus({ preventScroll: true });
       node.el.scrollIntoView({ block: "nearest", inline: "nearest" });
       onSelect(node.id);
     }
