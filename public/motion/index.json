@@ -2006,32 +2006,6 @@
       ],
       "updatedAt": "2026-08-13",
       "note": "2026_WEHAGO Q Mobile"
-    },
-    {
-      "id": "step-q4-review",
-      "type": "json",
-      "title": "검토",
-      "path": "./assets/3d/Step4.json",
-      "thumbnail": "",
-      "tags": [
-        "step",
-        "review"
-      ],
-      "updatedAt": "2026-08-13",
-      "note": "2026_WEHAGO Q Mobile"
-    },
-    {
-      "id": "step-q5-archive",
-      "type": "json",
-      "title": "보관",
-      "path": "./assets/3d/Step5.json",
-      "thumbnail": "",
-      "tags": [
-        "step",
-        "archive"
-      ],
-      "updatedAt": "2026-08-13",
-      "note": "2026_WEHAGO Q Mobile"
     }
   ]
 }
