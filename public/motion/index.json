@@ -2006,6 +2006,136 @@
       ],
       "updatedAt": "2026-08-13",
       "note": "2026_WEHAGO Q Mobile"
+    },
+    {
+      "id": "wehagoq-bomb",
+      "type": "json",
+      "title": "폭탄",
+      "path": "./assets/3d/bomb.json",
+      "thumbnail": "",
+      "tags": [
+        "bomb"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_WEHAGO Q Mobile"
+    },
+    {
+      "id": "wehagoq-bomb-complete",
+      "type": "json",
+      "title": "폭탄 완료",
+      "path": "./assets/3d/bomb_complete.json",
+      "thumbnail": "",
+      "tags": [
+        "bomb",
+        "complete"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_WEHAGO Q Mobile"
+    },
+    {
+      "id": "wehagoq-bomb-complete-trans",
+      "type": "json",
+      "title": "폭탄 완료 (투명)",
+      "path": "./assets/3d/bomb_complete_trans.json",
+      "thumbnail": "",
+      "tags": [
+        "bomb",
+        "complete",
+        "transparent"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_WEHAGO Q Mobile"
+    },
+    {
+      "id": "wehagoq-bomb-money",
+      "type": "json",
+      "title": "폭탄 자산",
+      "path": "./assets/3d/bomb_money.json",
+      "thumbnail": "",
+      "tags": [
+        "bomb",
+        "money"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_WEHAGO Q Mobile"
+    },
+    {
+      "id": "luckyball",
+      "type": "json",
+      "title": "럭키볼",
+      "path": "./assets/3d/luckyball.json",
+      "thumbnail": "",
+      "tags": [
+        "luckyball",
+        "lottery"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_WEHAGO Q Mobile"
+    },
+    {
+      "id": "send-document",
+      "type": "json",
+      "title": "문서 전송",
+      "path": "./assets/3d/send_document.json",
+      "thumbnail": "",
+      "tags": [
+        "document",
+        "send"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_WEHAGO Q Mobile"
+    },
+    {
+      "id": "asset-piggybank",
+      "type": "json",
+      "title": "자산",
+      "path": "./assets/3d/자산_돼지저금통.json",
+      "thumbnail": "",
+      "tags": [
+        "asset",
+        "piggy"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_WEHAGO Q Mobile"
+    },
+    {
+      "id": "qri-listen",
+      "type": "json",
+      "title": "듣기",
+      "path": "./assets/character/Qri_listen.json",
+      "thumbnail": "",
+      "tags": [
+        "qri",
+        "listen"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_WEHAGO Q Mobile"
+    },
+    {
+      "id": "qri-smile",
+      "type": "json",
+      "title": "미소",
+      "path": "./assets/character/smile.json",
+      "thumbnail": "",
+      "tags": [
+        "qri",
+        "smile"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_WEHAGO Q Mobile"
+    },
+    {
+      "id": "qri-walking",
+      "type": "json",
+      "title": "걷기",
+      "path": "./assets/character/walking.json",
+      "thumbnail": "",
+      "tags": [
+        "qri",
+        "walking"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_WEHAGO Q Mobile"
     }
   ]
 }
