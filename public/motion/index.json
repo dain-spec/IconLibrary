@@ -725,6 +725,74 @@
       "note": "2025_WEHAGOT 신고서 PDF 변환"
     },
     {
+      "id": "loading-address",
+      "type": "json",
+      "title": "연락처",
+      "path": "./assets/기본/loading_address.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "contact"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Web 연락처"
+    },
+    {
+      "id": "loading-graph",
+      "type": "json",
+      "title": "그래프 로딩",
+      "path": "./assets/기본/loading_graph_48.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "loading",
+        "graph"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_ONE AI Web"
+    },
+    {
+      "id": "loading-table",
+      "type": "json",
+      "title": "테이블 로딩",
+      "path": "./assets/기본/loading_table_48.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "loading",
+        "table"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_ONE AI Web"
+    },
+    {
+      "id": "loading-ai-recommendation",
+      "type": "json",
+      "title": "AI 추천 로딩",
+      "path": "./assets/기본/loading_ai_recommendation.json",
+      "thumbnail": "",
+      "tags": [
+        "loading",
+        "ai",
+        "recommendation"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_Amaranth10 Web 연말정산총괄현황"
+    },
+    {
+      "id": "loading-docs",
+      "type": "json",
+      "title": "문서 로딩",
+      "path": "./assets/기본/loading_docs.json",
+      "thumbnail": "",
+      "tags": [
+        "loading",
+        "docs"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_Amaranth10 Web AI 분석 리포트"
+    },
+    {
       "id": "star",
       "type": "json",
       "title": "별",
@@ -736,6 +804,47 @@
       ],
       "updatedAt": "2026-08-12",
       "note": "2025_WEHAGO T 수임처AI연말정산 안내문"
+    },
+    {
+      "id": "check-grayblue",
+      "type": "json",
+      "title": "체크 그레이블루",
+      "path": "./assets/기본/check_grayblue.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "check"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO T AI 세무조정 에이전트"
+    },
+    {
+      "id": "alert-lock",
+      "type": "json",
+      "title": "잠금 경고",
+      "path": "./assets/기본/ic_alert_lock_48.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "lock",
+        "alert"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_Amaranth10 Web"
+    },
+    {
+      "id": "noti-fin-loop",
+      "type": "json",
+      "title": "완료 알림 반복",
+      "path": "./assets/기본/ico_noti_fin_loop.json",
+      "thumbnail": "",
+      "tags": [
+        "notification",
+        "complete",
+        "loop"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_Amaranth10 Web 자료수집및자동분개처리"
     },
     {
       "id": "ic-analysis",
@@ -959,17 +1068,55 @@
       "note": "2025_ONE AI OmniEsol"
     },
     {
-      "id": "check-grayblue",
+      "id": "ic-chart-square",
       "type": "json",
-      "title": "체크 그레이블루",
-      "path": "./assets/기본/check_grayblue.json",
+      "title": "차트",
+      "path": "./assets/기본/ic_chart_square.json",
       "thumbnail": "",
       "tags": [
-        "icon",
-        "check"
+        "chart"
       ],
-      "updatedAt": "2026-08-12",
-      "note": "2025_WEHAGO T AI 세무조정 에이전트"
+      "updatedAt": "2026-08-13",
+      "note": "2026_Amaranth10 Web AI 분석리포트"
+    },
+    {
+      "id": "ic-code-doc-search",
+      "type": "json",
+      "title": "문서 검색",
+      "path": "./assets/기본/ic_code_doc_search.json",
+      "thumbnail": "",
+      "tags": [
+        "document",
+        "search"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_Amaranth10 Web AI 분석리포트"
+    },
+    {
+      "id": "ic-list-time",
+      "type": "json",
+      "title": "히스토리",
+      "path": "./assets/기본/ic_list_time_24.json",
+      "thumbnail": "",
+      "tags": [
+        "history",
+        "list",
+        "time"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_ONE AI Web ONECHAMBER"
+    },
+    {
+      "id": "ic-report",
+      "type": "json",
+      "title": "보고서",
+      "path": "./assets/기본/ic_report.json",
+      "thumbnail": "",
+      "tags": [
+        "report"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_ONE AI Web 시각화 보고서 생성"
     },
     {
       "id": "account-card-link",
@@ -1128,6 +1275,33 @@
       "note": "2025_WEHAGO Q Mobile"
     },
     {
+      "id": "oneai",
+      "type": "json",
+      "title": "ONE AI",
+      "path": "./assets/3d/oneai.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "brand"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_ONE AI Mobile"
+    },
+    {
+      "id": "oneai-loading",
+      "type": "json",
+      "title": "ONE AI 로딩",
+      "path": "./assets/3d/oneai_loading.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "brand",
+        "loading"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_ONE AI Mobile"
+    },
+    {
       "id": "card-link",
       "type": "json",
       "title": "카드연결",
@@ -1178,179 +1352,6 @@
       ],
       "updatedAt": "2026-08-12",
       "note": "2025_WEHAGO Meet Mobile"
-    },
-    {
-      "id": "emoji-fire",
-      "type": "json",
-      "title": "불꽃",
-      "path": "./assets/기본/emoji-fire.json",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "emoji"
-      ],
-      "updatedAt": "2026-08-12",
-      "note": "2025_WEHAGO Meet Mobile"
-    },
-    {
-      "id": "emoji-hundred",
-      "type": "json",
-      "title": "백점",
-      "path": "./assets/기본/emoji-hundred-points.json",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "emoji"
-      ],
-      "updatedAt": "2026-08-12",
-      "note": "2025_WEHAGO Meet Mobile"
-    },
-    {
-      "id": "emoji-ok",
-      "type": "json",
-      "title": "오케이",
-      "path": "./assets/기본/emoji-ok-hand.json",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "emoji"
-      ],
-      "updatedAt": "2026-08-12",
-      "note": "2025_WEHAGO Meet Mobile"
-    },
-    {
-      "id": "emoji-party",
-      "type": "json",
-      "title": "축포",
-      "path": "./assets/기본/emoji-party-popper.json",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "emoji"
-      ],
-      "updatedAt": "2026-08-12",
-      "note": "2025_WEHAGO Meet Mobile"
-    },
-    {
-      "id": "emoji-heart-eyes",
-      "type": "json",
-      "title": "하트눈",
-      "path": "./assets/기본/emoji-smiling-face-with-heart-eyes.json",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "emoji"
-      ],
-      "updatedAt": "2026-08-12",
-      "note": "2025_WEHAGO Meet Mobile"
-    },
-    {
-      "id": "emoji-thumbsup",
-      "type": "json",
-      "title": "좋아요",
-      "path": "./assets/기본/emoji-thumbs-up.json",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "emoji"
-      ],
-      "updatedAt": "2026-08-12",
-      "note": "2025_WEHAGO Meet Mobile"
-    },
-    {
-      "id": "emoji-two-hearts",
-      "type": "json",
-      "title": "하트",
-      "path": "./assets/기본/emoji-two-hearts.json",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "emoji"
-      ],
-      "updatedAt": "2026-08-12",
-      "note": "2025_WEHAGO Meet Mobile"
-    },
-    {
-      "id": "oneai",
-      "type": "json",
-      "title": "ONE AI",
-      "path": "./assets/3d/oneai.json",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "brand"
-      ],
-      "updatedAt": "2026-08-12",
-      "note": "2025_ONE AI Mobile"
-    },
-    {
-      "id": "oneai-loading",
-      "type": "json",
-      "title": "ONE AI 로딩",
-      "path": "./assets/3d/oneai_loading.json",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "brand",
-        "loading"
-      ],
-      "updatedAt": "2026-08-13",
-      "note": "2025_ONE AI Mobile"
-    },
-    {
-      "id": "loading-address",
-      "type": "json",
-      "title": "연락처",
-      "path": "./assets/기본/loading_address.json",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "contact"
-      ],
-      "updatedAt": "2026-08-12",
-      "note": "2025_WEHAGO Web 연락처"
-    },
-    {
-      "id": "loading-graph",
-      "type": "json",
-      "title": "그래프 로딩",
-      "path": "./assets/기본/loading_graph_48.json",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "loading",
-        "graph"
-      ],
-      "updatedAt": "2026-08-13",
-      "note": "2025_ONE AI Web"
-    },
-    {
-      "id": "loading-table",
-      "type": "json",
-      "title": "테이블 로딩",
-      "path": "./assets/기본/loading_table_48.json",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "loading",
-        "table"
-      ],
-      "updatedAt": "2026-08-13",
-      "note": "2025_ONE AI Web"
-    },
-    {
-      "id": "alert-lock",
-      "type": "json",
-      "title": "잠금 경고",
-      "path": "./assets/기본/ic_alert_lock_48.json",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "lock",
-        "alert"
-      ],
-      "updatedAt": "2026-08-13",
-      "note": "2025_Amaranth10 Web"
     },
     {
       "id": "dobi-doc-complete",
@@ -1760,18 +1761,17 @@
       "note": "2025_Bluemit Mobile"
     },
     {
-      "id": "noti-fin-loop",
+      "id": "emoji-fire",
       "type": "json",
-      "title": "완료 알림 반복",
-      "path": "./assets/기본/ico_noti_fin_loop.json",
+      "title": "불꽃",
+      "path": "./assets/기본/emoji-fire.json",
       "thumbnail": "",
       "tags": [
-        "notification",
-        "complete",
-        "loop"
+        "icon",
+        "emoji"
       ],
-      "updatedAt": "2026-08-13",
-      "note": "2025_Amaranth10 Web 자료수집및자동분개처리"
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Meet Mobile"
     },
     {
       "id": "dochi-greet",
@@ -1877,82 +1877,82 @@
       "note": "2026_정밀의료빅데이터플랫폼 Mindmit"
     },
     {
-      "id": "loading-ai-recommendation",
+      "id": "emoji-hundred",
       "type": "json",
-      "title": "AI 추천 로딩",
-      "path": "./assets/기본/loading_ai_recommendation.json",
+      "title": "백점",
+      "path": "./assets/기본/emoji-hundred-points.json",
       "thumbnail": "",
       "tags": [
-        "loading",
-        "ai",
-        "recommendation"
+        "icon",
+        "emoji"
       ],
-      "updatedAt": "2026-08-13",
-      "note": "2026_Amaranth10 Web 연말정산총괄현황"
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Meet Mobile"
     },
     {
-      "id": "loading-docs",
+      "id": "emoji-ok",
       "type": "json",
-      "title": "문서 로딩",
-      "path": "./assets/기본/loading_docs.json",
+      "title": "오케이",
+      "path": "./assets/기본/emoji-ok-hand.json",
       "thumbnail": "",
       "tags": [
-        "loading",
-        "docs"
+        "icon",
+        "emoji"
       ],
-      "updatedAt": "2026-08-13",
-      "note": "2026_Amaranth10 Web AI 분석 리포트"
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Meet Mobile"
     },
     {
-      "id": "ic-chart-square",
+      "id": "emoji-party",
       "type": "json",
-      "title": "차트",
-      "path": "./assets/기본/ic_chart_square.json",
+      "title": "축포",
+      "path": "./assets/기본/emoji-party-popper.json",
       "thumbnail": "",
       "tags": [
-        "chart"
+        "icon",
+        "emoji"
       ],
-      "updatedAt": "2026-08-13",
-      "note": "2026_Amaranth10 Web AI 분석리포트"
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Meet Mobile"
     },
     {
-      "id": "ic-code-doc-search",
+      "id": "emoji-heart-eyes",
       "type": "json",
-      "title": "문서 검색",
-      "path": "./assets/기본/ic_code_doc_search.json",
+      "title": "하트눈",
+      "path": "./assets/기본/emoji-smiling-face-with-heart-eyes.json",
       "thumbnail": "",
       "tags": [
-        "document",
-        "search"
+        "icon",
+        "emoji"
       ],
-      "updatedAt": "2026-08-13",
-      "note": "2026_Amaranth10 Web AI 분석리포트"
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Meet Mobile"
     },
     {
-      "id": "ic-list-time",
+      "id": "emoji-thumbsup",
       "type": "json",
-      "title": "히스토리",
-      "path": "./assets/기본/ic_list_time_24.json",
+      "title": "좋아요",
+      "path": "./assets/기본/emoji-thumbs-up.json",
       "thumbnail": "",
       "tags": [
-        "history",
-        "list",
-        "time"
+        "icon",
+        "emoji"
       ],
-      "updatedAt": "2026-08-13",
-      "note": "2026_ONE AI Web ONECHAMBER"
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Meet Mobile"
     },
     {
-      "id": "ic-report",
+      "id": "emoji-two-hearts",
       "type": "json",
-      "title": "보고서",
-      "path": "./assets/기본/ic_report.json",
+      "title": "하트",
+      "path": "./assets/기본/emoji-two-hearts.json",
       "thumbnail": "",
       "tags": [
-        "report"
+        "icon",
+        "emoji"
       ],
-      "updatedAt": "2026-08-13",
-      "note": "2026_ONE AI Web 시각화 보고서 생성"
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Meet Mobile"
     },
     {
       "id": "loading-spinner-2",
