@@ -1967,6 +1967,71 @@
       ],
       "updatedAt": "2026-08-13",
       "note": "2026_GEN AI DEWS PE Portal"
+    },
+    {
+      "id": "step-q1-consult",
+      "type": "json",
+      "title": "상담",
+      "path": "./assets/3d/Step1.json",
+      "thumbnail": "",
+      "tags": [
+        "step",
+        "consult"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_WEHAGO Q Mobile"
+    },
+    {
+      "id": "step-q2-check",
+      "type": "json",
+      "title": "자료확인",
+      "path": "./assets/3d/Step2.json",
+      "thumbnail": "",
+      "tags": [
+        "step",
+        "check"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_WEHAGO Q Mobile"
+    },
+    {
+      "id": "step-q3-lookup",
+      "type": "json",
+      "title": "조회",
+      "path": "./assets/3d/Step3.json",
+      "thumbnail": "",
+      "tags": [
+        "step",
+        "lookup"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_WEHAGO Q Mobile"
+    },
+    {
+      "id": "step-q4-review",
+      "type": "json",
+      "title": "검토",
+      "path": "./assets/3d/Step4.json",
+      "thumbnail": "",
+      "tags": [
+        "step",
+        "review"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_WEHAGO Q Mobile"
+    },
+    {
+      "id": "step-q5-archive",
+      "type": "json",
+      "title": "보관",
+      "path": "./assets/3d/Step5.json",
+      "thumbnail": "",
+      "tags": [
+        "step",
+        "archive"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_WEHAGO Q Mobile"
     }
   ]
 }
