@@ -88,6 +88,24 @@ const FIGMA_NODE_IDS: Record<string, string> = {
   "교육-책들": "2898:16575",
   "교육-학사모와 책": "5207:14726",
   "교육-학사모": "5207:14739",
+  // Individual Figma node IDs for the 교육 book-badge set, from the "wrap" frame (8064:18350).
+  "교육-계산기": "8064:18431",
+  "교육-설정": "8064:18440",
+  "교육-코인": "8095:18407",
+  "교육-회사": "8095:18417",
+  // Individual Figma node IDs for the 클립보드 badge set, from the "wrap" frame (8095:18420).
+  "클립보드-계산기": "8095:18469",
+  "클립보드-설정": "8095:18499",
+  "클립보드-코인": "8095:18478",
+  "클립보드-회사": "8095:18489",
+  // Individual Figma node IDs for the 기호 set, from the "wrap" frame (5215:15070).
+  "기호-체크 그린": "1469:2072",
+  "기호-체크": "1469:2062",
+  "기호-삭제": "1461:2237",
+  "기호-물음표": "1461:2225",
+  "기호-링크": "1490:50",
+  "기호-느낌표 보류": "5215:14986",
+  "기호-느낌표": "1461:2227",
 };
 
 export function getAllIcons3D(): Icon3D[] {
