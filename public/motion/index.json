@@ -2136,6 +2136,19 @@
       ],
       "updatedAt": "2026-08-13",
       "note": "2026_WEHAGO Q Mobile"
+    },
+    {
+      "id": "dobi-float-calc",
+      "type": "image",
+      "title": "계산",
+      "path": "./assets/character/dobi_floating.png",
+      "thumbnail": "",
+      "tags": [
+        "dobi",
+        "calculator"
+      ],
+      "updatedAt": "2026-08-14",
+      "note": "2026_WEHAGO Web 메인 세법도우미"
     }
   ]
 }
