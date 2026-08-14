@@ -1379,45 +1379,6 @@
       "note": "2025_Amaranth10 Web 세법도우미"
     },
     {
-      "id": "dochi-disappointed",
-      "type": "image",
-      "title": "실망",
-      "path": "./assets/character/Dochi_disappointed.png",
-      "thumbnail": "",
-      "tags": [
-        "dochi",
-        "disappointed"
-      ],
-      "updatedAt": "2026-08-13",
-      "note": "2025_Bluemit Mobile"
-    },
-    {
-      "id": "dochi-greet",
-      "type": "image",
-      "title": "인사",
-      "path": "./assets/character/Dochi_greet.png",
-      "thumbnail": "",
-      "tags": [
-        "dochi",
-        "greet"
-      ],
-      "updatedAt": "2026-08-13",
-      "note": "2025_Bluemit Mobile"
-    },
-    {
-      "id": "dochi-laugh",
-      "type": "image",
-      "title": "웃음",
-      "path": "./assets/character/Dochi_laugh.png",
-      "thumbnail": "",
-      "tags": [
-        "dochi",
-        "laugh"
-      ],
-      "updatedAt": "2026-08-13",
-      "note": "2025_Bluemit Mobile"
-    },
-    {
       "id": "dobi-expert1-completed",
       "type": "image",
       "title": "엄지척",
@@ -1643,6 +1604,32 @@
       "note": "2025_WEHAGO Web Proactive AI"
     },
     {
+      "id": "dobi-labor-inprogress",
+      "type": "image",
+      "title": "돋보기",
+      "path": "./assets/character/dobi_Inprogress.png",
+      "thumbnail": "",
+      "tags": [
+        "dobi",
+        "progress"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_세법노무도우미"
+    },
+    {
+      "id": "dobi-float-calc",
+      "type": "image",
+      "title": "계산",
+      "path": "./assets/character/dobi_floating.png",
+      "thumbnail": "",
+      "tags": [
+        "dobi",
+        "calculator"
+      ],
+      "updatedAt": "2026-08-14",
+      "note": "2026_WEHAGO Web 메인 세법도우미"
+    },
+    {
       "id": "domi-calculate",
       "type": "image",
       "title": "계산",
@@ -1760,6 +1747,19 @@
       "note": "2025_Amaranth10 Web 연말정산"
     },
     {
+      "id": "dochi-disappointed",
+      "type": "image",
+      "title": "실망",
+      "path": "./assets/character/Dochi_disappointed.png",
+      "thumbnail": "",
+      "tags": [
+        "dochi",
+        "disappointed"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_Bluemit Mobile"
+    },
+    {
       "id": "noti-fin-loop",
       "type": "json",
       "title": "완료 알림 반복",
@@ -1774,17 +1774,30 @@
       "note": "2025_Amaranth10 Web 자료수집및자동분개처리"
     },
     {
-      "id": "dobi-labor-inprogress",
+      "id": "dochi-greet",
       "type": "image",
-      "title": "돋보기",
-      "path": "./assets/character/dobi_Inprogress.png",
+      "title": "인사",
+      "path": "./assets/character/Dochi_greet.png",
       "thumbnail": "",
       "tags": [
-        "dobi",
-        "progress"
+        "dochi",
+        "greet"
       ],
       "updatedAt": "2026-08-13",
-      "note": "2026_세법노무도우미"
+      "note": "2025_Bluemit Mobile"
+    },
+    {
+      "id": "dochi-laugh",
+      "type": "image",
+      "title": "웃음",
+      "path": "./assets/character/Dochi_laugh.png",
+      "thumbnail": "",
+      "tags": [
+        "dochi",
+        "laugh"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2025_Bluemit Mobile"
     },
     {
       "id": "dochi-carrot",
@@ -1847,20 +1860,6 @@
       "tags": [
         "dochi",
         "ipad"
-      ],
-      "updatedAt": "2026-08-13",
-      "note": "2026_정밀의료빅데이터플랫폼 Mindmit"
-    },
-    {
-      "id": "dochi-ipad-crop",
-      "type": "json",
-      "title": "아이패드 (크롭)",
-      "path": "./assets/character/ipad_crop.json",
-      "thumbnail": "",
-      "tags": [
-        "dochi",
-        "ipad",
-        "crop"
       ],
       "updatedAt": "2026-08-13",
       "note": "2026_정밀의료빅데이터플랫폼 Mindmit"
@@ -2099,6 +2098,20 @@
       "note": "2026_WEHAGO Q Mobile"
     },
     {
+      "id": "dochi-ipad-crop",
+      "type": "json",
+      "title": "아이패드 (크롭)",
+      "path": "./assets/character/ipad_crop.json",
+      "thumbnail": "",
+      "tags": [
+        "dochi",
+        "ipad",
+        "crop"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_정밀의료빅데이터플랫폼 Mindmit"
+    },
+    {
       "id": "qri-listen",
       "type": "json",
       "title": "듣기",
@@ -2136,19 +2149,6 @@
       ],
       "updatedAt": "2026-08-13",
       "note": "2026_WEHAGO Q Mobile"
-    },
-    {
-      "id": "dobi-float-calc",
-      "type": "image",
-      "title": "계산",
-      "path": "./assets/character/dobi_floating.png",
-      "thumbnail": "",
-      "tags": [
-        "dobi",
-        "calculator"
-      ],
-      "updatedAt": "2026-08-14",
-      "note": "2026_WEHAGO Web 메인 세법도우미"
     }
   ]
 }
