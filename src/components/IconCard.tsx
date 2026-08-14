@@ -18,7 +18,7 @@ export function IconCard({
       title={icon.id}
       aria-label={icon.id}
       aria-pressed={isSelected}
-      className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-xl border transition-colors focus:outline focus:outline-1 focus:outline-offset-0 focus:outline-accent ${
+      className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-xl border transition-colors focus:outline focus:outline-[0.5px] focus:outline-offset-0 focus:outline-accent ${
         isSelected
           ? "border-accent bg-accent/10"
           : "border-border bg-surface hover:bg-surface-hover"
