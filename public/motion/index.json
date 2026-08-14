@@ -886,6 +886,43 @@
       "note": "2025_ONE AI Mobile"
     },
     {
+      "id": "ic-chart-square",
+      "type": "json",
+      "title": "차트",
+      "path": "./assets/기본/ic_chart_square.json",
+      "thumbnail": "",
+      "tags": [
+        "chart"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_Amaranth10 Web AI 분석리포트"
+    },
+    {
+      "id": "ic-code-doc-search",
+      "type": "json",
+      "title": "문서 검색",
+      "path": "./assets/기본/ic_code_doc_search.json",
+      "thumbnail": "",
+      "tags": [
+        "document",
+        "search"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_Amaranth10 Web AI 분석리포트"
+    },
+    {
+      "id": "ic-report",
+      "type": "json",
+      "title": "보고서",
+      "path": "./assets/기본/ic_report.json",
+      "thumbnail": "",
+      "tags": [
+        "report"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_ONE AI Web 시각화 보고서 생성"
+    },
+    {
       "id": "ic-aibox-18",
       "type": "json",
       "title": "보관함",
@@ -1055,31 +1092,6 @@
       "note": "2025_ONE AI OmniEsol"
     },
     {
-      "id": "ic-chart-square",
-      "type": "json",
-      "title": "차트",
-      "path": "./assets/기본/ic_chart_square.json",
-      "thumbnail": "",
-      "tags": [
-        "chart"
-      ],
-      "updatedAt": "2026-08-13",
-      "note": "2026_Amaranth10 Web AI 분석리포트"
-    },
-    {
-      "id": "ic-code-doc-search",
-      "type": "json",
-      "title": "문서 검색",
-      "path": "./assets/기본/ic_code_doc_search.json",
-      "thumbnail": "",
-      "tags": [
-        "document",
-        "search"
-      ],
-      "updatedAt": "2026-08-13",
-      "note": "2026_Amaranth10 Web AI 분석리포트"
-    },
-    {
       "id": "ic-list-time",
       "type": "json",
       "title": "히스토리",
@@ -1092,18 +1104,6 @@
       ],
       "updatedAt": "2026-08-13",
       "note": "2026_ONE AI Web ONECHAMBER"
-    },
-    {
-      "id": "ic-report",
-      "type": "json",
-      "title": "보고서",
-      "path": "./assets/기본/ic_report.json",
-      "thumbnail": "",
-      "tags": [
-        "report"
-      ],
-      "updatedAt": "2026-08-13",
-      "note": "2026_ONE AI Web 시각화 보고서 생성"
     },
     {
       "id": "account-card-link",
@@ -1223,45 +1223,6 @@
       "note": "2025_WEHAGO Q Mobile"
     },
     {
-      "id": "connection-error",
-      "type": "json",
-      "title": "연결오류",
-      "path": "./assets/기본/연결오류.json",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "connect"
-      ],
-      "updatedAt": "2026-08-12",
-      "note": "2025_WEHAGO Q Mobile"
-    },
-    {
-      "id": "connection-complete",
-      "type": "json",
-      "title": "연결완료",
-      "path": "./assets/기본/연결완료.json",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "connect"
-      ],
-      "updatedAt": "2026-08-12",
-      "note": "2025_WEHAGO Q Mobile"
-    },
-    {
-      "id": "check-grayblue",
-      "type": "json",
-      "title": "체크 그레이블루",
-      "path": "./assets/기본/check_grayblue.json",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "check"
-      ],
-      "updatedAt": "2026-08-12",
-      "note": "2025_WEHAGO T AI 세무조정 에이전트"
-    },
-    {
       "id": "card-sales-link",
       "type": "json",
       "title": "카드매출 연결",
@@ -1339,6 +1300,45 @@
       ],
       "updatedAt": "2026-08-12",
       "note": "2025_WEHAGO Q Mobile"
+    },
+    {
+      "id": "connection-error",
+      "type": "json",
+      "title": "연결오류",
+      "path": "./assets/기본/연결오류.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "connect"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Q Mobile"
+    },
+    {
+      "id": "connection-complete",
+      "type": "json",
+      "title": "연결완료",
+      "path": "./assets/기본/연결완료.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "connect"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO Q Mobile"
+    },
+    {
+      "id": "check-grayblue",
+      "type": "json",
+      "title": "체크 그레이블루",
+      "path": "./assets/기본/check_grayblue.json",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "check"
+      ],
+      "updatedAt": "2026-08-12",
+      "note": "2025_WEHAGO T AI 세무조정 에이전트"
     },
     {
       "id": "emoji-clapping",
