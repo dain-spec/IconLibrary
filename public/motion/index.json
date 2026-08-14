@@ -39,6 +39,19 @@
       "note": "2025_WEHAGO 공통 로딩"
     },
     {
+      "id": "loading-spinner-2",
+      "type": "json",
+      "title": "스피너 2",
+      "path": "./assets/Loader/loading_spinner_0.json",
+      "thumbnail": "",
+      "tags": [
+        "loader",
+        "spinner"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_GEN AI DEWS PE Portal"
+    },
+    {
       "id": "loading-record",
       "type": "json",
       "title": "점",
@@ -1953,19 +1966,6 @@
       ],
       "updatedAt": "2026-08-12",
       "note": "2025_WEHAGO Meet Mobile"
-    },
-    {
-      "id": "loading-spinner-2",
-      "type": "json",
-      "title": "스피너 2",
-      "path": "./assets/Loader/loading_spinner_0.json",
-      "thumbnail": "",
-      "tags": [
-        "loader",
-        "spinner"
-      ],
-      "updatedAt": "2026-08-13",
-      "note": "2026_GEN AI DEWS PE Portal"
     },
     {
       "id": "step-q1-consult",
