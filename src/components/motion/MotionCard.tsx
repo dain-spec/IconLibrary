@@ -22,7 +22,7 @@ export function MotionCard({
       title={asset.title}
       aria-label={asset.title}
       aria-pressed={isSelected}
-      className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-xl border bg-[#FAFAFA] p-2 transition-colors hover:bg-[#F0F0F0] ${
+      className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-xl border bg-[#FAFAFA] p-2 transition-colors hover:bg-[#F0F0F0] focus:outline focus:outline-1 focus:outline-offset-0 focus:outline-accent ${
         isSelected ? "border-accent" : "border-border"
       }`}
     >
