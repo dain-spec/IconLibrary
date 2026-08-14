@@ -834,6 +834,19 @@
       "note": "2025_Amaranth10 Web 자료수집및자동분개처리"
     },
     {
+      "id": "ic-ai-star",
+      "type": "json",
+      "title": "AI 별",
+      "path": "./assets/기본/star0.json",
+      "thumbnail": "",
+      "tags": [
+        "star",
+        "ai"
+      ],
+      "updatedAt": "2026-08-14",
+      "note": "2026_WEHAGO Web 화상회의"
+    },
+    {
       "id": "ic-analysis",
       "type": "json",
       "title": "분석",
