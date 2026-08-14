@@ -11,10 +11,6 @@ import { CopyButton } from "./CopyButton";
 import { PanelResizeHandle } from "./PanelResizeHandle";
 import { ZoomHoverPreview } from "./ZoomHoverPreview";
 
-// All 3D icons currently live under one Figma frame (weather), so every
-// icon links to that shared frame rather than an individual node.
-const FIGMA_3D_FRAME_LINK = figmaLinkFor("5201:14485");
-
 type Tab = "react" | "figma";
 
 const TABS: { key: Tab; label: string }[] = [
@@ -60,6 +56,7 @@ export function Icon3DDetailPanel({
   const [visible, setVisible] = useState(false);
   const [copyState, setCopyState] = useState<"idle" | "copied" | "error">("idle");
   const { width, isDragging, onPointerDown } = useResizablePanelWidth();
+  const figmaLink = icon.figmaNodeId ? figmaLinkFor(icon.figmaNodeId) : "";
 
   useEffect(() => {
     setVisible(true);
@@ -137,7 +134,7 @@ export function Icon3DDetailPanel({
         </a>
 
         <div className="mt-5 flex gap-1 border-b border-border">
-          {TABS.map((t) => (
+          {TABS.filter((t) => t.key !== "figma" || figmaLink).map((t) => (
             <button
               key={t.key}
               onClick={() => setTab(t.key)}
@@ -160,7 +157,7 @@ export function Icon3DDetailPanel({
         ) : (
           <div className="mt-3 flex flex-col gap-3">
             <a
-              href={FIGMA_3D_FRAME_LINK}
+              href={figmaLink}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-1.5 rounded-lg border border-border px-3 py-2 text-sm text-ink transition-colors hover:bg-surface-hover"
