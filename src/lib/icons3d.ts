@@ -106,6 +106,11 @@ const FIGMA_NODE_IDS: Record<string, string> = {
   "기호-링크": "1490:50",
   "기호-느낌표 보류": "5215:14986",
   "기호-느낌표": "1461:2227",
+  // Individual Figma node IDs for the 그래프 set, from the "wrap" frame (2898:17404).
+  "그래프-도넛 그래프": "2898:17340",
+  "그래프-막대 그래프": "2898:17380",
+  "그래프-막대 그래프 화살표": "2898:17382",
+  "그래프-브라우저 그래프": "2898:17392",
 };
 
 export function getAllIcons3D(): Icon3D[] {
