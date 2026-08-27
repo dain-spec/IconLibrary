@@ -1669,6 +1669,19 @@
       "note": "2025_WEHAGO T AI세무조정 에이전트"
     },
     {
+      "id": "dobi-intro",
+      "type": "image",
+      "title": "소개",
+      "path": "./assets/character/dobi_handpoint.png",
+      "thumbnail": "",
+      "tags": [
+        "dobi",
+        "intro"
+      ],
+      "updatedAt": "2026-08-14",
+      "note": "2025_WEHAGO T AI세무조정 에이전트"
+    },
+    {
       "id": "dobi-salute",
       "type": "image",
       "title": "경례",
