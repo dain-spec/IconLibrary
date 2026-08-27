@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Lottie from "lottie-react";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import type { MotionAsset } from "@/lib/motion";
 import { dedupeTagsCaseInsensitive } from "@/lib/tags";
 import { useResizablePanelWidth } from "@/lib/useResizablePanelWidth";
@@ -95,6 +96,24 @@ export function MotionDetailPanel({
     setTimeout(() => setCopyState("idle"), 1600);
   }
 
+  async function handleCopyCanvasFrame() {
+    const canvas = previewRef.current?.querySelector("canvas");
+    if (!canvas) {
+      setCopyState("error");
+      setTimeout(() => setCopyState("idle"), 1600);
+      return;
+    }
+    try {
+      const blob = await new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, "image/png"));
+      if (!blob) throw new Error("no blob");
+      await navigator.clipboard.write([new ClipboardItem({ "image/png": blob })]);
+      setCopyState("copied");
+    } catch {
+      setCopyState("error");
+    }
+    setTimeout(() => setCopyState("idle"), 1600);
+  }
+
   return (
     <div
       className={`relative h-full shrink-0 overflow-hidden border-l border-border bg-surface ${
@@ -136,6 +155,8 @@ export function MotionDetailPanel({
             asset.type === "image" ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img src={asset.src} alt={asset.title} className="h-80 w-80 object-contain" />
+            ) : asset.type === "lottie" ? (
+              <DotLottieReact src={asset.src} loop autoplay className="h-80 w-80" />
             ) : (
               workingData && (
                 <Lottie animationData={workingData} loop autoplay className="h-80 w-80" />
@@ -150,6 +171,8 @@ export function MotionDetailPanel({
             {asset.type === "image" ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img src={asset.src} alt={asset.title} className="h-24 w-24 object-contain" />
+            ) : asset.type === "lottie" ? (
+              <DotLottieReact src={asset.src} loop autoplay className="h-24 w-24" />
             ) : (
               workingData && (
                 <Lottie animationData={workingData} loop autoplay className="h-24 w-24" />
@@ -212,6 +235,18 @@ export function MotionDetailPanel({
                 : copyState === "error"
                   ? "복사 실패"
                   : "Figma로 SVG 복사"}
+            </button>
+          ) : asset.type === "lottie" ? (
+            <button
+              onClick={handleCopyCanvasFrame}
+              className="flex items-center justify-center gap-1.5 rounded-lg border border-border px-3 py-2 text-sm text-ink transition-colors hover:bg-surface-hover"
+            >
+              🖼️{" "}
+              {copyState === "copied"
+                ? "이미지 복사됨"
+                : copyState === "error"
+                  ? "복사 실패"
+                  : "이미지 복사"}
             </button>
           ) : (
             <button

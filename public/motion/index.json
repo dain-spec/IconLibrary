@@ -1968,6 +1968,34 @@
       "note": "2026_정밀의료빅데이터플랫폼 Mindmit"
     },
     {
+      "id": "dochi-glasses-lottie",
+      "type": "lottie",
+      "title": "돋보기 (Lottie)",
+      "path": "./assets/character/dochi_reading_glasses.lottie",
+      "thumbnail": "",
+      "tags": [
+        "dochi",
+        "glasses",
+        "lottie"
+      ],
+      "updatedAt": "2026-08-14",
+      "note": "2026_정밀의료빅데이터플랫폼 Mindmit"
+    },
+    {
+      "id": "dochi-happy-lottie",
+      "type": "lottie",
+      "title": "기쁨 (Lottie)",
+      "path": "./assets/character/happy.lottie",
+      "thumbnail": "",
+      "tags": [
+        "dochi",
+        "happy",
+        "lottie"
+      ],
+      "updatedAt": "2026-08-14",
+      "note": "2026_정밀의료빅데이터플랫폼 Mindmit"
+    },
+    {
       "id": "dochi-hi",
       "type": "json",
       "title": "인사",

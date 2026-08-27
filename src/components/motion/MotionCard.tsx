@@ -1,6 +1,7 @@
 "use client";
 
 import Lottie from "lottie-react";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import type { MotionAsset } from "@/lib/motion";
 import { useLottieData } from "@/lib/useLottieData";
 
@@ -29,6 +30,8 @@ export function MotionCard({
       {asset.type === "image" ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img src={asset.src} alt={asset.title} className="h-full w-full object-contain" />
+      ) : asset.type === "lottie" ? (
+        <DotLottieReact src={asset.src} loop autoplay className="h-full w-full" />
       ) : (
         animationData && (
           <Lottie animationData={animationData} loop autoplay className="h-full w-full" />

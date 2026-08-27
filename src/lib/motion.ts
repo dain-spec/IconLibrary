@@ -3,7 +3,7 @@ import path from "node:path";
 
 export interface MotionAsset {
   id: string;
-  type: "json" | "image";
+  type: "json" | "image" | "lottie";
   title: string;
   src: string;
   category: string;
@@ -13,7 +13,7 @@ export interface MotionAsset {
 
 interface RawMotionAsset {
   id: string;
-  type: "json" | "image";
+  type: "json" | "image" | "lottie";
   title: string;
   path: string;
   tags: string[];
