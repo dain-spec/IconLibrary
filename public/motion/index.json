@@ -1656,6 +1656,19 @@
       "note": "2025_WEHAGO T AI세무조정 에이전트"
     },
     {
+      "id": "dobi-form-check",
+      "type": "image",
+      "title": "서식확인",
+      "path": "./assets/character/서식확인.png",
+      "thumbnail": "",
+      "tags": [
+        "dobi",
+        "form"
+      ],
+      "updatedAt": "2026-08-14",
+      "note": "2025_WEHAGO T AI세무조정 에이전트"
+    },
+    {
       "id": "dobi-salute",
       "type": "image",
       "title": "경례",
