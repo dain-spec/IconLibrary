@@ -169,6 +169,27 @@ const FIGMA_NODE_IDS: Record<string, string> = {
   "기타-umbrella": "2952:9275",
   "기타-database": "5962:15284",
   "기타-api_connect": "6007:15330",
+  // Individual Figma node IDs for the 실행아이콘/메일/채팅/일정 sets and
+  // 6 more 기타 icons, from the "wrap" frame (2860:112).
+  "실행아이콘-t": "398:50",
+  "실행아이콘-nahago": "398:49",
+  "실행아이콘-oneai": "398:48",
+  "실행아이콘-oneai_cube": "8408:19866",
+  "실행아이콘-wehago": "11447:21237",
+  "메일-default": "2875:316",
+  "메일-badge": "6908:16234",
+  "메일-chat": "5222:16187",
+  "채팅-default": "2178:157",
+  "채팅-videocall": "606:1237",
+  "채팅-videocall_chat": "7820:17771",
+  "일정-year": "353:188",
+  "일정-default": "353:178",
+  "기타-address": "2178:154",
+  "기타-sign": "634:1261",
+  "기타-board": "2178:155",
+  "기타-vote": "2178:159",
+  "기타-mindmap": "2178:158",
+  "기타-storage": "5222:16211",
 };
 
 // Displayed Korean titles, keyed by "{category}-{englishFileStem}" — the
@@ -315,6 +336,25 @@ const TITLE_OVERRIDES: Record<string, string> = {
   "기타-umbrella": "우산",
   "기타-database": "데이터베이스",
   "기타-api_connect": "API 연결",
+  "실행아이콘-t": "T",
+  "실행아이콘-nahago": "NAHAGO",
+  "실행아이콘-oneai": "ONEAI",
+  "실행아이콘-oneai_cube": "ONEAI CUBE",
+  "실행아이콘-wehago": "WEHAGO",
+  "메일-default": "기본",
+  "메일-badge": "할인",
+  "메일-chat": "채팅",
+  "채팅-default": "채팅",
+  "채팅-videocall": "화상통화",
+  "채팅-videocall_chat": "화상통화 채팅",
+  "일정-year": "연도",
+  "일정-default": "확인",
+  "기타-address": "주소록",
+  "기타-sign": "서명",
+  "기타-board": "게시판",
+  "기타-vote": "투표",
+  "기타-mindmap": "마인드맵",
+  "기타-storage": "저장소",
 };
 
 export function getAllIcons3D(): Icon3D[] {
