@@ -226,6 +226,10 @@ const FIGMA_NODE_IDS: Record<string, string> = {
   "금융-moneybag_passbook": "3272:111",
   "금융-badge_percent": "2898:17264",
   "금융-badge": "2898:17285",
+  "기타-paper_plate_pen": "7572:17794",
+  "기타-headphone": "7572:17778",
+  "기타-hand_palm": "7572:17749",
+  "기타-giftpoint": "17664:27030",
 };
 
 // Displayed Korean titles, keyed by "{category}-{englishFileStem}" — the
@@ -427,6 +431,10 @@ const TITLE_OVERRIDES: Record<string, string> = {
   "금융-moneybag_passbook": "돈주머니 카드",
   "금융-badge_percent": "퍼센트 배지",
   "금융-badge": "배지",
+  "기타-paper_plate_pen": "체크리스트",
+  "기타-headphone": "헤드폰",
+  "기타-hand_palm": "손바닥",
+  "기타-giftpoint": "포인트",
 };
 
 export function getAllIcons3D(): Icon3D[] {
