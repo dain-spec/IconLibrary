@@ -190,6 +190,14 @@ const FIGMA_NODE_IDS: Record<string, string> = {
   "기타-vote": "2178:159",
   "기타-mindmap": "2178:158",
   "기타-storage": "5222:16211",
+  "건물-company": "2178:156",
+  "건물-default": "2303:122",
+  "건물-home_rent": "2944:9286",
+  "건물-home": "2277:5201",
+  "건물-home_coin": "6955:16247",
+  "건물-home_tax": "6955:16248",
+  "건물-bank": "2293:107",
+  "건물-school": "2856:101",
 };
 
 // Displayed Korean titles, keyed by "{category}-{englishFileStem}" — the
@@ -355,6 +363,14 @@ const TITLE_OVERRIDES: Record<string, string> = {
   "기타-vote": "투표",
   "기타-mindmap": "마인드맵",
   "기타-storage": "저장소",
+  "건물-company": "회사",
+  "건물-default": "빌딩",
+  "건물-home_rent": "월세",
+  "건물-home": "집",
+  "건물-home_coin": "주택담보대출",
+  "건물-home_tax": "세금감면",
+  "건물-bank": "은행",
+  "건물-school": "학교",
 };
 
 export function getAllIcons3D(): Icon3D[] {
