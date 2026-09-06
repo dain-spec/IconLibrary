@@ -14,6 +14,12 @@ export const FIGMA_FILE_KEY = "R6ZgOUWOgCZEgu38S8mhJl";
 
 export const iconMeta: IconMeta[] = [
   {
+    id: "ic_doc_flat",
+    category: "문서",
+    tags: { ko: ["문서", "서류"], en: ["document", "paper"] },
+    figmaNodeId: "18557:26385",
+  },
+  {
     id: "ic_doc_money_flat",
     category: "문서",
     tags: {
