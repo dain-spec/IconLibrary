@@ -211,6 +211,36 @@ export const iconMeta: IconMeta[] = [
     tags: { ko: ["PMS", "프로젝트관리"], en: ["project management"] },
     figmaNodeId: "18788:26686",
   },
+  {
+    id: "ic_individual_flat",
+    category: "서비스",
+    tags: { ko: ["개인조정", "개인세무조정"], en: ["individual tax adjustment"] },
+    figmaNodeId: "18794:27587",
+  },
+  {
+    id: "ic_logistics_flat",
+    category: "서비스",
+    tags: { ko: ["물류관리", "물류"], en: ["logistics management"] },
+    figmaNodeId: "18794:27605",
+  },
+  {
+    id: "ic_human_flat",
+    category: "서비스",
+    tags: { ko: ["급여관리", "급여", "인사"], en: ["payroll management", "hr"] },
+    figmaNodeId: "18794:27625",
+  },
+  {
+    id: "ic_corporate_flat",
+    category: "서비스",
+    tags: { ko: ["법인조정", "법인세무조정"], en: ["corporate tax adjustment"] },
+    figmaNodeId: "18794:27588",
+  },
+  {
+    id: "ic_accounting_flat",
+    category: "서비스",
+    tags: { ko: ["회계관리", "회계"], en: ["accounting management"] },
+    figmaNodeId: "18794:27643",
+  },
 ];
 
 export function figmaLinkFor(nodeId: string): string {
