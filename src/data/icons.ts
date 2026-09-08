@@ -55,6 +55,36 @@ export const iconMeta: IconMeta[] = [
     tags: { ko: ["멘션", "알림"], en: ["mention"] },
     figmaNodeId: "3531:9592",
   },
+  {
+    id: "ic_contract_flat",
+    category: "서비스",
+    tags: { ko: ["전자계약", "계약", "계약서"], en: ["contract", "e-contract"] },
+    figmaNodeId: "16333:2876",
+  },
+  {
+    id: "ic_mindmap_flat",
+    category: "서비스",
+    tags: { ko: ["마인드맵"], en: ["mindmap"] },
+    figmaNodeId: "12089:21106",
+  },
+  {
+    id: "ic_vote_flat",
+    category: "서비스",
+    tags: { ko: ["투표"], en: ["vote"] },
+    figmaNodeId: "12089:21162",
+  },
+  {
+    id: "ic_camera_flat",
+    category: "서비스",
+    tags: { ko: ["카메라", "사진"], en: ["camera", "photo"] },
+    figmaNodeId: "18664:37413",
+  },
+  {
+    id: "ic_video_flat",
+    category: "서비스",
+    tags: { ko: ["화상회의", "영상통화"], en: ["video conference", "video call"] },
+    figmaNodeId: "10863:1905",
+  },
 ];
 
 export function figmaLinkFor(nodeId: string): string {
