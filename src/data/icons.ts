@@ -361,6 +361,12 @@ export const iconMeta: IconMeta[] = [
     tags: { ko: ["사이렌", "경보", "알림"], en: ["siren", "alert"] },
     figmaNodeId: "17190:25279",
   },
+  {
+    id: "ic_cloud_flat",
+    category: "서비스",
+    tags: { ko: ["클라우드"], en: ["cloud"] },
+    figmaNodeId: "18788:26636",
+  },
 ];
 
 export function figmaLinkFor(nodeId: string): string {
