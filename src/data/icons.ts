@@ -25,6 +25,30 @@ export const iconMeta: IconMeta[] = [
     tags: { ko: ["메시지", "쪽지"], en: ["message"] },
     figmaNodeId: "3598:9646",
   },
+  {
+    id: "ic_mail_flat",
+    category: "서비스",
+    tags: { ko: ["메일", "이메일"], en: ["mail", "email"] },
+    figmaNodeId: "3535:9585",
+  },
+  {
+    id: "ic_drive_flat",
+    category: "서비스",
+    tags: { ko: ["드라이브", "저장소", "파일"], en: ["drive", "storage"] },
+    figmaNodeId: "10897:1945",
+  },
+  {
+    id: "ic_board_flat",
+    category: "서비스",
+    tags: { ko: ["게시판"], en: ["board"] },
+    figmaNodeId: "10897:2195",
+  },
+  {
+    id: "ic_chat_flat",
+    category: "서비스",
+    tags: { ko: ["대화", "채팅"], en: ["chat", "talk"] },
+    figmaNodeId: "6521:15554",
+  },
 ];
 
 export function figmaLinkFor(nodeId: string): string {
