@@ -49,6 +49,12 @@ export const iconMeta: IconMeta[] = [
     tags: { ko: ["대화", "채팅"], en: ["chat", "talk"] },
     figmaNodeId: "6521:15554",
   },
+  {
+    id: "ic_alphamention_flat",
+    category: "서비스",
+    tags: { ko: ["멘션", "알림"], en: ["mention"] },
+    figmaNodeId: "3531:9592",
+  },
 ];
 
 export function figmaLinkFor(nodeId: string): string {
