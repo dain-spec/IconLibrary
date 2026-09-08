@@ -1,9 +1,0 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g transform="translate(3 3) scale(1 1)">
-<g id="outlined">
-<path id="Rectangle 346600562" d="M0 3.5C0 1.567 1.567 0 3.5 0H14.5C16.433 0 18 1.567 18 3.5V14.5C18 16.433 16.433 18 14.5 18H3.5C1.567 18 0 16.433 0 14.5V3.5Z" fill="#FFC311"/>
-<path id="Rectangle 346600563" d="M0 3.5C0 1.567 1.567 0 3.5 0H14.5C16.433 0 18 1.567 18 3.5V5H0V3.5Z" fill="#FF8A00"/>
-<path id="Vector (simplified)" fill-rule="evenodd" clip-rule="evenodd" d="M10.333 8C10.8853 8 11.333 8.44772 11.333 9C11.333 9.55228 10.8853 10 10.333 10H5C4.44772 10 4 9.55228 4 9C4 8.44772 4.44772 8 5 8H10.333ZM13 12C13.5523 12 14 12.4477 14 13C14 13.5523 13.5523 14 13 14H5C4.44772 14 4 13.5523 4 13C4 12.4477 4.44772 12 5 12H13Z" fill="white"/>
-</g>
-</g>
-</svg>
