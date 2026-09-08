@@ -19,6 +19,12 @@ export const iconMeta: IconMeta[] = [
     tags: { ko: ["전자결재", "결재", "사인"], en: ["signature", "approval"] },
     figmaNodeId: "10897:2168",
   },
+  {
+    id: "ic_msg_flat",
+    category: "서비스",
+    tags: { ko: ["메시지", "쪽지"], en: ["message"] },
+    figmaNodeId: "3598:9646",
+  },
 ];
 
 export function figmaLinkFor(nodeId: string): string {
