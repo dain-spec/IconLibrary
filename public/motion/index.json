@@ -2269,6 +2269,36 @@
       ],
       "updatedAt": "2026-08-14",
       "note": "2026_WE봇"
+    },
+    {
+      "id": "building-sun",
+      "type": "lottie",
+      "title": "빌딩 맑음",
+      "path": "./assets/3d/building_sun.lottie",
+      "thumbnail": "",
+      "tags": [
+        "빌딩",
+        "건물",
+        "날씨",
+        "맑음"
+      ],
+      "updatedAt": "2026-09-09",
+      "note": "2026_WEHAGO Q Mobile"
+    },
+    {
+      "id": "building-rain",
+      "type": "lottie",
+      "title": "빌딩 비",
+      "path": "./assets/3d/building_rain.lottie",
+      "thumbnail": "",
+      "tags": [
+        "빌딩",
+        "건물",
+        "날씨",
+        "비"
+      ],
+      "updatedAt": "2026-09-09",
+      "note": "2026_WEHAGO Q Mobile"
     }
   ]
 }
