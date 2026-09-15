@@ -475,6 +475,60 @@ export const iconMeta: IconMeta[] = [
     tags: { ko: ["보내기", "전송"], en: ["send"] },
     figmaNodeId: "3534:9575",
   },
+  {
+    id: "ic_graduate_flat",
+    category: "복지",
+    tags: { ko: ["졸업", "학생"], en: ["graduate", "student"] },
+    figmaNodeId: "6877:16484",
+  },
+  {
+    id: "ic_book_flat",
+    category: "복지",
+    tags: { ko: ["교육"], en: ["education", "book"] },
+    figmaNodeId: "3595:9858",
+  },
+  {
+    id: "ic_bag_flat",
+    category: "복지",
+    tags: { ko: ["가방"], en: ["bag", "briefcase"] },
+    figmaNodeId: "3595:9718",
+  },
+  {
+    id: "ic_medical_flat",
+    category: "복지",
+    tags: { ko: ["의료"], en: ["medical", "health"] },
+    figmaNodeId: "18818:30779",
+  },
+  {
+    id: "ic_time_arrow_flat",
+    category: "복지",
+    tags: { ko: ["연장근무"], en: ["overtime", "extended work"] },
+    figmaNodeId: "3589:9617",
+  },
+  {
+    id: "ic_airplain_flat",
+    category: "복지",
+    tags: { ko: ["출장"], en: ["business trip", "travel"] },
+    figmaNodeId: "3589:9664",
+  },
+  {
+    id: "ic_vacation_flat",
+    category: "복지",
+    tags: { ko: ["휴가"], en: ["vacation"] },
+    figmaNodeId: "3589:9663",
+  },
+  {
+    id: "ic_umbrella_flat",
+    category: "복지",
+    tags: { ko: ["우산", "휴가"], en: ["umbrella"] },
+    figmaNodeId: "18826:31564",
+  },
+  {
+    id: "ic_armchair_flat",
+    category: "복지",
+    tags: { ko: ["퇴직증명"], en: ["retirement", "armchair"] },
+    figmaNodeId: "3595:9749",
+  },
 ];
 
 export function figmaLinkFor(nodeId: string): string {
