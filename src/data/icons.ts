@@ -423,19 +423,19 @@ export const iconMeta: IconMeta[] = [
   },
   {
     id: "ic_doc2_flat",
-    category: "문서",
+    category: "일반",
     tags: { ko: ["문서"], en: ["document"] },
     figmaNodeId: "7812:16251",
   },
   {
     id: "ic_doc_pencil_flat",
-    category: "문서",
+    category: "일반",
     tags: { ko: ["신청서작성", "문서", "수정"], en: ["document", "edit", "application"] },
     figmaNodeId: "3592:9724",
   },
   {
     id: "ic_doc3_flat",
-    category: "문서",
+    category: "일반",
     tags: { ko: ["문서"], en: ["document"] },
     figmaNodeId: "18743:29954",
   },
