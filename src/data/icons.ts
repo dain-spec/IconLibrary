@@ -415,6 +415,66 @@ export const iconMeta: IconMeta[] = [
     tags: { ko: ["보험", "건강"], en: ["insurance", "health"] },
     figmaNodeId: "18818:30618",
   },
+  {
+    id: "ic_edit_flat",
+    category: "일반",
+    tags: { ko: ["수정", "연필", "편집"], en: ["edit", "pencil"] },
+    figmaNodeId: "11085:19924",
+  },
+  {
+    id: "ic_doc2_flat",
+    category: "문서",
+    tags: { ko: ["문서"], en: ["document"] },
+    figmaNodeId: "7812:16251",
+  },
+  {
+    id: "ic_doc_pencil_flat",
+    category: "문서",
+    tags: { ko: ["신청서작성", "문서", "수정"], en: ["document", "edit", "application"] },
+    figmaNodeId: "3592:9724",
+  },
+  {
+    id: "ic_doc3_flat",
+    category: "문서",
+    tags: { ko: ["문서"], en: ["document"] },
+    figmaNodeId: "18743:29954",
+  },
+  {
+    id: "ic_lock_flat",
+    category: "일반",
+    tags: { ko: ["잠금", "보안"], en: ["lock", "security"] },
+    figmaNodeId: "10963:19637",
+  },
+  {
+    id: "ic_link_flat",
+    category: "일반",
+    tags: { ko: ["링크", "연결"], en: ["link"] },
+    figmaNodeId: "10219:19372",
+  },
+  {
+    id: "ic_dropper_flat",
+    category: "일반",
+    tags: { ko: ["스포이드", "색상추출"], en: ["dropper", "color picker"] },
+    figmaNodeId: "6864:16020",
+  },
+  {
+    id: "ic_alarm_flat",
+    category: "일반",
+    tags: { ko: ["알림", "알람"], en: ["alarm", "notification"] },
+    figmaNodeId: "12135:22828",
+  },
+  {
+    id: "ic_trash_flat",
+    category: "일반",
+    tags: { ko: ["삭제", "휴지통"], en: ["trash", "delete"] },
+    figmaNodeId: "11072:21463",
+  },
+  {
+    id: "ic_send_flat",
+    category: "일반",
+    tags: { ko: ["보내기", "전송"], en: ["send"] },
+    figmaNodeId: "3534:9575",
+  },
 ];
 
 export function figmaLinkFor(nodeId: string): string {
