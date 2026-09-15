@@ -22,14 +22,26 @@ export function LibraryExplorer({ icons }: { icons: Icon[] }) {
     });
   }, [icons, query]);
 
-  const [selectedId, setSelectedId] = useState<string | null>(() => filtered[0]?.id ?? null);
+  const grouped = useMemo(() => {
+    const order = Array.from(new Set(filtered.map((icon) => icon.category)));
+    return order
+      .map((category) => ({
+        category,
+        items: filtered.filter((icon) => icon.category === category),
+      }))
+      .filter((group) => group.items.length > 0);
+  }, [filtered]);
+
+  const [selectedId, setSelectedId] = useState<string | null>(
+    () => grouped[0]?.items[0]?.id ?? null
+  );
   const gridRef = useRef<HTMLDivElement>(null);
 
   const selected = icons.find((icon) => icon.id === selectedId) ?? null;
 
   useArrowKeyGridNav({
     containerRef: gridRef,
-    ids: filtered.map((icon) => icon.id),
+    ids: grouped.flatMap((group) => group.items.map((icon) => icon.id)),
     selectedId,
     onSelect: setSelectedId,
   });
@@ -58,14 +70,21 @@ export function LibraryExplorer({ icons }: { icons: Icon[] }) {
               검색 결과가 없습니다.
             </p>
           ) : (
-            <div ref={gridRef} className="mt-6 flex flex-wrap gap-3">
-              {filtered.map((icon) => (
-                <IconCard
-                  key={icon.id}
-                  icon={icon}
-                  isSelected={icon.id === selectedId}
-                  onClick={() => setSelectedId(icon.id)}
-                />
+            <div ref={gridRef} className="mt-6 flex flex-col gap-8">
+              {grouped.map((group) => (
+                <div key={group.category}>
+                  <h3 className="mb-3 text-sm font-semibold text-ink">{group.category}</h3>
+                  <div className="flex flex-wrap gap-3">
+                    {group.items.map((icon) => (
+                      <IconCard
+                        key={icon.id}
+                        icon={icon}
+                        isSelected={icon.id === selectedId}
+                        onClick={() => setSelectedId(icon.id)}
+                      />
+                    ))}
+                  </div>
+                </div>
               ))}
             </div>
           )}
