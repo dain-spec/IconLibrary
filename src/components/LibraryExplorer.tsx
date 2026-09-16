@@ -8,6 +8,8 @@ import { IconDetailPanel } from "./IconDetailPanel";
 import { SearchClearButton } from "./SearchClearButton";
 import { SearchIcon } from "./SearchIcon";
 
+const SHOW_CATEGORY_LABELS = false;
+
 export function LibraryExplorer({ icons }: { icons: Icon[] }) {
   const [query, setQuery] = useState("");
 
@@ -73,7 +75,9 @@ export function LibraryExplorer({ icons }: { icons: Icon[] }) {
             <div ref={gridRef} className="mt-6 flex flex-col gap-8">
               {grouped.map((group) => (
                 <div key={group.category}>
-                  <h3 className="mb-3 text-sm font-semibold text-ink">{group.category}</h3>
+                  {SHOW_CATEGORY_LABELS && (
+                    <h3 className="mb-3 text-sm font-semibold text-ink">{group.category}</h3>
+                  )}
                   <div className="flex flex-wrap gap-3">
                     {group.items.map((icon) => (
                       <IconCard
