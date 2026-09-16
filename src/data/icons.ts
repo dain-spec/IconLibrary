@@ -865,6 +865,90 @@ export const iconMeta: IconMeta[] = [
     tags: { ko: ["ID", "명함", "인증"], en: ["id card", "verified"] },
     figmaNodeId: "14770:22945",
   },
+  {
+    id: "ic_play2_flat",
+    category: "콘텐츠",
+    tags: { ko: ["유튜브", "영상"], en: ["youtube", "play", "video"] },
+    figmaNodeId: "16350:24883",
+  },
+  {
+    id: "ic_audio_flat",
+    category: "콘텐츠",
+    tags: { ko: ["오디오"], en: ["audio"] },
+    figmaNodeId: "10235:19390",
+  },
+  {
+    id: "ic_video2_flat",
+    category: "콘텐츠",
+    tags: { ko: ["비디오"], en: ["video"] },
+    figmaNodeId: "13868:22614",
+  },
+  {
+    id: "ic_videobox_flat",
+    category: "콘텐츠",
+    tags: { ko: ["동영상"], en: ["video box"] },
+    figmaNodeId: "16325:2876",
+  },
+  {
+    id: "ic_etc_flat",
+    category: "콘텐츠",
+    tags: { ko: ["기타"], en: ["etc", "more"] },
+    figmaNodeId: "6862:15951",
+  },
+  {
+    id: "ic_image_flat",
+    category: "콘텐츠",
+    tags: { ko: ["이미지"], en: ["image"] },
+    figmaNodeId: "3797:9869",
+  },
+  {
+    id: "ic_docai_flat",
+    category: "콘텐츠",
+    tags: { ko: ["AI 요약"], en: ["ai summary"] },
+    figmaNodeId: "3764:9760",
+  },
+  {
+    id: "ic_photo_flat",
+    category: "콘텐츠",
+    tags: { ko: ["사진"], en: ["photo"] },
+    figmaNodeId: "13029:22392",
+  },
+  {
+    id: "ic_ppt_flat",
+    category: "콘텐츠",
+    tags: { ko: ["PPT"], en: ["ppt", "slides"] },
+    figmaNodeId: "3800:9896",
+  },
+  {
+    id: "ic_table_flat",
+    category: "콘텐츠",
+    tags: { ko: ["표", "차트"], en: ["table", "chart"] },
+    figmaNodeId: "3801:9977",
+  },
+  {
+    id: "ic_copywriting_flat",
+    category: "콘텐츠",
+    tags: { ko: ["카피라이팅"], en: ["copywriting"] },
+    figmaNodeId: "3806:10100",
+  },
+  {
+    id: "ic_presentation_flat",
+    category: "콘텐츠",
+    tags: { ko: ["발표", "프리젠테이션"], en: ["presentation"] },
+    figmaNodeId: "3801:9877",
+  },
+  {
+    id: "ic_data_layer_flat",
+    category: "콘텐츠",
+    tags: { ko: ["레이어"], en: ["data layer"] },
+    figmaNodeId: "6820:15699",
+  },
+  {
+    id: "ic_code_flat",
+    category: "콘텐츠",
+    tags: { ko: ["코드", "개발"], en: ["code", "development"] },
+    figmaNodeId: "6877:16435",
+  },
 ];
 
 export function figmaLinkFor(nodeId: string): string {
