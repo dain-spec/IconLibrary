@@ -734,6 +734,12 @@ export const iconMeta: IconMeta[] = [
     figmaNodeId: "18690:26668",
   },
   {
+    id: "ic_quick_flat",
+    category: "일반",
+    tags: { ko: ["빠름", "번개"], en: ["quick", "fast", "lightning"] },
+    figmaNodeId: "18690:26841",
+  },
+  {
     id: "ic_error_flat",
     category: "일반",
     tags: { ko: ["오류"], en: ["error"] },
