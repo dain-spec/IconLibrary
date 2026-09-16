@@ -793,6 +793,78 @@ export const iconMeta: IconMeta[] = [
     tags: { ko: ["검색"], en: ["search"] },
     figmaNodeId: "18700:27386",
   },
+  {
+    id: "ic_user_flat",
+    category: "사용자",
+    tags: { ko: ["사람"], en: ["user", "person"] },
+    figmaNodeId: "18680:26573",
+  },
+  {
+    id: "ic_user2_flat",
+    category: "사용자",
+    tags: { ko: ["직원"], en: ["user", "employee"] },
+    figmaNodeId: "3504:9561",
+  },
+  {
+    id: "ic_user_money_flat",
+    category: "사용자",
+    tags: { ko: ["사람", "돈"], en: ["user", "money"] },
+    figmaNodeId: "18680:26608",
+  },
+  {
+    id: "ic_user_money2_flat",
+    category: "사용자",
+    tags: { ko: ["종합소득세"], en: ["user", "income tax"] },
+    figmaNodeId: "3504:9598",
+  },
+  {
+    id: "ic_user_cancel_flat",
+    category: "사용자",
+    tags: { ko: ["사람", "구독 취소"], en: ["user", "cancel", "unsubscribe"] },
+    figmaNodeId: "11078:21726",
+  },
+  {
+    id: "ic_user_add_flat",
+    category: "사용자",
+    tags: { ko: ["사람", "추가"], en: ["user", "add"] },
+    figmaNodeId: "12649:22416",
+  },
+  {
+    id: "ic_user_check_flat",
+    category: "사용자",
+    tags: { ko: ["사람", "체크"], en: ["user", "check"] },
+    figmaNodeId: "14189:2147",
+  },
+  {
+    id: "ic_user_set_flat",
+    category: "사용자",
+    tags: { ko: ["사람", "설정"], en: ["user", "settings"] },
+    figmaNodeId: "16257:2899",
+  },
+  {
+    id: "ic_user_percent_flat",
+    category: "사용자",
+    tags: { ko: ["근무", "돈", "세금"], en: ["user", "percent", "tax"] },
+    figmaNodeId: "15885:25416",
+  },
+  {
+    id: "ic_usergroup_flat",
+    category: "사용자",
+    tags: { ko: ["사람", "그룹", "사용자그룹"], en: ["user group", "team"] },
+    figmaNodeId: "10963:19559",
+  },
+  {
+    id: "ic_idcard_flat",
+    category: "사용자",
+    tags: { ko: ["ID", "명함"], en: ["id card", "business card"] },
+    figmaNodeId: "11464:21490",
+  },
+  {
+    id: "ic_idcard_check_flat",
+    category: "사용자",
+    tags: { ko: ["ID", "명함", "인증"], en: ["id card", "verified"] },
+    figmaNodeId: "14770:22945",
+  },
 ];
 
 export function figmaLinkFor(nodeId: string): string {
