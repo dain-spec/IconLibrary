@@ -1081,6 +1081,48 @@ export const iconMeta: IconMeta[] = [
     tags: { ko: ["건설"], en: ["construction"] },
     figmaNodeId: "17582:27007",
   },
+  {
+    id: "ic_pc_remote_flat",
+    category: "디바이스",
+    tags: { ko: ["pc", "원격", "노트북"], en: ["pc", "remote", "laptop"] },
+    figmaNodeId: "16350:24629",
+  },
+  {
+    id: "ic_pc_down_flat",
+    category: "디바이스",
+    tags: { ko: ["pc", "다운로드"], en: ["pc", "download"] },
+    figmaNodeId: "16350:24703",
+  },
+  {
+    id: "ic_pc_flat",
+    category: "디바이스",
+    tags: { ko: ["pc"], en: ["pc", "desktop"] },
+    figmaNodeId: "6811:15970",
+  },
+  {
+    id: "ic_phone_flat",
+    category: "디바이스",
+    tags: { ko: ["모바일", "폰"], en: ["mobile", "phone"] },
+    figmaNodeId: "11469:21676",
+  },
+  {
+    id: "ic_browser_flat",
+    category: "디바이스",
+    tags: { ko: ["브라우저", "인터넷창"], en: ["browser"] },
+    figmaNodeId: "17155:28039",
+  },
+  {
+    id: "ic_embedding_flat",
+    category: "디바이스",
+    tags: { ko: ["브라우저", "임베딩"], en: ["embedding"] },
+    figmaNodeId: "18826:31604",
+  },
+  {
+    id: "ic_cscenter_flat",
+    category: "디바이스",
+    tags: { ko: ["고객센터"], en: ["customer service", "support"] },
+    figmaNodeId: "6811:15768",
+  },
 ];
 
 export function figmaLinkFor(nodeId: string): string {
