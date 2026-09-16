@@ -1123,6 +1123,96 @@ export const iconMeta: IconMeta[] = [
     tags: { ko: ["고객센터"], en: ["customer service", "support"] },
     figmaNodeId: "6811:15768",
   },
+  {
+    id: "ic_graph_flat",
+    category: "기타",
+    tags: { ko: ["그래프"], en: ["graph", "chart"] },
+    figmaNodeId: "16817:1362",
+  },
+  {
+    id: "ic_graph_growth_flat",
+    category: "기타",
+    tags: { ko: ["그래프", "성장"], en: ["graph", "growth"] },
+    figmaNodeId: "16817:1441",
+  },
+  {
+    id: "ic_process_flat",
+    category: "기타",
+    tags: { ko: ["프로세스"], en: ["process"] },
+    figmaNodeId: "15874:719",
+  },
+  {
+    id: "ic_map_flat",
+    category: "기타",
+    tags: { ko: ["지도"], en: ["map"] },
+    figmaNodeId: "17194:25503",
+  },
+  {
+    id: "ic_map_pin_flat",
+    category: "기타",
+    tags: { ko: ["지도", "핀"], en: ["map", "pin"] },
+    figmaNodeId: "17194:25520",
+  },
+  {
+    id: "ic_place_flat",
+    category: "기타",
+    tags: { ko: ["지도", "핀"], en: ["place", "location"] },
+    figmaNodeId: "17194:25548",
+  },
+  {
+    id: "ic_pin_flat",
+    category: "기타",
+    tags: { ko: ["핀"], en: ["pin"] },
+    figmaNodeId: "17194:25557",
+  },
+  {
+    id: "ic_insurance_flat",
+    category: "기타",
+    tags: { ko: ["보험"], en: ["insurance"] },
+    figmaNodeId: "15869:27461",
+  },
+  {
+    id: "ic_siren_flat",
+    category: "기타",
+    tags: { ko: ["경고", "사이렌"], en: ["siren", "alert"] },
+    figmaNodeId: "17190:25279",
+  },
+  {
+    id: "ic_earth_flat",
+    category: "기타",
+    tags: { ko: ["지구"], en: ["earth", "globe"] },
+    figmaNodeId: "3974:10286",
+  },
+  {
+    id: "ic_weather_flat",
+    category: "기타",
+    tags: { ko: ["날씨"], en: ["weather"] },
+    figmaNodeId: "16350:24884",
+  },
+  {
+    id: "ic_hot_flat",
+    category: "기타",
+    tags: { ko: ["핫토픽"], en: ["hot topic", "trending"] },
+    figmaNodeId: "4016:11270",
+  },
+  {
+    id: "ic_bulb_flat",
+    category: "기타",
+    tags: { ko: ["전구"], en: ["bulb", "idea"] },
+    figmaNodeId: "15542:25252",
+  },
+  {
+    id: "ic_health2_flat",
+    category: "기타",
+    tags: { ko: ["건강", "헬스", "의료"], en: ["health", "heartbeat"] },
+    figmaNodeId: "6811:15714",
+  },
+  {
+    id: "ic_donation_flat",
+    category: "기타",
+    tags: { ko: ["기부"], en: ["donation"] },
+    figmaNodeId: "18821:31380",
+  },
 ];
 
 export function figmaLinkFor(nodeId: string): string {
