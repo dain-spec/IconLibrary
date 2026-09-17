@@ -1213,6 +1213,36 @@ export const iconMeta: IconMeta[] = [
     tags: { ko: ["기부"], en: ["donation"] },
     figmaNodeId: "18821:31380",
   },
+  {
+    id: "ic_emoji_smiling_face_flat",
+    category: "이모지",
+    tags: { ko: ["이모지"], en: ["emoji", "smiling"] },
+    figmaNodeId: "5668:14783",
+  },
+  {
+    id: "ic_emoji_slightly_face_flat",
+    category: "이모지",
+    tags: { ko: ["이모지"], en: ["emoji", "slightly smiling"] },
+    figmaNodeId: "5668:14784",
+  },
+  {
+    id: "ic_emoji_cry_face_flat",
+    category: "이모지",
+    tags: { ko: ["이모지"], en: ["emoji", "crying"] },
+    figmaNodeId: "5668:14785",
+  },
+  {
+    id: "ic_emoji_sad_face_flat",
+    category: "이모지",
+    tags: { ko: ["이모지"], en: ["emoji", "sad"] },
+    figmaNodeId: "7400:16175",
+  },
+  {
+    id: "ic_emoji_heart_face_flat",
+    category: "이모지",
+    tags: { ko: ["이모지"], en: ["emoji", "heart eyes"] },
+    figmaNodeId: "7399:16212",
+  },
 ];
 
 export function figmaLinkFor(nodeId: string): string {
