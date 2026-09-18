@@ -100,21 +100,16 @@ export default function GuidePage() {
             <DiagramImage src="/guide/05-radius.png" alt="Line/Fill/MultiColor 타입별 코너 radius" width={1999} height={960} />
           </Section>
 
-          <Section title="두께">
+          <Section
+            title="두께"
+            badge="Monochrome"
+            description="24 사이즈의 아이콘 기본 두께는 1.5px이나 1 또는 2px를 적용할 수 있으며 획의 정렬은 Center로 합니다."
+          >
             <div className="space-y-10">
+              <DiagramImage src="/guide/06-thickness-mono.png" alt="Monochrome 두께 1.5 / 2 / 1px" width={1999} height={960} />
               <div>
                 <div className="flex items-center gap-3">
-                  <Badge>Monochrome</Badge>
-                </div>
-                <p className="mt-2 max-w-3xl text-sm text-muted">
-                  24 사이즈의 아이콘 기본 두께는 1.5px이나 1 또는 2px를 적용할 수 있으며 획의 정렬은 Center로 합니다.
-                </p>
-                <div className="mt-4">
-                  <DiagramImage src="/guide/06-thickness-mono.png" alt="Monochrome 두께 1.5 / 2 / 1px" width={1999} height={960} />
-                </div>
-              </div>
-              <div>
-                <div className="flex items-center gap-3">
+                  <h3 className="text-lg font-semibold text-ink">두께</h3>
                   <Badge>MultiColor</Badge>
                 </div>
                 <p className="mt-2 max-w-3xl text-sm text-muted">
