@@ -7,6 +7,7 @@ const NAV = [
   { label: "MultiColor Icon", href: "/icon/multicolor" },
   { label: "3D Icon", href: "/icon/3d" },
   { label: "Motion", href: "/motion" },
+  { label: "Guide", href: "/guide" },
 ];
 
 export function Sidebar() {
