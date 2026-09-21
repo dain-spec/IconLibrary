@@ -2244,6 +2244,45 @@
       "note": "2026_WEHAGO Q Mobile"
     },
     {
+      "id": "qri-magnifier",
+      "type": "lottie",
+      "title": "돋보기",
+      "path": "./assets/character/Qri_magnifier.lottie",
+      "thumbnail": "",
+      "tags": [
+        "qri",
+        "magnifier"
+      ],
+      "updatedAt": "2026-09-21",
+      "note": "2026_WEHAGO Q Mobile"
+    },
+    {
+      "id": "qri-thinking",
+      "type": "lottie",
+      "title": "생각",
+      "path": "./assets/character/Qri_thinking.lottie",
+      "thumbnail": "",
+      "tags": [
+        "qri",
+        "thinking"
+      ],
+      "updatedAt": "2026-09-21",
+      "note": "2026_WEHAGO Q Mobile"
+    },
+    {
+      "id": "qri-answering",
+      "type": "lottie",
+      "title": "답변",
+      "path": "./assets/character/answering.lottie",
+      "thumbnail": "",
+      "tags": [
+        "qri",
+        "answering"
+      ],
+      "updatedAt": "2026-09-21",
+      "note": "2026_WEHAGO Q Mobile"
+    },
+    {
       "id": "webot-guide",
       "type": "image",
       "title": "안내",
