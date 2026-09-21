@@ -2231,6 +2231,19 @@
       "note": "2026_WEHAGO Q Mobile"
     },
     {
+      "id": "qri-greeting",
+      "type": "lottie",
+      "title": "인사",
+      "path": "./assets/character/Qri_greeting.lottie",
+      "thumbnail": "",
+      "tags": [
+        "qri",
+        "greeting"
+      ],
+      "updatedAt": "2026-09-21",
+      "note": "2026_WEHAGO Q Mobile"
+    },
+    {
       "id": "webot-guide",
       "type": "image",
       "title": "안내",
