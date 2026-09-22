@@ -52,6 +52,7 @@ function DiagramImage({
         width={width}
         height={height}
         className="h-auto w-full"
+        unoptimized
       />
     </div>
   );
