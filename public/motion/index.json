@@ -2219,6 +2219,19 @@
       "note": "2026_WEHAGO Q Mobile"
     },
     {
+      "id": "qri-talk",
+      "type": "lottie",
+      "title": "말하기",
+      "path": "./assets/character/qri_talk.lottie",
+      "thumbnail": "",
+      "tags": [
+        "qri",
+        "talk"
+      ],
+      "updatedAt": "2026-09-22",
+      "note": "2026_WEHAGO Q Mobile"
+    },
+    {
       "id": "qri-smile",
       "type": "json",
       "title": "미소",
