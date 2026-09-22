@@ -60,7 +60,7 @@ function DiagramImage({
 export default function GuidePage() {
   return (
     <div className="h-full overflow-y-auto">
-      <div className="mx-auto max-w-4xl px-6 py-10">
+      <div className="mx-auto max-w-6xl px-6 py-10">
         <p className="text-sm text-muted">2026. 9. · 프로덕트경험센터 / Product UX UI 1 Unit</p>
         <h1 className="mt-2 text-4xl font-bold text-ink">Icon Design Guide</h1>
 
