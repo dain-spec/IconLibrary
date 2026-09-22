@@ -437,18 +437,45 @@ const TITLE_OVERRIDES: Record<string, string> = {
   "기타-giftpoint": "포인트",
 };
 
+// FIGMA_NODE_IDS keys were inserted in the order each icon was added from
+// Figma, so its key order doubles as the canonical display order (both for
+// categories and for icons within a category). Anything not present in the
+// map (e.g. a newly added icon not yet registered) sorts alphabetically
+// after the mapped ones within its category.
+const FIGMA_ORDER = Object.keys(FIGMA_NODE_IDS);
+
+const CATEGORY_ORDER = FIGMA_ORDER.reduce<string[]>((order, key) => {
+  const category = key.split("-")[0];
+  if (!order.includes(category)) order.push(category);
+  return order;
+}, []);
+
+function categoryRank(category: string): number {
+  const index = CATEGORY_ORDER.indexOf(category);
+  return index === -1 ? CATEGORY_ORDER.length : index;
+}
+
+function iconRank(id: string): number {
+  const index = FIGMA_ORDER.indexOf(id);
+  return index === -1 ? FIGMA_ORDER.length : index;
+}
+
 export function getAllIcons3D(): Icon3D[] {
   const categories = fs
     .readdirSync(ICONS_3D_DIR, { withFileTypes: true })
     .filter((entry) => entry.isDirectory())
     .map((entry) => entry.name)
-    .sort();
+    .sort((a, b) => categoryRank(a) - categoryRank(b) || a.localeCompare(b));
 
   return categories.flatMap((category) => {
     const files = fs
       .readdirSync(path.join(ICONS_3D_DIR, category))
       .filter((file) => IMAGE_EXTENSION.test(file))
-      .sort();
+      .sort((a, b) => {
+        const idA = `${category}-${a.replace(IMAGE_EXTENSION, "")}`;
+        const idB = `${category}-${b.replace(IMAGE_EXTENSION, "")}`;
+        return iconRank(idA) - iconRank(idB) || a.localeCompare(b);
+      });
 
     return files.map((file) => {
       const fileStem = file.replace(IMAGE_EXTENSION, "");

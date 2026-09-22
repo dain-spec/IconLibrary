@@ -8,7 +8,7 @@ import { Icon3DDetailPanel } from "./Icon3DDetailPanel";
 import { SearchClearButton } from "./SearchClearButton";
 import { SearchIcon } from "./SearchIcon";
 
-const CATEGORY_ORDER = ["weather"];
+const SHOW_CATEGORY_LABELS = false;
 
 export function Icon3DExplorer({ icons }: { icons: Icon3D[] }) {
   const [query, setQuery] = useState("");
@@ -24,12 +24,7 @@ export function Icon3DExplorer({ icons }: { icons: Icon3D[] }) {
   }, [icons, query]);
 
   const grouped = useMemo(() => {
-    const order = [
-      ...CATEGORY_ORDER,
-      ...Array.from(new Set(filtered.map((icon) => icon.category))).filter(
-        (category) => !CATEGORY_ORDER.includes(category)
-      ),
-    ];
+    const order = Array.from(new Set(filtered.map((icon) => icon.category)));
     return order
       .map((category) => ({
         category,
@@ -78,7 +73,9 @@ export function Icon3DExplorer({ icons }: { icons: Icon3D[] }) {
             <div ref={gridRef} className="mt-6 flex flex-col gap-8">
               {grouped.map((group) => (
                 <div key={group.category}>
-                  <h3 className="mb-3 text-sm font-semibold text-ink">{group.category}</h3>
+                  {SHOW_CATEGORY_LABELS && (
+                    <h3 className="mb-3 text-sm font-semibold text-ink">{group.category}</h3>
+                  )}
                   <div className="flex flex-wrap gap-3">
                     {group.items.map((icon) => (
                       <Icon3DCard
