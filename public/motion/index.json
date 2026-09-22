@@ -2205,6 +2205,20 @@
       "note": "2026_WEHAGO Q Mobile"
     },
     {
+      "id": "qri-listen-lottie",
+      "type": "lottie",
+      "title": "듣기 (Lottie)",
+      "path": "./assets/character/qri_listen.lottie",
+      "thumbnail": "",
+      "tags": [
+        "qri",
+        "listen",
+        "lottie"
+      ],
+      "updatedAt": "2026-09-22",
+      "note": "2026_WEHAGO Q Mobile"
+    },
+    {
       "id": "qri-smile",
       "type": "json",
       "title": "미소",
