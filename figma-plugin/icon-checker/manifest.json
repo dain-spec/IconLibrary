@@ -1,0 +1,13 @@
+{
+  "name": "아이콘 검사기",
+  "id": "douzone-icon-library-checker",
+  "api": "1.0.0",
+  "main": "code.js",
+  "ui": "ui.html",
+  "editorType": ["figma"],
+  "documentAccess": "dynamic-page",
+  "networkAccess": {
+    "allowedDomains": ["none"],
+    "reasoning": "모든 검사는 파일 안에서만 이뤄지며 외부로 나가는 통신이 없다."
+  }
+}

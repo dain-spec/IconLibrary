@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<style>
+  :root {
+    --ink: #151A26;
+    --ink-2: #3F4859;
+    --muted: #78808F;
+    --line: #DCE2EE;
+    --surface: #EBEFF7;
+    --plate: #F7F9FC;
+    --accent: #3B6FE8;
+    --good: #0C7F62;
+    --bad: #D2384F;
+    --warn: #B7791F;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    font: 400 12px/1.5 -apple-system, "Pretendard", "Apple SD Gothic Neo", "Inter", sans-serif;
+    color: var(--ink-2);
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    padding: 14px 16px 12px;
+    border-bottom: 1px solid var(--line);
+    flex: none;
+  }
+  h1 {
+    margin: 0 0 2px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+  .sub { font-size: 11px; color: var(--muted); margin-bottom: 11px; }
+
+  .actions { display: flex; gap: 6px; }
+  button {
+    font: inherit;
+    font-weight: 600;
+    border-radius: 6px;
+    border: 1px solid var(--line);
+    background: #FFFFFF;
+    color: var(--ink-2);
+    padding: 7px 12px;
+    cursor: pointer;
+  }
+  button:hover { background: var(--plate); }
+  button.primary { background: var(--accent); border-color: var(--accent); color: #FFFFFF; }
+  button.primary:hover { filter: brightness(1.06); }
+  button:disabled { opacity: .5; cursor: default; }
+  button.ghost { padding: 6px 9px; font-weight: 500; font-size: 11px; }
+
+  .summary {
+    display: none;
+    gap: 6px;
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--line);
+    background: var(--plate);
+    align-items: center;
+    flex: none;
+  }
+  .summary.on { display: flex; }
+  .pill {
+    font-size: 11px; font-weight: 600;
+    padding: 3px 8px; border-radius: 999px;
+    border: 1px solid transparent;
+    cursor: pointer; user-select: none;
+  }
+  .pill.off { opacity: .38; }
+  .pill.err  { background: #FCEBEE; color: var(--bad); border-color: #F3C7CF; }
+  .pill.warn { background: #FDF3E0; color: var(--warn); border-color: #F0DDBB; }
+  .pill.info { background: #E9F0FC; color: var(--accent); border-color: #CCDCF7; }
+  .pill.pass { background: #E4F4EF; color: var(--good); border-color: #C2E4D9; }
+  .summary .spacer { flex: 1; }
+
+  main { flex: 1; overflow-y: auto; padding: 6px 0 24px; }
+
+  .note {
+    margin: 40px 24px; text-align: center;
+    color: var(--muted); font-size: 12px; line-height: 1.7;
+  }
+  .note b { color: var(--ink-2); font-weight: 600; }
+
+  .icon { border-bottom: 1px solid var(--line); }
+  .icon-head {
+    display: flex; align-items: center; gap: 8px;
+    padding: 10px 16px; cursor: pointer;
+  }
+  .icon-head:hover { background: var(--plate); }
+  .caret { width: 8px; color: var(--muted); flex: none; transition: transform .12s; font-size: 9px; }
+  .icon.open .caret { transform: rotate(90deg); }
+  .icon-name {
+    font-family: "SF Mono", ui-monospace, Menlo, monospace;
+    font-size: 11.5px; font-weight: 600; color: var(--ink);
+    flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .tag {
+    font-size: 10px; font-weight: 600; padding: 2px 6px; border-radius: 4px;
+    background: var(--surface); color: var(--muted); flex: none;
+  }
+  .counts { display: flex; gap: 4px; flex: none; }
+  .dot {
+    font-size: 10px; font-weight: 700; min-width: 18px; text-align: center;
+    padding: 2px 5px; border-radius: 4px;
+  }
+  .dot.err  { background: #FCEBEE; color: var(--bad); }
+  .dot.warn { background: #FDF3E0; color: var(--warn); }
+  .dot.ok   { background: #E4F4EF; color: var(--good); }
+
+  .findings { display: none; padding: 0 16px 12px 32px; }
+  .icon.open .findings { display: block; }
+
+  .f {
+    display: flex; gap: 8px; align-items: flex-start;
+    padding: 7px 6px; margin: 0 -6px;
+    border-top: 1px solid #F0F3F9;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .f:first-child { border-top: none; }
+  .f:hover { background: var(--plate); }
+  .f.active { background: #E9F0FC; }
+  .f.active + .f { border-top-color: transparent; }
+  .code {
+    font-family: "SF Mono", ui-monospace, Menlo, monospace;
+    font-size: 9.5px; font-weight: 700; letter-spacing: .02em;
+    padding: 2px 5px; border-radius: 3px; height: 16px; flex: none;
+  }
+  .f.error .code { background: #FCEBEE; color: var(--bad); }
+  .f.warn  .code { background: #FDF3E0; color: var(--warn); }
+  .f.info  .code { background: #E9F0FC; color: var(--accent); }
+  .f-body { flex: 1; min-width: 0; }
+  .f-title { font-weight: 600; color: var(--ink); font-size: 11.5px; }
+  .f.info .f-title { font-weight: 500; color: var(--ink-2); }
+  .f-detail { color: var(--muted); font-size: 11px; margin-top: 1px; word-break: break-word; }
+  .f-detail code, .f-detail .mono {
+    font-family: "SF Mono", ui-monospace, Menlo, monospace; font-size: 10.5px;
+    background: var(--plate); padding: 0 3px; border-radius: 2px;
+  }
+  /* 행이 가리키는 레이어 이름. 어디로 가는지 눌러 보기 전에 알 수 있게 둔다. */
+  .layer {
+    flex: none; max-width: 104px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    font-family: "SF Mono", ui-monospace, Menlo, monospace;
+    font-size: 9.5px; color: var(--muted);
+    background: var(--surface); border-radius: 3px; padding: 2px 5px;
+  }
+  .f:hover .layer, .f.active .layer { color: var(--accent); background: #DCE7FA; }
+  .arrow { flex: none; font-size: 10px; color: var(--accent); opacity: 0; padding-top: 1px; }
+  .f:hover .arrow, .f.active .arrow { opacity: 1; }
+
+  footer {
+    flex: none; display: none; gap: 6px; align-items: center;
+    padding: 9px 16px; border-top: 1px solid var(--line); background: #FFFFFF;
+  }
+  footer.on { display: flex; }
+  footer .spacer { flex: 1; }
+  .hint { font-size: 10.5px; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>아이콘 검사기</h1>
+  <div class="sub">아이콘 제작 가이드 Spec v2 · Multicolor 규칙 + 3스타일 공통</div>
+  <div class="actions">
+    <button id="check-sel" class="primary">선택 검사</button>
+    <button id="check-page">페이지 전체</button>
+  </div>
+</header>
+
+<div class="summary" id="summary">
+  <span class="pill err"  id="p-err"  data-sev="error">위반 0</span>
+  <span class="pill warn" id="p-warn" data-sev="warn">경고 0</span>
+  <span class="pill info off" id="p-info" data-sev="info">정보 0</span>
+  <span class="spacer"></span>
+  <span class="pill pass" id="p-pass">통과 0 / 0</span>
+</div>
+
+<main id="main">
+  <div class="note">
+    검사할 아이콘 컴포넌트를 고르고 <b>선택 검사</b>를 누른다.<br />
+    프레임이나 섹션을 고르면 그 안의 24 × 24 아이콘을 모두 훑는다.
+  </div>
+</main>
+
+<footer id="footer">
+  <span class="hint" id="hint"></span>
+  <span class="spacer"></span>
+  <button class="ghost" id="expand">모두 펼치기</button>
+  <button class="ghost" id="copy">리포트 복사</button>
+</footer>
+
+<script>
+  var SEV_ON = { error: true, warn: true, info: false };
+  var REPORTS = [];
+  var STYLE_LABEL = { multicolor: 'Multicolor', line: 'Line', fill: 'Fill', unknown: '미분류' };
+
+  function esc(s) {
+    return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+  // 백틱으로 감싼 부분은 코드체로 보여준다.
+  function md(s) {
+    return esc(s).replace(/`([^`]+)`/g, '<span class="mono">$1</span>');
+  }
+
+  function post(msg) { parent.postMessage({ pluginMessage: msg }, '*'); }
+
+  /** 캔버스에서 해당 레이어를 선택하고, 누른 행에 표시를 남긴다. */
+  function focus(nodeId, el) {
+    if (!nodeId) return;
+    var prev = document.querySelector('.f.active');
+    if (prev) prev.classList.remove('active');
+    if (el && el.classList.contains('f')) el.classList.add('active');
+    post({ type: 'focus', nodeId: nodeId });
+  }
+
+  document.getElementById('check-sel').onclick = function () { post({ type: 'check', scope: 'selection' }); busy(); };
+  document.getElementById('check-page').onclick = function () { post({ type: 'check', scope: 'page' }); busy(); };
+
+  function busy() {
+    document.getElementById('main').innerHTML = '<div class="note">검사 중…</div>';
+  }
+
+  Array.prototype.forEach.call(document.querySelectorAll('.pill[data-sev]'), function (el) {
+    el.onclick = function () {
+      var sev = el.dataset.sev;
+      SEV_ON[sev] = !SEV_ON[sev];
+      el.classList.toggle('off', !SEV_ON[sev]);
+      render();
+    };
+  });
+
+  document.getElementById('expand').onclick = function () {
+    var all = document.querySelectorAll('.icon');
+    var anyClosed = Array.prototype.some.call(all, function (e) { return !e.classList.contains('open'); });
+    Array.prototype.forEach.call(all, function (e) { e.classList.toggle('open', anyClosed); });
+    this.textContent = anyClosed ? '모두 접기' : '모두 펼치기';
+  };
+
+  document.getElementById('copy').onclick = function () {
+    var out = [];
+    REPORTS.forEach(function (r) {
+      var errs = r.findings.filter(function (f) { return f.sev === 'error'; });
+      var warns = r.findings.filter(function (f) { return f.sev === 'warn'; });
+      out.push('## ' + r.name + '  (' + (STYLE_LABEL[r.style] || r.style) + ')');
+      if (!errs.length && !warns.length) { out.push('- 통과'); out.push(''); return; }
+      r.findings.forEach(function (f) {
+        if (!SEV_ON[f.sev]) return;
+        var mark = f.sev === 'error' ? '✕' : f.sev === 'warn' ? '△' : '·';
+        out.push('- ' + mark + ' [' + f.code + '] ' + f.title + (f.detail ? ' — ' + f.detail : ''));
+      });
+      out.push('');
+    });
+    var text = out.join('\n');
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    document.body.removeChild(ta);
+    var btn = this;
+    btn.textContent = '복사됨';
+    setTimeout(function () { btn.textContent = '리포트 복사'; }, 1400);
+  };
+
+  function render() {
+    var main = document.getElementById('main');
+    var counts = { error: 0, warn: 0, info: 0 };
+    var passed = 0;
+
+    REPORTS.forEach(function (r) {
+      r.findings.forEach(function (f) { counts[f.sev]++; });
+      if (!r.findings.some(function (f) { return f.sev === 'error'; })) passed++;
+    });
+
+    document.getElementById('p-err').textContent = '위반 ' + counts.error;
+    document.getElementById('p-warn').textContent = '경고 ' + counts.warn;
+    document.getElementById('p-info').textContent = '정보 ' + counts.info;
+    document.getElementById('p-pass').textContent = '통과 ' + passed + ' / ' + REPORTS.length;
+    document.getElementById('summary').classList.toggle('on', REPORTS.length > 0);
+    document.getElementById('footer').classList.toggle('on', REPORTS.length > 0);
+
+    main.innerHTML = '';
+    REPORTS.forEach(function (r, idx) {
+      var shown = r.findings.filter(function (f) { return SEV_ON[f.sev]; });
+      var nErr = r.findings.filter(function (f) { return f.sev === 'error'; }).length;
+      var nWarn = r.findings.filter(function (f) { return f.sev === 'warn'; }).length;
+
+      var wrap = document.createElement('div');
+      wrap.className = 'icon' + (nErr > 0 ? ' open' : '');
+
+      var head = document.createElement('div');
+      head.className = 'icon-head';
+      head.innerHTML =
+        '<span class="caret">▶</span>' +
+        '<span class="icon-name">' + esc(r.name) + '</span>' +
+        '<span class="tag">' + esc(STYLE_LABEL[r.style] || r.style) + '</span>' +
+        '<span class="counts">' +
+          (nErr ? '<span class="dot err">' + nErr + '</span>' : '') +
+          (nWarn ? '<span class="dot warn">' + nWarn + '</span>' : '') +
+          (!nErr && !nWarn ? '<span class="dot ok">✓</span>' : '') +
+        '</span>';
+      head.onclick = function () {
+        wrap.classList.toggle('open');
+        focus(r.id, head);
+      };
+      wrap.appendChild(head);
+
+      var list = document.createElement('div');
+      list.className = 'findings';
+      if (!shown.length) {
+        list.innerHTML = '<div class="f info"><div class="f-body"><div class="f-detail">표시할 항목이 없다. 상단 필터를 확인한다.</div></div></div>';
+      }
+      shown.forEach(function (f) {
+        var row = document.createElement('div');
+        row.className = 'f ' + f.sev;
+        // 설명에 이미 레이어 이름이 적혀 있으면 칩을 겹쳐 붙이지 않는다.
+        var showChip = f.nodeName && f.nodeId !== r.id && f.detail.indexOf(f.nodeName) < 0;
+        row.innerHTML =
+          '<span class="code">' + esc(f.code) + '</span>' +
+          '<div class="f-body">' +
+            '<div class="f-title">' + md(f.title) + '</div>' +
+            (f.detail ? '<div class="f-detail">' + md(f.detail) + '</div>' : '') +
+          '</div>' +
+          (showChip ? '<span class="layer">' + esc(f.nodeName) + '</span>' : '') +
+          '<span class="arrow">↗</span>';
+        row.onclick = function () { focus(f.nodeId, row); };
+        list.appendChild(row);
+      });
+      wrap.appendChild(list);
+      main.appendChild(wrap);
+    });
+
+    document.getElementById('hint').textContent =
+      REPORTS.length + '개 검사 · 항목을 누르면 해당 레이어로 간다';
+  }
+
+  onmessage = function (event) {
+    var msg = event.data.pluginMessage;
+    if (!msg) return;
+    if (msg.type === 'result') {
+      REPORTS = msg.reports || [];
+      if (!REPORTS.length) {
+        document.getElementById('summary').classList.remove('on');
+        document.getElementById('footer').classList.remove('on');
+        document.getElementById('main').innerHTML = '<div class="note">' + esc(msg.note) + '</div>';
+        return;
+      }
+      render();
+    }
+  };
+</script>
+</body>
+</html>
