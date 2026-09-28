@@ -2232,6 +2232,71 @@
       "note": "2026_WEHAGO Q Mobile"
     },
     {
+      "id": "qri-talk-2",
+      "type": "lottie",
+      "title": "말하기 2",
+      "path": "./assets/character/qri_talk_1.lottie",
+      "thumbnail": "",
+      "tags": [
+        "qri",
+        "talk"
+      ],
+      "updatedAt": "2026-09-28",
+      "note": "2026_WEHAGO Q Mobile"
+    },
+    {
+      "id": "qri-hello",
+      "type": "lottie",
+      "title": "안녕",
+      "path": "./assets/character/qri_hello.lottie",
+      "thumbnail": "",
+      "tags": [
+        "qri",
+        "hello"
+      ],
+      "updatedAt": "2026-09-28",
+      "note": "2026_WEHAGO Q Mobile"
+    },
+    {
+      "id": "qri-calculation",
+      "type": "lottie",
+      "title": "계산",
+      "path": "./assets/character/qri_calculation.lottie",
+      "thumbnail": "",
+      "tags": [
+        "qri",
+        "calculation"
+      ],
+      "updatedAt": "2026-09-28",
+      "note": "2026_WEHAGO Q Mobile"
+    },
+    {
+      "id": "qri-megaphone",
+      "type": "lottie",
+      "title": "확성기",
+      "path": "./assets/character/qri_megaphone.lottie",
+      "thumbnail": "",
+      "tags": [
+        "qri",
+        "megaphone"
+      ],
+      "updatedAt": "2026-09-28",
+      "note": "2026_WEHAGO Q Mobile"
+    },
+    {
+      "id": "qri-mission",
+      "type": "lottie",
+      "title": "미션",
+      "path": "./assets/character/mission.lottie",
+      "thumbnail": "",
+      "tags": [
+        "qri",
+        "mission"
+      ],
+      "updatedAt": "2026-09-28",
+      "note": "2026_WEHAGO Q Mobile"
+    },
+    {
       "id": "qri-smile",
       "type": "json",
       "title": "미소",
