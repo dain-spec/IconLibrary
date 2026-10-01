@@ -926,18 +926,6 @@ export const iconMeta: IconMeta[] = [
     figmaNodeId: "3801:9977",
   },
   {
-    id: "ic_table_merge_flat",
-    category: "콘텐츠",
-    tags: { ko: ["셀 병합", "표"], en: ["table", "merge cells"] },
-    figmaNodeId: "19457:26141",
-  },
-  {
-    id: "ic_table_split_flat",
-    category: "콘텐츠",
-    tags: { ko: ["셀 분할", "표"], en: ["table", "split cells"] },
-    figmaNodeId: "19457:26142",
-  },
-  {
     id: "ic_copywriting_flat",
     category: "콘텐츠",
     tags: { ko: ["카피라이팅"], en: ["copywriting"] },
@@ -1224,6 +1212,18 @@ export const iconMeta: IconMeta[] = [
     category: "기타",
     tags: { ko: ["기부"], en: ["donation"] },
     figmaNodeId: "18821:31380",
+  },
+  {
+    id: "ic_table_merge_flat",
+    category: "기타",
+    tags: { ko: ["셀 병합", "표"], en: ["table", "merge cells"] },
+    figmaNodeId: "19457:26141",
+  },
+  {
+    id: "ic_table_split_flat",
+    category: "기타",
+    tags: { ko: ["셀 분할", "표"], en: ["table", "split cells"] },
+    figmaNodeId: "19457:26142",
   },
   {
     id: "ic_emoji_smiling_face_flat",
