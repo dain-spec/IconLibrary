@@ -374,6 +374,12 @@ export const iconMeta: IconMeta[] = [
     figmaNodeId: "15926:23822",
   },
   {
+    id: "ic_stock_flat",
+    category: "문서",
+    tags: { ko: ["현황", "주식"], en: ["stock", "status"] },
+    figmaNodeId: "19744:26284",
+  },
+  {
     id: "ic_credit_flat",
     category: "문서",
     tags: { ko: ["크레딧", "카드"], en: ["credit"] },
@@ -606,6 +612,18 @@ export const iconMeta: IconMeta[] = [
     category: "금융",
     tags: { ko: ["월세"], en: ["rent"] },
     figmaNodeId: "18826:31423",
+  },
+  {
+    id: "ic_calendar_sales_flat",
+    category: "금융",
+    tags: { ko: ["리포트", "문서", "매출 일정"], en: ["calendar", "sales report"] },
+    figmaNodeId: "19676:27837",
+  },
+  {
+    id: "ic_calendar_graph_flat",
+    category: "금융",
+    tags: { ko: ["리포트", "문서", "일정 그래프"], en: ["calendar", "graph report"] },
+    figmaNodeId: "19676:27853",
   },
   {
     id: "ic_money_flat",
@@ -950,6 +968,12 @@ export const iconMeta: IconMeta[] = [
     figmaNodeId: "6877:16435",
   },
   {
+    id: "ic_change",
+    category: "콘텐츠",
+    tags: { ko: ["변경", "교체"], en: ["change", "swap"] },
+    figmaNodeId: "19737:26215",
+  },
+  {
     id: "ic_thumb_flat",
     category: "비즈니스",
     tags: { ko: ["전체"], en: ["all", "thumbs up"] },
@@ -1134,6 +1158,12 @@ export const iconMeta: IconMeta[] = [
     category: "기타",
     tags: { ko: ["그래프", "성장"], en: ["graph", "growth"] },
     figmaNodeId: "16817:1441",
+  },
+  {
+    id: "ic_graph_decline_flat",
+    category: "기타",
+    tags: { ko: ["그래프", "하락"], en: ["graph", "decline"] },
+    figmaNodeId: "19721:26170",
   },
   {
     id: "ic_process_flat",
