@@ -1052,6 +1052,12 @@ export const iconMeta: IconMeta[] = [
     figmaNodeId: "18794:27224",
   },
   {
+    id: "ic_company_money_flat",
+    category: "비즈니스",
+    tags: { ko: ["건물", "법인", "회사 비용"], en: ["company", "money"] },
+    figmaNodeId: "19783:26284",
+  },
+  {
     id: "ic_hospital_flat",
     category: "비즈니스",
     tags: { ko: ["병원", "보험"], en: ["hospital", "insurance"] },
@@ -1082,6 +1088,12 @@ export const iconMeta: IconMeta[] = [
     figmaNodeId: "18821:31038",
   },
   {
+    id: "ic_warehouse_flat",
+    category: "비즈니스",
+    tags: { ko: ["창고", "집", "부동산"], en: ["warehouse"] },
+    figmaNodeId: "19793:26870",
+  },
+  {
     id: "ic_government_flat",
     category: "비즈니스",
     tags: { ko: ["기관", "은행"], en: ["government", "bank"] },
@@ -1110,6 +1122,18 @@ export const iconMeta: IconMeta[] = [
     category: "비즈니스",
     tags: { ko: ["구매"], en: ["box", "purchase"] },
     figmaNodeId: "15926:758",
+  },
+  {
+    id: "ic_box_money_flat",
+    category: "비즈니스",
+    tags: { ko: ["구매", "구매 금액"], en: ["box", "purchase", "money"] },
+    figmaNodeId: "19783:26175",
+  },
+  {
+    id: "ic_box_error_flat",
+    category: "비즈니스",
+    tags: { ko: ["구매", "오류"], en: ["box", "purchase", "error"] },
+    figmaNodeId: "19795:26941",
   },
   {
     id: "ic_truck_flat",
