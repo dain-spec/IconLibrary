@@ -590,6 +590,12 @@ export const iconMeta: IconMeta[] = [
     figmaNodeId: "18818:30893",
   },
   {
+    id: "ic_bond_flat",
+    category: "금융",
+    tags: { ko: ["채권"], en: ["bond"] },
+    figmaNodeId: "19807:27158",
+  },
+  {
     id: "ic_passbook_arrow_flat",
     category: "금융",
     tags: { ko: ["통장이체", "통장", "이체"], en: ["passbook transfer"] },
@@ -654,6 +660,48 @@ export const iconMeta: IconMeta[] = [
     category: "금융",
     tags: { ko: ["매출"], en: ["sales"] },
     figmaNodeId: "15487:25150",
+  },
+  {
+    id: "ic_calendar_sales2_flat",
+    category: "금융",
+    tags: { ko: ["판매월", "리포트", "문서"], en: ["calendar", "monthly sales"] },
+    figmaNodeId: "19786:26385",
+  },
+  {
+    id: "ic_calendar_purchase_flat",
+    category: "금융",
+    tags: { ko: ["구매월", "리포트", "문서"], en: ["calendar", "monthly purchase"] },
+    figmaNodeId: "19786:26443",
+  },
+  {
+    id: "ic_dashboard_outbound_flat",
+    category: "금융",
+    tags: { ko: ["현황", "출고"], en: ["dashboard", "outbound"] },
+    figmaNodeId: "19786:26671",
+  },
+  {
+    id: "ic_dashboard_inbound_flat",
+    category: "금융",
+    tags: { ko: ["현황", "입고"], en: ["dashboard", "inbound"] },
+    figmaNodeId: "19786:26678",
+  },
+  {
+    id: "ic_outbound_flat",
+    category: "금융",
+    tags: { ko: ["출고"], en: ["outbound"] },
+    figmaNodeId: "19786:26563",
+  },
+  {
+    id: "ic_inbound_flat",
+    category: "금융",
+    tags: { ko: ["입고"], en: ["inbound"] },
+    figmaNodeId: "19786:26564",
+  },
+  {
+    id: "ic_money_error_flat",
+    category: "금융",
+    tags: { ko: ["미수금", "매입"], en: ["unpaid", "money error"] },
+    figmaNodeId: "19793:26785",
   },
   {
     id: "ic_arrow_left_flat",
