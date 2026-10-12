@@ -1146,6 +1146,21 @@ export const iconMeta: IconMeta[] = [
     figmaNodeId: "19795:26941",
   },
   {
+    id: "ic_box_target_flat",
+    category: "비즈니스",
+    tags: { ko: ["대상품목", "품목", "대상"], en: ["target item", "item", "box", "target"] },
+  },
+  {
+    id: "ic_boxes_check_flat",
+    category: "비즈니스",
+    tags: { ko: ["재고 보유", "재고", "보유"], en: ["stock held", "inventory", "in stock", "boxes"] },
+  },
+  {
+    id: "ic_box_clock_flat",
+    category: "비즈니스",
+    tags: { ko: ["현재고", "재고", "현재"], en: ["current stock", "inventory", "box", "clock"] },
+  },
+  {
     id: "ic_truck_flat",
     category: "비즈니스",
     tags: { ko: ["트럭"], en: ["truck", "delivery"] },
