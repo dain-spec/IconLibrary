@@ -2206,6 +2206,90 @@
       "note": "2026_WEHAGO Q Mobile"
     },
     {
+      "id": "qri-smile",
+      "type": "json",
+      "title": "미소",
+      "path": "./assets/character/smile.json",
+      "thumbnail": "",
+      "tags": [
+        "qri",
+        "smile",
+        "이전 버전"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_WEHAGO Q Mobile"
+    },
+    {
+      "id": "qri-walking",
+      "type": "json",
+      "title": "걷기",
+      "path": "./assets/character/walking.json",
+      "thumbnail": "",
+      "tags": [
+        "qri",
+        "walking",
+        "이전 버전"
+      ],
+      "updatedAt": "2026-08-13",
+      "note": "2026_WEHAGO Q Mobile"
+    },
+    {
+      "id": "qri-greeting",
+      "type": "lottie",
+      "title": "인사",
+      "path": "./assets/character/Qri_greeting.lottie",
+      "thumbnail": "",
+      "tags": [
+        "qri",
+        "greeting",
+        "이전 버전"
+      ],
+      "updatedAt": "2026-09-21",
+      "note": "2026_WEHAGO Q Mobile"
+    },
+    {
+      "id": "qri-magnifier",
+      "type": "lottie",
+      "title": "돋보기",
+      "path": "./assets/character/Qri_magnifier.lottie",
+      "thumbnail": "",
+      "tags": [
+        "qri",
+        "magnifier",
+        "이전 버전"
+      ],
+      "updatedAt": "2026-09-21",
+      "note": "2026_WEHAGO Q Mobile"
+    },
+    {
+      "id": "qri-thinking",
+      "type": "lottie",
+      "title": "생각",
+      "path": "./assets/character/Qri_thinking.lottie",
+      "thumbnail": "",
+      "tags": [
+        "qri",
+        "thinking",
+        "이전 버전"
+      ],
+      "updatedAt": "2026-09-21",
+      "note": "2026_WEHAGO Q Mobile"
+    },
+    {
+      "id": "qri-answering",
+      "type": "lottie",
+      "title": "답변",
+      "path": "./assets/character/answering.lottie",
+      "thumbnail": "",
+      "tags": [
+        "qri",
+        "answering",
+        "이전 버전"
+      ],
+      "updatedAt": "2026-09-21",
+      "note": "2026_WEHAGO Q Mobile"
+    },
+    {
       "id": "qri-listen-lottie",
       "type": "lottie",
       "title": "듣기 (Lottie)",
@@ -2302,90 +2386,6 @@
         "최종 버전"
       ],
       "updatedAt": "2026-09-28",
-      "note": "2026_WEHAGO Q Mobile"
-    },
-    {
-      "id": "qri-smile",
-      "type": "json",
-      "title": "미소",
-      "path": "./assets/character/smile.json",
-      "thumbnail": "",
-      "tags": [
-        "qri",
-        "smile",
-        "이전 버전"
-      ],
-      "updatedAt": "2026-08-13",
-      "note": "2026_WEHAGO Q Mobile"
-    },
-    {
-      "id": "qri-walking",
-      "type": "json",
-      "title": "걷기",
-      "path": "./assets/character/walking.json",
-      "thumbnail": "",
-      "tags": [
-        "qri",
-        "walking",
-        "이전 버전"
-      ],
-      "updatedAt": "2026-08-13",
-      "note": "2026_WEHAGO Q Mobile"
-    },
-    {
-      "id": "qri-greeting",
-      "type": "lottie",
-      "title": "인사",
-      "path": "./assets/character/Qri_greeting.lottie",
-      "thumbnail": "",
-      "tags": [
-        "qri",
-        "greeting",
-        "이전 버전"
-      ],
-      "updatedAt": "2026-09-21",
-      "note": "2026_WEHAGO Q Mobile"
-    },
-    {
-      "id": "qri-magnifier",
-      "type": "lottie",
-      "title": "돋보기",
-      "path": "./assets/character/Qri_magnifier.lottie",
-      "thumbnail": "",
-      "tags": [
-        "qri",
-        "magnifier",
-        "이전 버전"
-      ],
-      "updatedAt": "2026-09-21",
-      "note": "2026_WEHAGO Q Mobile"
-    },
-    {
-      "id": "qri-thinking",
-      "type": "lottie",
-      "title": "생각",
-      "path": "./assets/character/Qri_thinking.lottie",
-      "thumbnail": "",
-      "tags": [
-        "qri",
-        "thinking",
-        "이전 버전"
-      ],
-      "updatedAt": "2026-09-21",
-      "note": "2026_WEHAGO Q Mobile"
-    },
-    {
-      "id": "qri-answering",
-      "type": "lottie",
-      "title": "답변",
-      "path": "./assets/character/answering.lottie",
-      "thumbnail": "",
-      "tags": [
-        "qri",
-        "answering",
-        "이전 버전"
-      ],
-      "updatedAt": "2026-09-21",
       "note": "2026_WEHAGO Q Mobile"
     },
     {
