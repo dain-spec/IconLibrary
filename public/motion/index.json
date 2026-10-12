@@ -2215,7 +2215,7 @@
         "listen",
         "lottie"
       ],
-      "updatedAt": "2026-09-22",
+      "updatedAt": "2026-10-12",
       "note": "2026_WEHAGO Q Mobile"
     },
     {
@@ -2443,6 +2443,210 @@
       ],
       "updatedAt": "2026-09-09",
       "note": "2026_WEHAGO Q Mobile"
+    },
+    {
+      "id": "calendar-3d-lottie",
+      "type": "lottie",
+      "title": "달력 (Lottie)",
+      "path": "./assets/3d/calendar.lottie",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "calendar",
+        "lottie"
+      ],
+      "updatedAt": "2026-10-12",
+      "note": "2026_WEHAGO 공통 3D 아이콘"
+    },
+    {
+      "id": "check-3d-lottie",
+      "type": "lottie",
+      "title": "체크",
+      "path": "./assets/3d/check.lottie",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "check",
+        "lottie"
+      ],
+      "updatedAt": "2026-10-12",
+      "note": "2026_WEHAGO 공통 3D 아이콘"
+    },
+    {
+      "id": "company-3d-lottie",
+      "type": "lottie",
+      "title": "회사",
+      "path": "./assets/3d/company.lottie",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "company",
+        "lottie"
+      ],
+      "updatedAt": "2026-10-12",
+      "note": "2026_WEHAGO 공통 3D 아이콘"
+    },
+    {
+      "id": "credit-card-3d-lottie",
+      "type": "lottie",
+      "title": "신용카드",
+      "path": "./assets/3d/credit_card.lottie",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "credit card",
+        "lottie"
+      ],
+      "updatedAt": "2026-10-12",
+      "note": "2026_WEHAGO 공통 3D 아이콘"
+    },
+    {
+      "id": "docbox-hometax-3d-lottie",
+      "type": "lottie",
+      "title": "홈택스 문서함",
+      "path": "./assets/3d/docbox_hometax.lottie",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "document",
+        "hometax",
+        "lottie"
+      ],
+      "updatedAt": "2026-10-12",
+      "note": "2026_WEHAGO 공통 3D 아이콘"
+    },
+    {
+      "id": "fail-3d-lottie",
+      "type": "lottie",
+      "title": "실패",
+      "path": "./assets/3d/fail.lottie",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "fail",
+        "lottie"
+      ],
+      "updatedAt": "2026-10-12",
+      "note": "2026_WEHAGO 공통 3D 아이콘"
+    },
+    {
+      "id": "hand-3d-lottie",
+      "type": "lottie",
+      "title": "손 박수 (Lottie)",
+      "path": "./assets/3d/hand.lottie",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "hand",
+        "clap",
+        "lottie"
+      ],
+      "updatedAt": "2026-10-12",
+      "note": "2026_WEHAGO 공통 3D 아이콘"
+    },
+    {
+      "id": "moneybag-3d-lottie",
+      "type": "lottie",
+      "title": "종합소득세 돈주머니 (Lottie)",
+      "path": "./assets/3d/moneybag.lottie",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "money",
+        "tax",
+        "lottie"
+      ],
+      "updatedAt": "2026-10-12",
+      "note": "2026_WEHAGO 공통 3D 아이콘"
+    },
+    {
+      "id": "padlock-3d-lottie",
+      "type": "lottie",
+      "title": "자물쇠",
+      "path": "./assets/3d/padlock.lottie",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "padlock",
+        "lock",
+        "lottie"
+      ],
+      "updatedAt": "2026-10-12",
+      "note": "2026_WEHAGO 공통 3D 아이콘"
+    },
+    {
+      "id": "paper-calcu-3d-lottie",
+      "type": "lottie",
+      "title": "종이 계산기",
+      "path": "./assets/3d/paper_calcu.lottie",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "calculator",
+        "paper",
+        "lottie"
+      ],
+      "updatedAt": "2026-10-12",
+      "note": "2026_WEHAGO 공통 3D 아이콘"
+    },
+    {
+      "id": "passbook-3d-lottie",
+      "type": "lottie",
+      "title": "통장",
+      "path": "./assets/3d/passbook.lottie",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "passbook",
+        "lottie"
+      ],
+      "updatedAt": "2026-10-12",
+      "note": "2026_WEHAGO 공통 3D 아이콘"
+    },
+    {
+      "id": "search-card-3d-lottie",
+      "type": "lottie",
+      "title": "카드매출 조회 (Lottie)",
+      "path": "./assets/3d/search_card.lottie",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "card",
+        "search",
+        "lottie"
+      ],
+      "updatedAt": "2026-10-12",
+      "note": "2026_WEHAGO 공통 3D 아이콘"
+    },
+    {
+      "id": "search-folder-3d-lottie",
+      "type": "lottie",
+      "title": "폴더 검색",
+      "path": "./assets/3d/search_folder.lottie",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "folder",
+        "search",
+        "lottie"
+      ],
+      "updatedAt": "2026-10-12",
+      "note": "2026_WEHAGO 공통 3D 아이콘"
+    },
+    {
+      "id": "tax-clipboard-3d-lottie",
+      "type": "lottie",
+      "title": "세금 클립보드",
+      "path": "./assets/3d/tax_clipboard.lottie",
+      "thumbnail": "",
+      "tags": [
+        "icon",
+        "tax",
+        "clipboard",
+        "lottie"
+      ],
+      "updatedAt": "2026-10-12",
+      "note": "2026_WEHAGO 공통 3D 아이콘"
     }
   ]
 }
