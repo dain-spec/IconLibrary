@@ -9,7 +9,6 @@ export interface MotionAsset {
   category: string;
   tags: string[];
   note?: string;
-  group?: string;
 }
 
 interface RawMotionAsset {
@@ -19,7 +18,6 @@ interface RawMotionAsset {
   path: string;
   tags: string[];
   note?: string;
-  group?: string;
 }
 
 const INDEX_PATH = path.join(process.cwd(), "public", "motion", "index.json");
@@ -45,6 +43,5 @@ export function getAllMotionAssets(): MotionAsset[] {
     category: categoryFor(asset.path),
     tags: asset.tags,
     note: asset.note,
-    group: asset.group,
   }));
 }
