@@ -9,6 +9,7 @@ import { SearchClearButton } from "../SearchClearButton";
 import { SearchIcon } from "../SearchIcon";
 
 const CATEGORY_ORDER = ["Loader", "기본", "3d", "character"];
+const SUBGROUP_ORDER = ["Qri 최종 버전", "Qri 이전 버전"];
 
 export function MotionExplorer({ assets }: { assets: MotionAsset[] }) {
   const [query, setQuery] = useState("");
@@ -33,10 +34,17 @@ export function MotionExplorer({ assets }: { assets: MotionAsset[] }) {
       ),
     ];
     return order
-      .map((category) => ({
-        category,
-        items: filtered.filter((asset) => asset.category === category),
-      }))
+      .map((category) => {
+        const items = filtered.filter((asset) => asset.category === category);
+        const subgroups = [
+          { name: null as string | null, items: items.filter((asset) => !asset.group) },
+          ...SUBGROUP_ORDER.map((name) => ({
+            name: name as string | null,
+            items: items.filter((asset) => asset.group === name),
+          })),
+        ].filter((subgroup) => subgroup.items.length > 0);
+        return { category, items: subgroups.flatMap((subgroup) => subgroup.items), subgroups };
+      })
       .filter((group) => group.items.length > 0);
   }, [filtered]);
 
@@ -81,14 +89,23 @@ export function MotionExplorer({ assets }: { assets: MotionAsset[] }) {
               {grouped.map((group) => (
                 <div key={group.category}>
                   <h3 className="mb-3 text-sm font-semibold text-ink">{group.category}</h3>
-                  <div className="flex flex-wrap gap-3">
-                    {group.items.map((asset) => (
-                      <MotionCard
-                        key={asset.id}
-                        asset={asset}
-                        isSelected={asset.id === selectedId}
-                        onClick={() => setSelectedId(asset.id)}
-                      />
+                  <div className="flex flex-col gap-5">
+                    {group.subgroups.map((subgroup) => (
+                      <div key={subgroup.name ?? "default"}>
+                        {subgroup.name && (
+                          <h4 className="mb-2 text-xs font-medium text-muted">{subgroup.name}</h4>
+                        )}
+                        <div className="flex flex-wrap gap-3">
+                          {subgroup.items.map((asset) => (
+                            <MotionCard
+                              key={asset.id}
+                              asset={asset}
+                              isSelected={asset.id === selectedId}
+                              onClick={() => setSelectedId(asset.id)}
+                            />
+                          ))}
+                        </div>
+                      </div>
                     ))}
                   </div>
                 </div>
