@@ -704,6 +704,16 @@ export const iconMeta: IconMeta[] = [
     figmaNodeId: "19793:26785",
   },
   {
+    id: "ic_money_balance_flat",
+    category: "금융",
+    tags: { ko: ["잔액", "잔액 보유"], en: ["balance", "money balance", "remaining"] },
+  },
+  {
+    id: "ic_database_check_flat",
+    category: "금융",
+    tags: { ko: ["잔액", "잔액 보유", "데이터베이스"], en: ["balance", "remaining", "database"] },
+  },
+  {
     id: "ic_arrow_left_flat",
     category: "공통",
     tags: { ko: ["화살표", "왼쪽"], en: ["arrow", "left", "back"] },
