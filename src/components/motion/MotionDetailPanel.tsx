@@ -19,6 +19,53 @@ import {
   type LottieColorGroup,
 } from "@/lib/lottieColor";
 
+const XLINK_NS = "http://www.w3.org/1999/xlink";
+
+async function webpDataUrlToPng(dataUrl: string): Promise<string> {
+  const img = new Image();
+  img.src = dataUrl;
+  await img.decode();
+  const canvas = document.createElement("canvas");
+  canvas.width = img.naturalWidth;
+  canvas.height = img.naturalHeight;
+  canvas.getContext("2d")?.drawImage(img, 0, 0);
+  return canvas.toDataURL("image/png");
+}
+
+// Figma's SVG import drops WebP data URIs, so embedded images are converted to
+// PNG, and layers lottie hides (display="none") are pruned to keep the paste small.
+async function serializeSvgForFigma(svgEl: SVGSVGElement): Promise<string> {
+  const clone = svgEl.cloneNode(true) as SVGSVGElement;
+  clone.querySelectorAll('[display="none"]').forEach((el) => el.remove());
+  clone.querySelectorAll("g").forEach((el) => {
+    if (el.style.display === "none") el.remove();
+  });
+  const usedIds = new Set(
+    Array.from(clone.querySelectorAll("use")).map((el) =>
+      (el.getAttribute("href") ?? el.getAttributeNS(XLINK_NS, "href") ?? "").replace(/^#/, "")
+    )
+  );
+  clone.querySelectorAll("defs > image").forEach((el) => {
+    if (!usedIds.has(el.id)) el.remove();
+  });
+  const cache = new Map<string, Promise<string>>();
+  await Promise.all(
+    Array.from(clone.querySelectorAll("image")).map(async (el) => {
+      const href = el.getAttribute("href") ?? el.getAttributeNS(XLINK_NS, "href") ?? "";
+      if (!href.startsWith("data:image/webp")) return;
+      let png = cache.get(href);
+      if (!png) {
+        png = webpDataUrlToPng(href);
+        cache.set(href, png);
+      }
+      const converted = await png;
+      if (el.hasAttribute("href")) el.setAttribute("href", converted);
+      if (el.hasAttributeNS(XLINK_NS, "href")) el.setAttributeNS(XLINK_NS, "xlink:href", converted);
+    })
+  );
+  return clone.outerHTML;
+}
+
 function cloneAnimationData(data: object) {
   return JSON.parse(JSON.stringify(data));
 }
@@ -77,7 +124,12 @@ export function MotionDetailPanel({
       setCopyState("error");
       return;
     }
-    let markup = svgEl.outerHTML;
+    let markup: string;
+    try {
+      markup = await serializeSvgForFigma(svgEl);
+    } catch {
+      markup = svgEl.outerHTML;
+    }
     if (!/\sxmlns\s*=/.test(markup)) {
       markup = markup.replace("<svg ", '<svg xmlns="http://www.w3.org/2000/svg" ');
     }
