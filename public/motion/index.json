@@ -2559,21 +2559,6 @@
       "note": "2026_WEHAGO Q Mobile"
     },
     {
-      "id": "moneybag-3d-lottie",
-      "type": "lottie",
-      "title": "종합소득세 돈주머니 (Lottie)",
-      "path": "./assets/3d/moneybag.lottie",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "money",
-        "tax",
-        "lottie"
-      ],
-      "updatedAt": "2026-10-12",
-      "note": "2026_WEHAGO Q Mobile"
-    },
-    {
       "id": "padlock-3d-lottie",
       "type": "lottie",
       "title": "자물쇠",
