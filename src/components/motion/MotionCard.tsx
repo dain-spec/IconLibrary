@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Lottie from "lottie-react";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import type { MotionAsset } from "@/lib/motion";
@@ -14,11 +15,22 @@ export function MotionCard({
   isSelected?: boolean;
   onClick: () => void;
 }) {
-  const animationData = useLottieData(asset.type === "json" ? asset.src : "");
+  // Cards show a tiny static thumbnail; the real animation/image is only fetched
+  // while the card is hovered or focused, so opening the page stays light.
+  const [active, setActive] = useState(false);
+  const animationData = useLottieData(asset.type === "json" && active ? asset.src : "");
+
+  // Keep the thumbnail up until a hovered Lottie JSON has actually loaded.
+  const showLive =
+    !asset.thumb || (active && (asset.type !== "json" || animationData !== null));
 
   return (
     <button
       onClick={onClick}
+      onMouseEnter={() => setActive(true)}
+      onMouseLeave={() => setActive(false)}
+      onFocus={() => setActive(true)}
+      onBlur={() => setActive(false)}
       data-card-id={asset.id}
       title={asset.title}
       aria-label={asset.title}
@@ -27,15 +39,26 @@ export function MotionCard({
         isSelected ? "border-accent" : "border-border"
       }`}
     >
-      {asset.type === "image" ? (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img src={asset.src} alt={asset.title} className="h-full w-full object-contain" />
-      ) : asset.type === "lottie" ? (
-        <DotLottieReact src={asset.src} loop autoplay className="h-full w-full" />
-      ) : (
-        animationData && (
-          <Lottie animationData={animationData} loop autoplay className="h-full w-full" />
+      {showLive ? (
+        asset.type === "image" ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={asset.src} alt={asset.title} className="h-full w-full object-contain" />
+        ) : asset.type === "lottie" ? (
+          active && <DotLottieReact src={asset.src} loop autoplay className="h-full w-full" />
+        ) : (
+          animationData && (
+            <Lottie animationData={animationData} loop autoplay className="h-full w-full" />
+          )
         )
+      ) : (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={asset.thumb}
+          alt={asset.title}
+          loading="lazy"
+          decoding="async"
+          className="h-full w-full object-contain"
+        />
       )}
     </button>
   );

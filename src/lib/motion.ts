@@ -6,6 +6,7 @@ export interface MotionAsset {
   type: "json" | "image" | "lottie";
   title: string;
   src: string;
+  thumb?: string;
   category: string;
   tags: string[];
   note?: string;
@@ -20,7 +21,8 @@ interface RawMotionAsset {
   note?: string;
 }
 
-const INDEX_PATH = path.join(process.cwd(), "public", "motion", "index.json");
+const MOTION_DIR = path.join(process.cwd(), "public", "motion");
+const INDEX_PATH = path.join(MOTION_DIR, "index.json");
 
 function toPublicSrc(rawPath: string): string {
   return rawPath.replace(/^\.\/assets\//, "/motion/");
@@ -40,6 +42,9 @@ export function getAllMotionAssets(): MotionAsset[] {
     type: asset.type,
     title: asset.title,
     src: toPublicSrc(asset.path),
+    thumb: fs.existsSync(path.join(MOTION_DIR, "thumbs", `${asset.id}.webp`))
+      ? `/motion/thumbs/${asset.id}.webp`
+      : undefined,
     category: categoryFor(asset.path),
     tags: asset.tags,
     note: asset.note,
