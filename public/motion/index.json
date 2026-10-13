@@ -2459,20 +2459,6 @@
       "note": "2026_WEHAGO Q Mobile"
     },
     {
-      "id": "calendar-3d-lottie",
-      "type": "lottie",
-      "title": "달력 (Lottie)",
-      "path": "./assets/3d/calendar.lottie",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "calendar",
-        "lottie"
-      ],
-      "updatedAt": "2026-10-12",
-      "note": "2026_WEHAGO Q Mobile"
-    },
-    {
       "id": "check-3d-lottie",
       "type": "lottie",
       "title": "체크",
