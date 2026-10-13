@@ -2618,21 +2618,6 @@
       "note": "2026_WEHAGO Q Mobile"
     },
     {
-      "id": "search-card-3d-lottie",
-      "type": "lottie",
-      "title": "카드매출 조회 (Lottie)",
-      "path": "./assets/3d/search_card.lottie",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "card",
-        "search",
-        "lottie"
-      ],
-      "updatedAt": "2026-10-12",
-      "note": "2026_WEHAGO Q Mobile"
-    },
-    {
       "id": "search-folder-3d-lottie",
       "type": "lottie",
       "title": "폴더 검색",
