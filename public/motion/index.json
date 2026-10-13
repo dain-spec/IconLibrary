@@ -203,21 +203,6 @@
       "note": "2025_WEHAGO 공통 3D 아이콘"
     },
     {
-      "id": "docbox-hometax-3d-lottie",
-      "type": "lottie",
-      "title": "홈택스 문서함",
-      "path": "./assets/3d/docbox_hometax.lottie",
-      "thumbnail": "",
-      "tags": [
-        "icon",
-        "document",
-        "hometax",
-        "lottie"
-      ],
-      "updatedAt": "2026-10-12",
-      "note": "2026_WEHAGO Q Mobile"
-    },
-    {
       "id": "bluemit-clipboard",
       "type": "json",
       "title": "클립보드",
