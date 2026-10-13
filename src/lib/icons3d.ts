@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { withBase } from "@/lib/basePath";
 
 export interface Icon3D {
   id: string;
@@ -485,7 +486,7 @@ export function getAllIcons3D(): Icon3D[] {
         id,
         title,
         category,
-        src: `/icons/3d/${category}/${encodeURIComponent(file)}`,
+        src: withBase(`/icons/3d/${category}/${encodeURIComponent(file)}`),
         tags: [category, ...title.split("+")],
         figmaNodeId: FIGMA_NODE_IDS[id],
       };

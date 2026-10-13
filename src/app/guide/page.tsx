@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { withBase } from "@/lib/basePath";
 
 function Badge({ children }: { children: React.ReactNode }) {
   return (
@@ -47,7 +48,7 @@ function DiagramImage({
   return (
     <div className="overflow-hidden rounded-2xl border border-border">
       <Image
-        src={src}
+        src={withBase(src)}
         alt={alt}
         width={width}
         height={height}

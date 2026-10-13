@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { withBase } from "@/lib/basePath";
 
 export interface MotionAsset {
   id: string;
@@ -25,7 +26,7 @@ const MOTION_DIR = path.join(process.cwd(), "public", "motion");
 const INDEX_PATH = path.join(MOTION_DIR, "index.json");
 
 function toPublicSrc(rawPath: string): string {
-  return rawPath.replace(/^\.\/assets\//, "/motion/");
+  return withBase(rawPath.replace(/^\.\/assets\//, "/motion/"));
 }
 
 function categoryFor(rawPath: string): string {
@@ -43,7 +44,7 @@ export function getAllMotionAssets(): MotionAsset[] {
     title: asset.title,
     src: toPublicSrc(asset.path),
     thumb: fs.existsSync(path.join(MOTION_DIR, "thumbs", `${asset.id}.webp`))
-      ? `/motion/thumbs/${asset.id}.webp`
+      ? withBase(`/motion/thumbs/${asset.id}.webp`)
       : undefined,
     category: categoryFor(asset.path),
     tags: asset.tags,

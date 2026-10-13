@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { iconMeta, type IconMeta } from "@/data/icons";
+import { withBase } from "@/lib/basePath";
 
 export interface Icon extends IconMeta {
   svg: string;
@@ -27,7 +28,7 @@ export function getAllIcons(): Icon[] {
   const readIcon = (file: string): Icon => {
     const id = file.replace(/\.svg$/, "");
     const svg = fs.readFileSync(path.join(ICONS_DIR, file), "utf-8");
-    return { ...metaFor(id), svg, src: `/icons/multicolor/${file}` };
+    return { ...metaFor(id), svg, src: withBase(`/icons/multicolor/${file}`) };
   };
 
   // Ordered per iconMeta (which mirrors the Figma frame order); any file not

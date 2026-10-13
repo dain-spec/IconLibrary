@@ -16,7 +16,7 @@ export function Sidebar() {
   return (
     <nav className="flex h-full w-52 shrink-0 flex-col gap-0.5 overflow-y-auto border-r border-border px-3 py-4">
       {NAV.map((item) => {
-        const active = pathname === item.href;
+        const active = pathname.replace(/\/$/, "") === item.href;
         return (
           <Link
             key={item.href}
