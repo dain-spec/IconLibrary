@@ -398,6 +398,12 @@ export const iconMeta: IconMeta[] = [
     figmaNodeId: "16350:24813",
   },
   {
+    id: "ic_receipt_cancel_flat",
+    category: "문서",
+    tags: { ko: ["영수증 취소", "영수증", "취소"], en: ["receipt cancel", "cancel"] },
+    figmaNodeId: "20066:26378",
+  },
+  {
     id: "ic_doc_state_flat",
     category: "문서",
     tags: { ko: ["자동전표", "문서", "전표"], en: ["document", "auto slip"] },
@@ -432,6 +438,12 @@ export const iconMeta: IconMeta[] = [
     category: "일반",
     tags: { ko: ["문서"], en: ["document"] },
     figmaNodeId: "7812:16251",
+  },
+  {
+    id: "ic_doc_cancel_flat",
+    category: "일반",
+    tags: { ko: ["문서 취소", "문서", "취소"], en: ["document cancel", "cancel"] },
+    figmaNodeId: "20066:26424",
   },
   {
     id: "ic_doc_pencil_flat",
@@ -566,6 +578,12 @@ export const iconMeta: IconMeta[] = [
     figmaNodeId: "13056:24284",
   },
   {
+    id: "ic_folder_set_flat",
+    category: "폴더",
+    tags: { ko: ["폴더 설정", "폴더", "설정"], en: ["folder settings", "folder", "settings"] },
+    figmaNodeId: "20113:28029",
+  },
+  {
     id: "ic_receipt_percent_flat",
     category: "금융",
     tags: { ko: ["세금영수증"], en: ["tax receipt"] },
@@ -594,6 +612,12 @@ export const iconMeta: IconMeta[] = [
     category: "금융",
     tags: { ko: ["채권"], en: ["bond"] },
     figmaNodeId: "19807:27158",
+  },
+  {
+    id: "ic_wallet_flat",
+    category: "금융",
+    tags: { ko: ["지갑"], en: ["wallet"] },
+    figmaNodeId: "19884:26249",
   },
   {
     id: "ic_passbook_arrow_flat",
@@ -704,6 +728,24 @@ export const iconMeta: IconMeta[] = [
     figmaNodeId: "19793:26785",
   },
   {
+    id: "ic_outbound_tray_flat",
+    category: "금융",
+    tags: { ko: ["출고", "내보내기"], en: ["outbound", "export"] },
+    figmaNodeId: "19891:26477",
+  },
+  {
+    id: "ic_inbound_tray_flat",
+    category: "금융",
+    tags: { ko: ["입고", "가져오기"], en: ["inbound", "import"] },
+    figmaNodeId: "19891:26478",
+  },
+  {
+    id: "ic_money_check_flat",
+    category: "금융",
+    tags: { ko: ["매입", "금액 확인"], en: ["purchase", "money check"] },
+    figmaNodeId: "19853:26257",
+  },
+  {
     id: "ic_money_balance_flat",
     category: "금융",
     tags: { ko: ["잔액", "잔액 보유"], en: ["balance", "money balance", "remaining"] },
@@ -784,6 +826,12 @@ export const iconMeta: IconMeta[] = [
     category: "공통",
     tags: { ko: ["재생"], en: ["play"] },
     figmaNodeId: "18690:26700",
+  },
+  {
+    id: "ic_process2_flat",
+    category: "공통",
+    tags: { ko: ["진행중", "프로세스"], en: ["process", "in progress"] },
+    figmaNodeId: "19973:26310",
   },
   {
     id: "ic_set_flat",
@@ -1134,6 +1182,18 @@ export const iconMeta: IconMeta[] = [
     figmaNodeId: "15926:758",
   },
   {
+    id: "ic_box_time_flat",
+    category: "비즈니스",
+    tags: { ko: ["구매", "구매 대기", "시간"], en: ["box", "purchase", "pending", "time"] },
+    figmaNodeId: "19856:26324",
+  },
+  {
+    id: "ic_box_check_flat",
+    category: "비즈니스",
+    tags: { ko: ["구매", "구매 완료", "확인"], en: ["box", "purchase", "complete", "check"] },
+    figmaNodeId: "19856:26367",
+  },
+  {
     id: "ic_box_money_flat",
     category: "비즈니스",
     tags: { ko: ["구매", "구매 금액"], en: ["box", "purchase", "money"] },
@@ -1165,6 +1225,12 @@ export const iconMeta: IconMeta[] = [
     category: "비즈니스",
     tags: { ko: ["트럭"], en: ["truck", "delivery"] },
     figmaNodeId: "16801:25123",
+  },
+  {
+    id: "ic_truck2_flat",
+    category: "비즈니스",
+    tags: { ko: ["트럭", "배송"], en: ["truck", "delivery"] },
+    figmaNodeId: "19950:26379",
   },
   {
     id: "ic_cart_flat",
@@ -1201,6 +1267,12 @@ export const iconMeta: IconMeta[] = [
     category: "비즈니스",
     tags: { ko: ["건설"], en: ["construction"] },
     figmaNodeId: "17582:27007",
+  },
+  {
+    id: "ic_tag_flat",
+    category: "비즈니스",
+    tags: { ko: ["태그", "가격표"], en: ["tag", "price tag"] },
+    figmaNodeId: "19887:26400",
   },
   {
     id: "ic_pc_remote_flat",
