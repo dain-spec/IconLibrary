@@ -746,16 +746,6 @@ export const iconMeta: IconMeta[] = [
     figmaNodeId: "19853:26257",
   },
   {
-    id: "ic_money_balance_flat",
-    category: "금융",
-    tags: { ko: ["잔액", "잔액 보유"], en: ["balance", "money balance", "remaining"] },
-  },
-  {
-    id: "ic_database_check_flat",
-    category: "금융",
-    tags: { ko: ["잔액", "잔액 보유", "데이터베이스"], en: ["balance", "remaining", "database"] },
-  },
-  {
     id: "ic_arrow_left_flat",
     category: "공통",
     tags: { ko: ["화살표", "왼쪽"], en: ["arrow", "left", "back"] },
@@ -1204,21 +1194,6 @@ export const iconMeta: IconMeta[] = [
     category: "비즈니스",
     tags: { ko: ["구매", "오류"], en: ["box", "purchase", "error"] },
     figmaNodeId: "19795:26941",
-  },
-  {
-    id: "ic_box_target_flat",
-    category: "비즈니스",
-    tags: { ko: ["대상품목", "품목", "대상"], en: ["target item", "item", "box", "target"] },
-  },
-  {
-    id: "ic_boxes_check_flat",
-    category: "비즈니스",
-    tags: { ko: ["재고 보유", "재고", "보유"], en: ["stock held", "inventory", "in stock", "boxes"] },
-  },
-  {
-    id: "ic_box_clock_flat",
-    category: "비즈니스",
-    tags: { ko: ["현재고", "재고", "현재"], en: ["current stock", "inventory", "box", "clock"] },
   },
   {
     id: "ic_truck_flat",
