@@ -906,16 +906,16 @@ export const iconMeta: IconMeta[] = [
     figmaNodeId: "18148:28250",
   },
   {
-    id: "ic_search_flat",
-    category: "공통",
-    tags: { ko: ["검색"], en: ["search"] },
-    figmaNodeId: "6377:15547",
-  },
-  {
     id: "ic_search2_flat",
     category: "공통",
     tags: { ko: ["검색"], en: ["search"] },
     figmaNodeId: "18700:27386",
+  },
+  {
+    id: "ic_search_flat",
+    category: "공통",
+    tags: { ko: ["검색"], en: ["search"] },
+    figmaNodeId: "6377:15547",
   },
   {
     id: "ic_user_flat",
@@ -924,22 +924,10 @@ export const iconMeta: IconMeta[] = [
     figmaNodeId: "18680:26573",
   },
   {
-    id: "ic_user2_flat",
-    category: "사용자",
-    tags: { ko: ["직원"], en: ["user", "employee"] },
-    figmaNodeId: "3504:9561",
-  },
-  {
     id: "ic_user_money_flat",
     category: "사용자",
     tags: { ko: ["사람", "돈"], en: ["user", "money"] },
     figmaNodeId: "18680:26608",
-  },
-  {
-    id: "ic_user_money2_flat",
-    category: "사용자",
-    tags: { ko: ["종합소득세"], en: ["user", "income tax"] },
-    figmaNodeId: "3504:9598",
   },
   {
     id: "ic_user_cancel_flat",
@@ -966,10 +954,22 @@ export const iconMeta: IconMeta[] = [
     figmaNodeId: "16257:2899",
   },
   {
+    id: "ic_user2_flat",
+    category: "사용자",
+    tags: { ko: ["직원"], en: ["user", "employee"] },
+    figmaNodeId: "3504:9561",
+  },
+  {
     id: "ic_user_percent_flat",
     category: "사용자",
     tags: { ko: ["근무", "돈", "세금"], en: ["user", "percent", "tax"] },
     figmaNodeId: "15885:25416",
+  },
+  {
+    id: "ic_user_money2_flat",
+    category: "사용자",
+    tags: { ko: ["종합소득세"], en: ["user", "income tax"] },
+    figmaNodeId: "3504:9598",
   },
   {
     id: "ic_usergroup_flat",
