@@ -580,7 +580,7 @@ export const iconMeta: IconMeta[] = [
   {
     id: "ic_folder_set_flat",
     category: "폴더",
-    tags: { ko: ["폴더 설정", "폴더", "설정"], en: ["folder settings", "folder", "settings"] },
+    tags: { ko: ["AI 업무관리", "업무관리", "폴더", "설정"], en: ["ai task management", "folder", "settings"] },
     figmaNodeId: "20113:28029",
   },
   {
