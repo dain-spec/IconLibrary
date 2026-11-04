@@ -701,7 +701,7 @@ export const iconMeta: IconMeta[] = [
     id: "ic_dashboard_outbound_flat",
     category: "금융",
     tags: { ko: ["현황", "출고"], en: ["dashboard", "outbound"] },
-    figmaNodeId: "19786:26671",
+    figmaNodeId: "20514:27817",
   },
   {
     id: "ic_dashboard_inbound_flat",
