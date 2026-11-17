@@ -614,6 +614,12 @@ export const iconMeta: IconMeta[] = [
     figmaNodeId: "19807:27158",
   },
   {
+    id: "ic_giftcard_flat",
+    category: "금융",
+    tags: { ko: ["상품권"], en: ["gift card", "voucher"] },
+    figmaNodeId: "20652:26345",
+  },
+  {
     id: "ic_wallet_flat",
     category: "금융",
     tags: { ko: ["지갑"], en: ["wallet"] },
@@ -666,6 +672,12 @@ export const iconMeta: IconMeta[] = [
     category: "금융",
     tags: { ko: ["지방소득세"], en: ["local income tax"] },
     figmaNodeId: "3508:9653",
+  },
+  {
+    id: "ic_liquidity_flat",
+    category: "금융",
+    tags: { ko: ["유동성", "현금 흐름"], en: ["liquidity", "cash flow"] },
+    figmaNodeId: "20575:26276",
   },
   {
     id: "ic_calcu_flat",
